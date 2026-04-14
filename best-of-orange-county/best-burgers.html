@@ -253,78 +253,68 @@ mobileBtn.addEventListener('click', () => {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <!-- LATE NIGHT LISTINGS WITH IMAGE LINK + LEARN MORE BUTTON -->
-<div class="oc-late-list-container">
-  <h1>Late Night Eats in Orange County</h1>
+  <!-- BEST BURGERS LISTINGS -->
+<div class="oc-burger-list-container">
+  <h1>Best Burgers in Orange County</h1>
 
   <!-- Category Buttons -->
-  <div class="oc-late-categories">
-    <button class="oc-late-btn active" data-cat="all">All</button>
-    <button class="oc-late-btn" data-cat="fast-food">Fast Food</button>
-    <button class="oc-late-btn" data-cat="diners">24-Hour Diners</button>
-    <button class="oc-late-btn" data-cat="delivery">Late Night Delivery</button>
+  <div class="oc-burger-categories">
+    <button class="oc-burger-btn active" data-cat="all">All</button>
+    <button class="oc-burger-btn" data-cat="smash">Smash Burgers</button>
+    <button class="oc-burger-btn" data-cat="classic">Classic Burgers</button>
+    <button class="oc-burger-btn" data-cat="gourmet">Gourmet</button>
+    <button class="oc-burger-btn" data-cat="fast-food">Fast Casual</button>
   </div>
 
   <!-- Search Input -->
-  <input type="text" id="ocLateSearch" class="oc-late-search" placeholder="Search restaurants...">
+  <input type="text" id="ocBurgerSearch" class="oc-burger-search" placeholder="Search burger spots...">
 
   <!-- Listings -->
-  <div class="oc-late-listings" id="ocLateList"></div>
+  <div class="oc-burger-listings" id="ocBurgerList"></div>
 </div>
 
 <style>
-.oc-late-list-container {
+.oc-burger-list-container {
   max-width: 950px;
   margin: 0 auto;
   padding: 40px 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.oc-late-list-container h1 {
+.oc-burger-list-container h1 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Category buttons */
-.oc-late-categories {
+/* Buttons */
+.oc-burger-categories {
   display: flex;
   justify-content: center;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
-.oc-late-btn {
+.oc-burger-btn {
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid #d1d5db;
-  background: #ffffff;
+  background: #fff;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.oc-late-btn.active,
-.oc-late-btn:hover {
+.oc-burger-btn.active,
+.oc-burger-btn:hover {
   background: #ff6b35;
-  color: #ffffff;
+  color: #fff;
   border-color: #ff6b35;
 }
 
-/* Search Input */
-.oc-late-search {
+/* Search */
+.oc-burger-search {
   width: 100%;
   max-width: 400px;
   display: block;
@@ -332,109 +322,89 @@ mobileBtn.addEventListener('click', () => {
   padding: 10px 14px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
-  font-size: 16px;
 }
 
-/* Listings container */
-.oc-late-listings {
+/* Listings */
+.oc-burger-listings {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Single listing item */
-.oc-late-item {
+/* Item */
+.oc-burger-item {
   display: flex;
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 16px;
-  align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  transition: 0.2s;
 }
 
-.oc-late-item:hover {
+.oc-burger-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Left section: image + info */
-.oc-late-left {
+.oc-burger-left {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
   flex: 1;
 }
 
-/* Clickable placeholder image */
-.oc-late-img {
+.oc-burger-img {
   width: 120px;
   height: 120px;
   background: #e5e7eb;
   border-radius: 8px;
   flex-shrink: 0;
-  cursor: pointer;
-  transition: 0.2s;
 }
 
-.oc-late-img:hover {
-  transform: scale(1.03);
-}
-
-/* Info */
-.oc-late-info h2 {
+.oc-burger-info h2 {
   margin: 0 0 6px 0;
   font-size: 18px;
-  font-weight: 700;
 }
 
-.oc-late-info p {
+.oc-burger-info p {
   margin: 4px 0;
   font-size: 14px;
   color: #374151;
 }
 
-.oc-late-info a {
+.oc-burger-info a {
   color: #ff6b35;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* Learn More Button */
-.oc-late-learn {
+/* Learn More */
+.oc-burger-learn {
   background: #ff6b35;
   color: #fff;
   padding: 10px 16px;
   border-radius: 8px;
-  font-weight: 600;
   text-decoration: none;
-  white-space: nowrap;
+  font-weight: 600;
   align-self: center;
-  transition: 0.2s;
+  white-space: nowrap;
 }
 
-.oc-late-learn:hover {
+.oc-burger-learn:hover {
   background: #e55a2d;
 }
 
 @media (max-width: 600px) {
-  .oc-late-item {
+  .oc-burger-item {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .oc-late-left {
-    width: 100%;
-  }
-
-  .oc-late-img {
+  .oc-burger-img {
     width: 100%;
     height: 140px;
   }
 
-  .oc-late-learn {
-    margin-top: 10px;
+  .oc-burger-learn {
     width: 100%;
     text-align: center;
   }
@@ -442,99 +412,151 @@ mobileBtn.addEventListener('click', () => {
 </style>
 
 <script>
-// Late Night Listings
-const lateNightList = [
+// Highly rated OC burger spots
+const burgerList = [
   {
-    name: "Taco Express",
-    slug: "taco-express",
+    name: "Peter’s Gourmade Burgers (Tustin/Fullerton)",
+    slug: "peters-gourmade-burgers",
+    category: "gourmet",
+    phone: "(714) 730-0911",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Peters+Gourmade+Burgers+OC"
+  },
+  {
+    name: "Hammer Burger (Santa Ana)",
+    slug: "hammer-burger",
+    category: "smash",
+    phone: "(714) 123-4567",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Hammer+Burger+Santa+Ana"
+  },
+  {
+    name: "Bunz (Orange County)",
+    slug: "bunz-burgers",
+    category: "smash",
+    phone: "(714) 555-8899",
+    hours: "11 AM - 8 PM",
+    reviews: "https://www.google.com/search?q=Bunz+Burger+OC"
+  },
+  {
+    name: "Sign Smash Burger (Tustin)",
+    slug: "sign-smash-burger",
+    category: "smash",
+    phone: "(714) 987-2211",
+    hours: "11 AM - 11 PM",
+    reviews: "https://www.google.com/search?q=Sign+Smash+Burger+Tustin"
+  },
+  {
+    name: "TK Burgers (Huntington Beach)",
+    slug: "tk-burgers",
     category: "fast-food",
-    phone: "(714) 555-1234",
-    hours: "10 PM - 4 AM",
-    reviews: "https://www.google.com/search?q=Taco+Express+Anaheim"
+    phone: "(714) 842-2222",
+    hours: "10 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=TK+Burgers+Huntington+Beach"
   },
   {
-    name: "Burger Hub",
-    slug: "burger-hub",
-    category: "fast-food",
-    phone: "(949) 555-5678",
-    hours: "11 PM - 3 AM",
-    reviews: "https://www.google.com/search?q=Burger+Hub+Orange+County"
+    name: "The Cut Handcrafted Burgers (Irvine)",
+    slug: "the-cut-burgers",
+    category: "gourmet",
+    phone: "(949) 333-9999",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=The+Cut+Burger+Irvine"
   },
   {
-    name: "24/7 Diner Anaheim",
-    slug: "24-7-diner-anaheim",
-    category: "diners",
-    phone: "(714) 555-9012",
-    hours: "Open 24 hours",
-    reviews: "https://www.google.com/search?q=24/7+Diner+Anaheim"
+    name: "Grinderz (North OC)",
+    slug: "grinderz-burgers",
+    category: "classic",
+    phone: "(714) 555-3344",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Grinderz+Orange+County"
   },
   {
-    name: "Night Owl Delivery",
-    slug: "night-owl-delivery",
-    category: "delivery",
-    phone: "(949) 555-3456",
-    hours: "9 PM - 2 AM",
-    reviews: "https://www.google.com/search?q=Night+Owl+Delivery+OC"
+    name: "Slater’s 50/50 (Irvine)",
+    slug: "slaters-5050",
+    category: "gourmet",
+    phone: "(949) 861-2225",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Slaters+50+50+Irvine"
   }
 ];
 
-const listContainer = document.getElementById('ocLateList');
-const categoryButtons = document.querySelectorAll('.oc-late-btn');
+const listContainer = document.getElementById('ocBurgerList');
+const categoryButtons = document.querySelectorAll('.oc-burger-btn');
 
 function renderList(items){
   listContainer.innerHTML = '';
-  if(items.length===0){
-    listContainer.innerHTML = '<p style="text-align:center;color:#6b7280;">No restaurants found.</p>';
+
+  if(items.length === 0){
+    listContainer.innerHTML = '<p style="text-align:center;color:#6b7280;">No burgers found.</p>';
     return;
   }
 
   items.forEach(item=>{
     const div = document.createElement('div');
-    div.classList.add('oc-late-item');
+    div.classList.add('oc-burger-item');
+
     div.innerHTML = `
-      <div class="oc-late-left">
-        <a href="/get-featured/"><div class="oc-late-img" title="Click to get featured"></div></a>
-        <div class="oc-late-info">
-          <h2><a href="/late-night/${item.slug}/" title="${item.name}">${item.name}</a></h2>
+      <div class="oc-burger-left">
+        <div class="oc-burger-img"></div>
+        <div class="oc-burger-info">
+          <h2><a href="/best-burgers/${item.slug}/">${item.name}</a></h2>
           <p><strong>Phone:</strong> ${item.phone}</p>
           <p><strong>Hours:</strong> ${item.hours}</p>
           <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
-          <p><em>Category: ${item.category.replace(/-/g,' ')}</em></p>
+          <p><em>Category: ${item.category}</em></p>
         </div>
       </div>
-      <a class="oc-late-learn" href="/late-night/${item.slug}/">Learn More</a>
+
+      <a class="oc-burger-learn" href="/best-burgers/${item.slug}/">
+        Learn More
+      </a>
     `;
+
     listContainer.appendChild(div);
   });
 }
 
 // Initial render
-renderList(lateNightList);
+renderList(burgerList);
 
 // Category filter
 categoryButtons.forEach(btn=>{
   btn.addEventListener('click', function(){
     categoryButtons.forEach(b=>b.classList.remove('active'));
     this.classList.add('active');
-    const cat=this.getAttribute('data-cat');
-    if(cat==='all') renderList(lateNightList);
-    else renderList(lateNightList.filter(item=>item.category===cat));
+
+    const cat = this.getAttribute('data-cat');
+    if(cat === 'all') renderList(burgerList);
+    else renderList(burgerList.filter(i => i.category === cat));
   });
 });
 
 // Search filter
-document.getElementById('ocLateSearch').addEventListener('input', function(){
-  const query=this.value.toLowerCase();
-  const activeCategory=document.querySelector('.oc-late-btn.active').getAttribute('data-cat');
-  let filtered = lateNightList.filter(item=>item.name.toLowerCase().includes(query));
-  if(activeCategory!=='all') filtered = filtered.filter(item=>item.category===activeCategory);
+document.getElementById('ocBurgerSearch').addEventListener('input', function(){
+  const query = this.value.toLowerCase();
+  const activeCategory = document.querySelector('.oc-burger-btn.active').getAttribute('data-cat');
+
+  let filtered = burgerList.filter(i =>
+    i.name.toLowerCase().includes(query)
+  );
+
+  if(activeCategory !== 'all'){
+    filtered = filtered.filter(i => i.category === activeCategory);
+  }
+
   renderList(filtered);
 });
 </script>
-</body>
   
   
   
+  
+  
+  
+  
+  
+  
+
   
   
   
