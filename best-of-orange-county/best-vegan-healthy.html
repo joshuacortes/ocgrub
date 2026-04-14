@@ -1,1 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deals - OCGrub - Explore All Orange County Grub Deals</title>
+    <<meta name="description" content="Discover the best deals food options in Orange County with OCGrub. Find restaurants, diners, and delivery spots open late, complete with hours, contact info, and reviews. Never go hungry after hours in OC!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/protein/">Protein</a>
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  <a href="/late-night/">Late Night Food</a>
+  <a href="/deals/">Food Deals</a>
+  <a href="/protein/">Protein</a>
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!-- BEST VEGAN + HEALTHY LISTINGS -->
+<div class="oc-vegan-list-container">
+  <h1>Best Vegan & Healthy Food in Orange County</h1>
+
+  <!-- Category Buttons -->
+  <div class="oc-vegan-categories">
+    <button class="oc-vegan-btn active" data-cat="all">All</button>
+    <button class="oc-vegan-btn" data-cat="vegan">100% Vegan</button>
+    <button class="oc-vegan-btn" data-cat="healthy">Healthy Bowls</button>
+    <button class="oc-vegan-btn" data-cat="juice">Juice / Smoothies</button>
+    <button class="oc-vegan-btn" data-cat="asian">Asian Vegan</button>
+  </div>
+
+  <!-- Search Input -->
+  <input type="text" id="ocVeganSearch" class="oc-vegan-search" placeholder="Search vegan & healthy spots...">
+
+  <!-- Listings -->
+  <div class="oc-vegan-listings" id="ocVeganList"></div>
+</div>
+
+<style>
+.oc-vegan-list-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.oc-vegan-list-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.oc-vegan-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.oc-vegan-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.oc-vegan-btn.active,
+.oc-vegan-btn:hover {
+  background: #22c55e;
+  color: #fff;
+  border-color: #22c55e;
+}
+
+/* Search */
+.oc-vegan-search {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+/* Listings */
+.oc-vegan-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Item */
+.oc-vegan-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.oc-vegan-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.oc-vegan-left {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.oc-vegan-img {
+  width: 120px;
+  height: 120px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.oc-vegan-info h2 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.oc-vegan-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.oc-vegan-info a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Learn More */
+.oc-vegan-learn {
+  background: #22c55e;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.oc-vegan-learn:hover {
+  background: #16a34a;
+}
+
+@media (max-width: 600px) {
+  .oc-vegan-item {
+    flex-direction: column;
+  }
+
+  .oc-vegan-img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .oc-vegan-learn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+// 30 HIGHLY RATED VEGAN + HEALTHY OC SPOTS
+const veganList = [
+  { name: "Au Lac (Fountain Valley)", slug: "au-lac", category: "vegan", phone: "(714) 965-9688", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Au+Lac+Fountain+Valley" },
+  { name: "Healthy Junk (Anaheim)", slug: "healthy-junk", category: "vegan", phone: "(714) 603-7399", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Healthy+Junk+Anaheim" },
+  { name: "Seabirds Kitchen (Costa Mesa)", slug: "seabirds-kitchen", category: "vegan", phone: "(714) 942-7621", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Seabirds+Kitchen+Costa+Mesa" },
+  { name: "The Sun Vegan (Fountain Valley)", slug: "sun-vegan", category: "asian", phone: "(714) 418-0400", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=The+Sun+Vegan+Fountain+Valley" },
+  { name: "Bo De Tinh Tam Chay (Westminster)", slug: "bo-de-tinh-tam-chay", category: "asian", phone: "(714) 890-6426", hours: "9 AM - 8 PM", reviews: "https://www.google.com/search?q=Bo+De+Tinh+Tam+Chay" },
+
+  { name: "Hoa Sen Vegetarian (Garden Grove)", slug: "hoa-sen", category: "asian", phone: "(714) 638-9422", hours: "10 AM - 8 PM", reviews: "https://www.google.com/search?q=Hoa+Sen+Garden+Grove" },
+  { name: "Mitasie Vegan (Lake Forest)", slug: "mitasie", category: "vegan", phone: "(949) 455-1122", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Mitasie+Lake+Forest" },
+  { name: "Nice Burger (Irvine)", slug: "nice-burger", category: "vegan", phone: "(949) 336-8300", hours: "11 AM - 10 PM", reviews: "https://www.google.com/search?q=Nice+Burger+Irvine" },
+  { name: "Plant Power Fast Food (HB / Fountain Valley)", slug: "plant-power", category: "vegan", phone: "(714) 500-5555", hours: "10 AM - 10 PM", reviews: "https://www.google.com/search?q=Plant+Power+Fast+Food+HB" },
+
+  { name: "Vegan By El Zamorano (Santa Ana)", slug: "vegan-el-zamorano", category: "vegan", phone: "(714) 569-0047", hours: "10 AM - 9 PM", reviews: "https://www.google.com/search?q=Vegan+by+El+Zamorano" },
+  { name: "Green Tomato Grill (Lake Forest)", slug: "green-tomato-grill", category: "healthy", phone: "(949) 586-9440", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Green+Tomato+Grill" },
+  { name: "Veggie Grill (Irvine Spectrum)", slug: "veggie-grill", category: "healthy", phone: "(949) 453-1010", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Veggie+Grill+Irvine" },
+
+  { name: "Nourish Wellness Cafe (Tustin)", slug: "nourish-wellness", category: "healthy", phone: "(714) 486-1500", hours: "8 AM - 6 PM", reviews: "https://www.google.com/search?q=Nourish+Wellness+Cafe+Tustin" },
+  { name: "Urth Caffe (Laguna / Newport / Orange)", slug: "urth-caffe", category: "healthy", phone: "(949) 640-7474", hours: "7 AM - 11 PM", reviews: "https://www.google.com/search?q=Urth+Caffe+OC" },
+  { name: "Gracias Madre (Newport Beach)", slug: "gracias-madre", category: "vegan", phone: "(949) 877-3000", hours: "11 AM - 10 PM", reviews: "https://www.google.com/search?q=Gracias+Madre+Newport" },
+
+  { name: "Hug Life Vegan Ice Cream (Orange)", slug: "hug-life", category: "vegan", phone: "(714) 202-1234", hours: "12 PM - 10 PM", reviews: "https://www.google.com/search?q=Hug+Life+Orange+CA" },
+  { name: "The Donuttery (Huntington Beach)", slug: "donuttery", category: "vegan", phone: "(714) 373-3300", hours: "24 Hours", reviews: "https://www.google.com/search?q=The+Donuttery+HB" },
+
+  { name: "Vibe Organic Kitchen (Dana Point)", slug: "vibe-organic", category: "healthy", phone: "(949) 248-1911", hours: "8 AM - 8 PM", reviews: "https://www.google.com/search?q=Vibe+Organic+Kitchen" },
+  { name: "Seabirds Kitchen (Long Beach / OC)", slug: "seabirds-2", category: "vegan", phone: "(562) 432-2337", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Seabirds+Kitchen" },
+
+  { name: "Veggos (Lake Forest)", slug: "veggos", category: "vegan", phone: "(949) 340-1775", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Veggos+Lake+Forest" },
+  { name: "Rutabegorz (Orange / Tustin / Fullerton)", slug: "rutabegorz", category: "healthy", phone: "(714) 633-3260", hours: "8 AM - 9 PM", reviews: "https://www.google.com/search?q=Rutabegorz+Orange+CA" },
+
+  { name: "Saigon Vegan (Garden Grove)", slug: "saigon-vegan", category: "asian", phone: "(714) 537-0100", hours: "10 AM - 9 PM", reviews: "https://www.google.com/search?q=Saigon+Vegan+Garden+Grove" },
+  { name: "Thien Dang Vegetarian (Garden Grove)", slug: "thien-dang", category: "asian", phone: "(714) 638-8188", hours: "10 AM - 8 PM", reviews: "https://www.google.com/search?q=Thien+Dang+Garden+Grove" },
+
+  { name: "Loving Hut (Garden Grove)", slug: "loving-hut", category: "vegan", phone: "(714) 539-3838", hours: "10 AM - 9 PM", reviews: "https://www.google.com/search?q=Loving+Hut+Garden+Grove" },
+  { name: "True Food Kitchen (Newport Beach)", slug: "true-food-kitchen", category: "healthy", phone: "(949) 644-2400", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=True+Food+Kitchen+Newport+Beach" },
+
+  { name: "Veggie Fam (Santa Ana)", slug: "veggie-fam", category: "vegan", phone: "(714) 852-2222", hours: "11 AM - 9 PM", reviews: "https://www.google.com/search?q=Veggie+Fam+Santa+Ana" },
+  { name: "Green Bliss Cafe (Costa Mesa)", slug: "green-bliss", category: "healthy", phone: "(949) 650-8880", hours: "8 AM - 4 PM", reviews: "https://www.google.com/search?q=Green+Bliss+Cafe+Costa+Mesa" }
+];
+
+const listContainer = document.getElementById('ocVeganList');
+const categoryButtons = document.querySelectorAll('.oc-vegan-btn');
+
+function renderList(items){
+  listContainer.innerHTML = '';
+
+  if(items.length === 0){
+    listContainer.innerHTML = '<p style="text-align:center;color:#6b7280;">No vegan/healthy spots found.</p>';
+    return;
+  }
+
+  items.forEach(item=>{
+    const div = document.createElement('div');
+    div.classList.add('oc-vegan-item');
+
+    div.innerHTML = `
+      <div class="oc-vegan-left">
+        <div class="oc-vegan-img"></div>
+        <div class="oc-vegan-info">
+          <h2><a href="/best-vegan-healthy/${item.slug}/">${item.name}</a></h2>
+          <p><strong>Phone:</strong> ${item.phone}</p>
+          <p><strong>Hours:</strong> ${item.hours}</p>
+          <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
+          <p><em>Category: ${item.category}</em></p>
+        </div>
+      </div>
+
+      <a class="oc-vegan-learn" href="/best-vegan-healthy/${item.slug}/">Learn More</a>
+    `;
+
+    listContainer.appendChild(div);
+  });
+}
+
+// Initial render
+renderList(veganList);
+
+// Category filter
+categoryButtons.forEach(btn=>{
+  btn.addEventListener('click', function(){
+    categoryButtons.forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+
+    const cat = this.getAttribute('data-cat');
+    if(cat === 'all') renderList(veganList);
+    else renderList(veganList.filter(i => i.category === cat));
+  });
+});
+
+// Search filter
+document.getElementById('ocVeganSearch').addEventListener('input', function(){
+  const query = this.value.toLowerCase();
+  const activeCategory = document.querySelector('.oc-vegan-btn.active').getAttribute('data-cat');
+
+  let filtered = veganList.filter(i =>
+    i.name.toLowerCase().includes(query)
+  );
+
+  if(activeCategory !== 'all'){
+    filtered = filtered.filter(i => i.category === activeCategory);
+  }
+
+  renderList(filtered);
+});
+</script>
+  
+  
+  
+  
+  
+  
+  
+  <div style="height:80px;"></div>
+  
+  <footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/map/">Map</a>
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+  
+  
+</html>
