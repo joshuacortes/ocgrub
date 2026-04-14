@@ -246,6 +246,214 @@ mobileBtn.addEventListener('click', () => {
 });
 </script>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- HERO SECTIONS -->
+<style>
+/* OCGRUB HERO (UNIQUE NAMESPACE) */
+.ocg-hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.ocg-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  transform: scale(1.05);
+}
+
+.ocg-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 2;
+}
+
+.ocg-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.ocg-hero h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.ocg-hero p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.ocg-hero-btn {
+  display: inline-block;
+  background: #ff6b35;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ocg-hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .ocg-hero {
+    min-height: 70vh;
+  }
+  .ocg-hero h1 {
+    font-size: 32px;
+  }
+  .ocg-hero p {
+    font-size: 16px;
+  }
+}
+</style>
+
+<!-- CITIES -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1557128729-0d13d0af8460?q=80&w=1170');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Explore OC Cities</h1>
+    <p>Discover the best food spots across every city in Orange County, CA.</p>
+    <a href="/cities/" class="ocg-hero-btn">Browse Cities</a>
+  </div>
+</section>
+
+<!-- BEST OF -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Best Of OC</h1>
+    <p>Handpicked top-rated restaurants and must-try food experiences.</p>
+    <a href="/best-of-orange-county/" class="ocg-hero-btn">View Best Of</a>
+  </div>
+</section>
+
+<!-- LATE NIGHT -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Late Night Eats</h1>
+    <p>Find the best food spots open late when cravings hit.</p>
+    <a href="/late-night/" class="ocg-hero-btn">Find Late Night</a>
+  </div>
+</section>
+
+<!-- DEALS -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Food Deals</h1>
+    <p>Save money with the latest restaurant deals and specials.</p>
+    <a href="/deals/" class="ocg-hero-btn">View Deals</a>
+  </div>
+</section>
+
+<!-- PROTEIN -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Protein Picks</h1>
+    <p>High-protein meals and fitness-friendly food options.</p>
+    <a href="/protein/" class="ocg-hero-btn">Explore Protein</a>
+  </div>
+</section>
+
+<script>
+// OPTIONAL: subtle scroll fade-in
+const ocgSections = document.querySelectorAll('.ocg-hero');
+
+const ocgObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+}, { threshold: 0.2 });
+
+ocgSections.forEach(sec => {
+  sec.style.opacity = 0;
+  sec.style.transform = "translateY(40px)";
+  sec.style.transition = "all 0.8s ease";
+  ocgObserver.observe(sec);
+});
+</script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </body>
   
   
