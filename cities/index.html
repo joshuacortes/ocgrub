@@ -3,8 +3,8 @@
 <head> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All Cities - OCGrub - Explore All Orange County Cities.</title>
-    <meta name="description" content="Browse by city - the best restaurants, food deals, and late-night eats in Orange County. Browse city directories, explore 'Best of OC' reviews, find food maps, and stay updated with the latest culinary news.">
+<title>Aliso Viejo - OCGrub - Explore the Official OCGrub Website.</title>
+    <meta name="description" content="Discover the best restaurants, food deals, and protein eats in Orange County with OCGrub. Browse city directories, explore 'Best of OC' reviews, find food maps, and stay updated with the latest culinary news.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google tag (gtag.js) -->
@@ -16,6 +16,7 @@
 
   gtag('config', 'G-378RHVD2SY');
 </script>
+    
 <style>
 /* RESET */
 body {
@@ -187,6 +188,9 @@ body {
   }
 }
 </style>
+
+
+    
 </head>
 <body>
 
@@ -246,114 +250,292 @@ mobileBtn.addEventListener('click', () => {
   
   
   
-  <!-- CITIES DIRECTORY SECTION -->
-<div class="oc-cities-container">
-  <h1>Explore All Orange County Cities</h1>
-  <input type="text" id="ocCitySearch" class="oc-search-input" placeholder="Search for a city...">
-  <div class="oc-city-grid" id="ocCityGrid"></div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- =========================
+YORBA LINDA DIRECTORY SECTION
+OCGRUB STYLE LISTING BLOCK
+========================= -->
+
+<div class="oc-late-list-container">
+  <h1>Yorba Linda Food & Local Eats</h1>
+
+  <!-- CATEGORY FILTERS -->
+  <div class="oc-late-categories">
+    <button class="oc-late-btn active" data-cat="all">All</button>
+    <button class="oc-late-btn" data-cat="restaurant">Restaurants</button>
+    <button class="oc-late-btn" data-cat="fastfood">Fast Food</button>
+    <button class="oc-late-btn" data-cat="cafe">Cafes</button>
+  </div>
+
+  <!-- SEARCH -->
+  <input type="text" id="ocSearch" class="oc-late-search" placeholder="Search Yorba Linda spots...">
+
+  <!-- LISTINGS -->
+  <div class="oc-late-listings" id="ocList"></div>
 </div>
 
 <style>
-/* Cities Section Styles */
-.oc-cities-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 16px;
+.oc-late-list-container{
+  max-width:950px;margin:0 auto;padding:40px 16px;
+  font-family:Arial,Helvetica,sans-serif;
 }
 
-.oc-cities-container h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: center;
+.oc-late-list-container h1{
+  text-align:center;font-size:28px;font-weight:700;margin-bottom:20px;
 }
 
-.oc-search-input {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto 30px auto;
-  padding: 10px 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 16px;
+.oc-late-categories{
+  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:20px;
 }
 
-.oc-city-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
+.oc-late-btn{
+  padding:8px 14px;border-radius:8px;border:1px solid #d1d5db;
+  background:#fff;font-weight:600;cursor:pointer;
 }
 
-.oc-city-card {
-  background: #ffffff;
-  padding: 14px 10px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+.oc-late-btn.active{
+  background:#ff6b35;color:#fff;border-color:#ff6b35;
 }
 
-.oc-city-card a {
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  display: block;
+.oc-late-search{
+  width:100%;max-width:420px;display:block;margin:0 auto 25px auto;
+  padding:10px;border-radius:8px;border:1px solid #d1d5db;
 }
 
-.oc-city-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.oc-late-listings{display:flex;flex-direction:column;gap:18px;}
+
+.oc-late-item{
+  display:flex;justify-content:space-between;gap:16px;
+  background:#fff;padding:16px;border-radius:10px;
 }
 
-@media (max-width: 600px) {
-  .oc-cities-container h1 {
-    font-size: 24px;
-  }
+.oc-late-left{display:flex;gap:14px;}
+
+.oc-late-img{
+  width:110px;height:110px;background:#e5e7eb;border-radius:8px;
+}
+
+.oc-late-info h2{margin:0;font-size:18px;}
+
+.oc-late-info p{margin:4px 0;font-size:14px;color:#374151;}
+
+.oc-late-learn{
+  background:#ff6b35;color:#fff;padding:10px 14px;
+  border-radius:8px;text-decoration:none;align-self:center;
+}
+
+@media(max-width:700px){
+  .oc-late-item{flex-direction:column;}
+  .oc-late-img{width:100%;height:140px;}
 }
 </style>
 
 <script>
-// Orange County cities in alphabetical order
-const ocCities = [
-  "Aliso Viejo","Anaheim","Brea","Buena Park","Costa Mesa","Cypress","Dana Point","Fountain Valley",
-  "Fullerton","Garden Grove","Huntington Beach","Irvine","La Habra","Laguna Beach","Laguna Hills",
-  "Laguna Niguel","Lake Forest","La Palma","Los Alamitos","Mission Viejo","Newport Beach","Orange",
-  "Placentia","Rancho Santa Margarita","San Clemente","San Juan Capistrano","Santa Ana","Seal Beach",
-  "Stanton","Tustin","Villa Park","Westminster","Yorba Linda"
+const data = [
+  {
+    name: "Yorba Linda Town Center Grill",
+    slug: "yorba-linda-town-center-grill",
+    category: "restaurant",
+    type: "American Grill",
+    phone: "(714) 777-1234",
+    link: "https://www.google.com/search?q=Yorba+Linda+Town+Center+Grill"
+  },
+  {
+    name: "Salsa Rocks Mexican Food",
+    slug: "salsa-rocks-yorba-linda",
+    category: "restaurant",
+    type: "Mexican Cuisine",
+    phone: "(714) 970-2272",
+    link: "https://www.salsarocks.com"
+  },
+  {
+    name: "Kareem’s Mediterranean",
+    slug: "kareems-yorba-linda",
+    category: "restaurant",
+    type: "Mediterranean",
+    phone: "(714) 777-8888",
+    link: "https://www.google.com/search?q=Kareem%27s+Mediterranean+Yorba+Linda"
+  },
+  {
+    name: "The Peel Craftbar & Kitchen",
+    slug: "the-peel-yorba-linda",
+    category: "restaurant",
+    type: "Modern American",
+    phone: "(714) 777-4321",
+    link: "https://www.thepeelrestaurant.com"
+  },
+
+  {
+    name: "In-N-Out Burger",
+    slug: "in-n-out-yorba-linda",
+    category: "fastfood",
+    type: "Burgers",
+    phone: "(800) 786-1000",
+    link: "https://www.in-n-out.com"
+  },
+  {
+    name: "Chick-fil-A Yorba Linda",
+    slug: "chick-fil-a-yorba-linda",
+    category: "fastfood",
+    type: "Chicken Sandwiches",
+    phone: "(714) 692-1230",
+    link: "https://www.chick-fil-a.com"
+  },
+  {
+    name: "Chipotle Mexican Grill",
+    slug: "chipotle-yorba-linda",
+    category: "fastfood",
+    type: "Mexican Grill",
+    phone: "(714) 777-0199",
+    link: "https://www.chipotle.com"
+  },
+  {
+    name: "Starbucks Yorba Linda",
+    slug: "starbucks-yorba-linda",
+    category: "cafe",
+    type: "Coffee Shop",
+    phone: "(714) 777-2323",
+    link: "https://www.starbucks.com"
+  },
+  {
+    name: "The Coffee Bean & Tea Leaf",
+    slug: "coffee-bean-yorba-linda",
+    category: "cafe",
+    type: "Coffee & Tea",
+    phone: "(714) 777-9090",
+    link: "https://www.coffeebean.com"
+  }
 ];
 
-const cityGrid = document.getElementById('ocCityGrid');
+const list = document.getElementById("ocList");
+const buttons = document.querySelectorAll(".oc-late-btn");
+const search = document.getElementById("ocSearch");
 
-// Function to render city cards
-function renderCities(list) {
-  cityGrid.innerHTML = '';
-  list.forEach(city => {
-    const slug = city.toLowerCase().replace(/\s+/g,'-');
-    const card = document.createElement('div');
-    card.classList.add('oc-city-card');
-    card.innerHTML = `<a href="/cities/${slug}/" title="Restaurants in ${city}">${city}</a>`;
-    cityGrid.appendChild(card);
+function render(items){
+  list.innerHTML = "";
+
+  if(items.length === 0){
+    list.innerHTML = "<p style='text-align:center;color:#6b7280;'>No results found</p>";
+    return;
+  }
+
+  items.forEach(i=>{
+    const el = document.createElement("div");
+    el.className = "oc-late-item";
+
+    el.innerHTML = `
+      <div class="oc-late-left">
+        <div class="oc-late-img"></div>
+        <div class="oc-late-info">
+          <h2><a href="/cities/yorba-linda/${i.slug}">${i.name}</a></h2>
+          <p><strong>${i.type}</strong></p>
+          <p>${i.phone}</p>
+          <p><a href="${i.link}" target="_blank">Visit Website</a></p>
+          <p><em>${i.category}</em></p>
+        </div>
+      </div>
+      <a class="oc-late-learn" href="/cities/yorba-linda/${i.slug}">View</a>
+    `;
+
+    list.appendChild(el);
   });
 }
 
-// Initial render
-renderCities(ocCities);
+function filter(){
+  const active = document.querySelector(".oc-late-btn.active").dataset.cat;
+  const q = search.value.toLowerCase();
 
-// Search filter
-document.getElementById('ocCitySearch').addEventListener('input', function() {
-  const query = this.value.toLowerCase();
-  const filtered = ocCities.filter(city => city.toLowerCase().includes(query));
-  renderCities(filtered);
+  let filtered = data.filter(i => i.name.toLowerCase().includes(q));
+
+  if(active !== "all"){
+    filtered = filtered.filter(i => i.category === active);
+  }
+
+  render(filtered);
+}
+
+buttons.forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    buttons.forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    filter();
+  });
 });
+
+search.addEventListener("input", filter);
+
+render(data);
 </script>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </body>
-  
-  
-  
-  
   
   
   
