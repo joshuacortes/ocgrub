@@ -1,1 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aliso Viejo - OCGrub - Explore the Official OCGrub Website.</title>
+    <meta name="description" content="Discover the best restaurants, food deals, and protein eats in Orange County with OCGrub. Browse city directories, explore 'Best of OC' reviews, find food maps, and stay updated with the latest culinary news.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-378RHVD2SY');
+</script>
+    
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+
+
+    
+</head>
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/protein/">Protein</a>
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  <a href="/late-night/">Late Night Food</a>
+  <a href="/deals/">Food Deals</a>
+  <a href="/protein/">Protein</a>
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- =========================
+FULLERTON DIRECTORY SECTION
+OCGRUB STYLE LISTING BLOCK
+========================= -->
+
+<div class="oc-late-list-container">
+  <h1>Fullerton Food & Local Eats</h1>
+
+  <!-- CATEGORY FILTERS -->
+  <div class="oc-late-categories">
+    <button class="oc-late-btn active" data-cat="all">All</button>
+    <button class="oc-late-btn" data-cat="restaurant">Restaurants</button>
+    <button class="oc-late-btn" data-cat="fastfood">Fast Food</button>
+    <button class="oc-late-btn" data-cat="cafe">Cafes</button>
+  </div>
+
+  <!-- SEARCH -->
+  <input type="text" id="ocSearch" class="oc-late-search" placeholder="Search Fullerton spots...">
+
+  <!-- LISTINGS -->
+  <div class="oc-late-listings" id="ocList"></div>
+</div>
+
+<style>
+.oc-late-list-container{
+  max-width:950px;margin:0 auto;padding:40px 16px;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.oc-late-list-container h1{
+  text-align:center;font-size:28px;font-weight:700;margin-bottom:20px;
+}
+
+.oc-late-categories{
+  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:20px;
+}
+
+.oc-late-btn{
+  padding:8px 14px;border-radius:8px;border:1px solid #d1d5db;
+  background:#fff;font-weight:600;cursor:pointer;
+}
+
+.oc-late-btn.active{
+  background:#ff6b35;color:#fff;border-color:#ff6b35;
+}
+
+.oc-late-search{
+  width:100%;max-width:420px;display:block;margin:0 auto 25px auto;
+  padding:10px;border-radius:8px;border:1px solid #d1d5db;
+}
+
+.oc-late-listings{display:flex;flex-direction:column;gap:18px;}
+
+.oc-late-item{
+  display:flex;justify-content:space-between;gap:16px;
+  background:#fff;padding:16px;border-radius:10px;
+}
+
+.oc-late-left{display:flex;gap:14px;}
+
+.oc-late-img{
+  width:110px;height:110px;background:#e5e7eb;border-radius:8px;
+}
+
+.oc-late-info h2{margin:0;font-size:18px;}
+
+.oc-late-info p{margin:4px 0;font-size:14px;color:#374151;}
+
+.oc-late-learn{
+  background:#ff6b35;color:#fff;padding:10px 14px;
+  border-radius:8px;text-decoration:none;align-self:center;
+}
+
+@media(max-width:700px){
+  .oc-late-item{flex-direction:column;}
+  .oc-late-img{width:100%;height:140px;}
+}
+</style>
+
+<script>
+const data = [
+  {
+    name: "The Night Owl",
+    slug: "the-night-owl-fullerton",
+    category: "restaurant",
+    type: "American Gastropub",
+    phone: "(714) 879-4791",
+    link: "https://www.google.com/search?q=The+Night+Owl+Fullerton"
+  },
+  {
+    name: "Mulberry Street Ristorante",
+    slug: "mulberry-street-ristorante",
+    category: "restaurant",
+    type: "Italian",
+    phone: "(714) 449-5252",
+    link: "https://mulberrystreettrattoria.com"
+  },
+  {
+    name: "Roman Cucina Fullerton",
+    slug: "roman-cucina-fullerton",
+    category: "restaurant",
+    type: "Italian",
+    phone: "(714) 871-7766",
+    link: "https://www.romancucina.com"
+  },
+  {
+    name: "Fuoco Pizzeria Napoletana",
+    slug: "fuoco-pizzeria-fullerton",
+    category: "restaurant",
+    type: "Neapolitan Pizza",
+    phone: "(714) 871-2233",
+    link: "https://www.fuocopizzeria.com"
+  },
+  {
+    name: "Rutabegorz",
+    slug: "rutabegorz-fullerton",
+    category: "restaurant",
+    type: "Healthy American / Vegan",
+    phone: "(714) 738-9339",
+    link: "https://www.rutabegorz.com"
+  },
+  {
+    name: "In-N-Out Burger",
+    slug: "in-n-out-fullerton",
+    category: "fastfood",
+    type: "Burgers",
+    phone: "(800) 786-1000",
+    link: "https://www.in-n-out.com"
+  },
+  {
+    name: "Chick-fil-A Fullerton",
+    slug: "chick-fil-a-fullerton",
+    category: "fastfood",
+    type: "Chicken Sandwiches",
+    phone: "(714) 738-7333",
+    link: "https://www.chick-fil-a.com"
+  },
+  {
+    name: "Chipotle Mexican Grill",
+    slug: "chipotle-fullerton",
+    category: "fastfood",
+    type: "Mexican Grill",
+    phone: "(714) 447-9700",
+    link: "https://www.chipotle.com"
+  },
+  {
+    name: "Starbucks Downtown Fullerton",
+    slug: "starbucks-fullerton",
+    category: "cafe",
+    type: "Coffee Shop",
+    phone: "(714) 525-2740",
+    link: "https://www.starbucks.com"
+  },
+  {
+    name: "Dripp Coffee Bar",
+    slug: "dripp-coffee-fullerton",
+    category: "cafe",
+    type: "Specialty Coffee",
+    phone: "(657) 217-4061",
+    link: "https://www.dripp.com"
+  }
+];
+
+const list = document.getElementById("ocList");
+const buttons = document.querySelectorAll(".oc-late-btn");
+const search = document.getElementById("ocSearch");
+
+function render(items){
+  list.innerHTML = "";
+
+  if(items.length === 0){
+    list.innerHTML = "<p style='text-align:center;color:#6b7280;'>No results found</p>";
+    return;
+  }
+
+  items.forEach(i=>{
+    const el = document.createElement("div");
+    el.className = "oc-late-item";
+
+    el.innerHTML = `
+      <div class="oc-late-left">
+        <div class="oc-late-img"></div>
+        <div class="oc-late-info">
+          <h2><a href="/cities/fullerton/${i.slug}">${i.name}</a></h2>
+          <p><strong>${i.type}</strong></p>
+          <p>${i.phone}</p>
+          <p><a href="${i.link}" target="_blank">Visit Website</a></p>
+          <p><em>${i.category}</em></p>
+        </div>
+      </div>
+      <a class="oc-late-learn" href="/cities/fullerton/${i.slug}">View</a>
+    `;
+
+    list.appendChild(el);
+  });
+}
+
+function filter(){
+  const active = document.querySelector(".oc-late-btn.active").dataset.cat;
+  const q = search.value.toLowerCase();
+
+  let filtered = data.filter(i => i.name.toLowerCase().includes(q));
+
+  if(active !== "all"){
+    filtered = filtered.filter(i => i.category === active);
+  }
+
+  render(filtered);
+}
+
+buttons.forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    buttons.forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    filter();
+  });
+});
+
+search.addEventListener("input", filter);
+
+render(data);
+</script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+  
+  
+  
+  
+  
+  
+  <div style="height:80px;"></div>
+  
+  <footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/map/">Map</a>
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+  
+  
+</html>
