@@ -263,34 +263,35 @@ mobileBtn.addEventListener('click', () => {
   
   
   
-  <!-- LATE NIGHT LISTINGS WITH IMAGE LINK + LEARN MORE BUTTON -->
-<div class="oc-late-list-container">
-  <h1>Late Night Eats in Orange County</h1>
+<!-- BEST ASIAN CUISINE LISTINGS -->
+<div class="oc-asian-list-container">
+  <h1>Best Asian Cuisine in Orange County</h1>
 
   <!-- Category Buttons -->
-  <div class="oc-late-categories">
-    <button class="oc-late-btn active" data-cat="all">All</button>
-    <button class="oc-late-btn" data-cat="fast-food">Fast Food</button>
-    <button class="oc-late-btn" data-cat="diners">24-Hour Diners</button>
-    <button class="oc-late-btn" data-cat="delivery">Late Night Delivery</button>
+  <div class="oc-asian-categories">
+    <button class="oc-asian-btn active" data-cat="all">All</button>
+    <button class="oc-asian-btn" data-cat="japanese">Japanese</button>
+    <button class="oc-asian-btn" data-cat="korean">Korean</button>
+    <button class="oc-asian-btn" data-cat="chinese">Chinese</button>
+    <button class="oc-asian-btn" data-cat="vietnamese">Vietnamese</button>
   </div>
 
   <!-- Search Input -->
-  <input type="text" id="ocLateSearch" class="oc-late-search" placeholder="Search restaurants...">
+  <input type="text" id="ocAsianSearch" class="oc-asian-search" placeholder="Search Asian restaurants...">
 
   <!-- Listings -->
-  <div class="oc-late-listings" id="ocLateList"></div>
+  <div class="oc-asian-listings" id="ocAsianList"></div>
 </div>
 
 <style>
-.oc-late-list-container {
+.oc-asian-list-container {
   max-width: 950px;
   margin: 0 auto;
   padding: 40px 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.oc-late-list-container h1 {
+.oc-asian-list-container h1 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -298,7 +299,7 @@ mobileBtn.addEventListener('click', () => {
 }
 
 /* Category buttons */
-.oc-late-categories {
+.oc-asian-categories {
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -306,7 +307,7 @@ mobileBtn.addEventListener('click', () => {
   margin-bottom: 20px;
 }
 
-.oc-late-btn {
+.oc-asian-btn {
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid #d1d5db;
@@ -316,15 +317,15 @@ mobileBtn.addEventListener('click', () => {
   transition: 0.2s;
 }
 
-.oc-late-btn.active,
-.oc-late-btn:hover {
+.oc-asian-btn.active,
+.oc-asian-btn:hover {
   background: #ff6b35;
   color: #ffffff;
   border-color: #ff6b35;
 }
 
 /* Search Input */
-.oc-late-search {
+.oc-asian-search {
   width: 100%;
   max-width: 400px;
   display: block;
@@ -335,15 +336,15 @@ mobileBtn.addEventListener('click', () => {
   font-size: 16px;
 }
 
-/* Listings container */
-.oc-late-listings {
+/* Listings */
+.oc-asian-listings {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Single listing item */
-.oc-late-item {
+/* Item */
+.oc-asian-item {
   display: flex;
   background: #ffffff;
   border-radius: 10px;
@@ -354,55 +355,47 @@ mobileBtn.addEventListener('click', () => {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.oc-late-item:hover {
+.oc-asian-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Left section: image + info */
-.oc-late-left {
+.oc-asian-left {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
   flex: 1;
 }
 
-/* Clickable placeholder image */
-.oc-late-img {
+/* Image placeholder */
+.oc-asian-img {
   width: 120px;
   height: 120px;
   background: #e5e7eb;
   border-radius: 8px;
   flex-shrink: 0;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.oc-late-img:hover {
-  transform: scale(1.03);
 }
 
 /* Info */
-.oc-late-info h2 {
+.oc-asian-info h2 {
   margin: 0 0 6px 0;
   font-size: 18px;
   font-weight: 700;
 }
 
-.oc-late-info p {
+.oc-asian-info p {
   margin: 4px 0;
   font-size: 14px;
   color: #374151;
 }
 
-.oc-late-info a {
+.oc-asian-info a {
   color: #ff6b35;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* Learn More Button */
-.oc-late-learn {
+/* Button */
+.oc-asian-learn {
   background: #ff6b35;
   color: #fff;
   padding: 10px 16px;
@@ -411,30 +404,23 @@ mobileBtn.addEventListener('click', () => {
   text-decoration: none;
   white-space: nowrap;
   align-self: center;
-  transition: 0.2s;
 }
 
-.oc-late-learn:hover {
+.oc-asian-learn:hover {
   background: #e55a2d;
 }
 
 @media (max-width: 600px) {
-  .oc-late-item {
+  .oc-asian-item {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .oc-late-left {
-    width: 100%;
-  }
-
-  .oc-late-img {
+  .oc-asian-img {
     width: 100%;
     height: 140px;
   }
 
-  .oc-late-learn {
-    margin-top: 10px;
+  .oc-asian-learn {
     width: 100%;
     text-align: center;
   }
@@ -442,99 +428,141 @@ mobileBtn.addEventListener('click', () => {
 </style>
 
 <script>
-// Late Night Listings
-const lateNightList = [
+// Highly rated Asian cuisine in Orange County
+const asianList = [
   {
-    name: "Taco Express",
-    slug: "taco-express",
-    category: "fast-food",
-    phone: "(714) 555-1234",
-    hours: "10 PM - 4 AM",
-    reviews: "https://www.google.com/search?q=Taco+Express+Anaheim"
+    name: "Din Tai Fung (Irvine Spectrum)",
+    slug: "din-tai-fung-irvine",
+    category: "chinese",
+    phone: "(949) 999-8433",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Din+Tai+Fung+Irvine"
   },
   {
-    name: "Burger Hub",
-    slug: "burger-hub",
-    category: "fast-food",
-    phone: "(949) 555-5678",
-    hours: "11 PM - 3 AM",
-    reviews: "https://www.google.com/search?q=Burger+Hub+Orange+County"
+    name: "Baekjeong Korean BBQ",
+    slug: "baekjeong-korean-bbq",
+    category: "korean",
+    phone: "(714) 617-4888",
+    hours: "11 AM - 12 AM",
+    reviews: "https://www.google.com/search?q=Baekjeong+Irvine"
   },
   {
-    name: "24/7 Diner Anaheim",
-    slug: "24-7-diner-anaheim",
-    category: "diners",
-    phone: "(714) 555-9012",
-    hours: "Open 24 hours",
-    reviews: "https://www.google.com/search?q=24/7+Diner+Anaheim"
+    name: "Meizhou Dongpo",
+    slug: "meizhou-dongpo",
+    category: "chinese",
+    phone: "(714) 617-1520",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Meizhou+Dongpo+Irvine"
   },
   {
-    name: "Night Owl Delivery",
-    slug: "night-owl-delivery",
-    category: "delivery",
-    phone: "(949) 555-3456",
-    hours: "9 PM - 2 AM",
-    reviews: "https://www.google.com/search?q=Night+Owl+Delivery+OC"
+    name: "Honda-Ya Japanese Restaurant",
+    slug: "honda-ya",
+    category: "japanese",
+    phone: "(714) 676-1090",
+    hours: "5 PM - 11 PM",
+    reviews: "https://www.google.com/search?q=Honda-Ya+Tustin"
+  },
+  {
+    name: "Kura Revolving Sushi Bar",
+    slug: "kura-sushi-irvine",
+    category: "japanese",
+    phone: "(949) 501-4040",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Kura+Sushi+Irvine"
+  },
+  {
+    name: "Phở 79",
+    slug: "pho-79",
+    category: "vietnamese",
+    phone: "(714) 531-4740",
+    hours: "6 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Pho+79+Garden+Grove"
+  },
+  {
+    name: "Sup Noodle Bar",
+    slug: "sup-noodle-bar",
+    category: "vietnamese",
+    phone: "(714) 786-8477",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Sup+Noodle+Bar+Irvine"
+  },
+  {
+    name: "Haidilao Hot Pot Irvine",
+    slug: "haidilao-hot-pot",
+    category: "chinese",
+    phone: "(949) 868-3088",
+    hours: "11 AM - 2 AM",
+    reviews: "https://www.google.com/search?q=Haidilao+Irvine"
   }
 ];
 
-const listContainer = document.getElementById('ocLateList');
-const categoryButtons = document.querySelectorAll('.oc-late-btn');
+const listContainer = document.getElementById('ocAsianList');
+const categoryButtons = document.querySelectorAll('.oc-asian-btn');
 
 function renderList(items){
   listContainer.innerHTML = '';
-  if(items.length===0){
+
+  if(items.length === 0){
     listContainer.innerHTML = '<p style="text-align:center;color:#6b7280;">No restaurants found.</p>';
     return;
   }
 
   items.forEach(item=>{
     const div = document.createElement('div');
-    div.classList.add('oc-late-item');
+    div.classList.add('oc-asian-item');
+
     div.innerHTML = `
-      <div class="oc-late-left">
-        <a href="/get-featured/"><div class="oc-late-img" title="Click to get featured"></div></a>
-        <div class="oc-late-info">
-          <h2><a href="/late-night/${item.slug}/" title="${item.name}">${item.name}</a></h2>
+      <div class="oc-asian-left">
+        <div class="oc-asian-img"></div>
+        <div class="oc-asian-info">
+          <h2><a href="/best-asian-cuisine/${item.slug}">${item.name}</a></h2>
           <p><strong>Phone:</strong> ${item.phone}</p>
           <p><strong>Hours:</strong> ${item.hours}</p>
           <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
-          <p><em>Category: ${item.category.replace(/-/g,' ')}</em></p>
+          <p><em>Category: ${item.category}</em></p>
         </div>
       </div>
-      <a class="oc-late-learn" href="/late-night/${item.slug}/">Learn More</a>
+
+      <a class="oc-asian-learn" href="/best-asian-cuisine/${item.slug}">
+        Learn More
+      </a>
     `;
+
     listContainer.appendChild(div);
   });
 }
 
 // Initial render
-renderList(lateNightList);
+renderList(asianList);
 
 // Category filter
 categoryButtons.forEach(btn=>{
   btn.addEventListener('click', function(){
     categoryButtons.forEach(b=>b.classList.remove('active'));
     this.classList.add('active');
-    const cat=this.getAttribute('data-cat');
-    if(cat==='all') renderList(lateNightList);
-    else renderList(lateNightList.filter(item=>item.category===cat));
+
+    const cat = this.getAttribute('data-cat');
+    if(cat === 'all') renderList(asianList);
+    else renderList(asianList.filter(i => i.category === cat));
   });
 });
 
 // Search filter
-document.getElementById('ocLateSearch').addEventListener('input', function(){
-  const query=this.value.toLowerCase();
-  const activeCategory=document.querySelector('.oc-late-btn.active').getAttribute('data-cat');
-  let filtered = lateNightList.filter(item=>item.name.toLowerCase().includes(query));
-  if(activeCategory!=='all') filtered = filtered.filter(item=>item.category===activeCategory);
+document.getElementById('ocAsianSearch').addEventListener('input', function(){
+  const query = this.value.toLowerCase();
+  const activeCategory = document.querySelector('.oc-asian-btn.active').getAttribute('data-cat');
+
+  let filtered = asianList.filter(i =>
+    i.name.toLowerCase().includes(query)
+  );
+
+  if(activeCategory !== 'all'){
+    filtered = filtered.filter(i => i.category === activeCategory);
+  }
+
   renderList(filtered);
 });
 </script>
-</body>
-  
-  
-  
   
   
   
