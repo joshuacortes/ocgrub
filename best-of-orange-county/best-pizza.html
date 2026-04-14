@@ -1,1 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deals - OCGrub - Explore All Orange County Grub Deals</title>
+    <<meta name="description" content="Discover the best deals food options in Orange County with OCGrub. Find restaurants, diners, and delivery spots open late, complete with hours, contact info, and reviews. Never go hungry after hours in OC!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/protein/">Protein</a>
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  <a href="/late-night/">Late Night Food</a>
+  <a href="/deals/">Food Deals</a>
+  <a href="/protein/">Protein</a>
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- BEST PIZZA LISTINGS -->
+<div class="oc-pizza-list-container">
+  <h1>Best Pizza in Orange County</h1>
+
+  <!-- Category Buttons -->
+  <div class="oc-pizza-categories">
+    <button class="oc-pizza-btn active" data-cat="all">All</button>
+    <button class="oc-pizza-btn" data-cat="neapolitan">Neapolitan</button>
+    <button class="oc-pizza-btn" data-cat="ny-style">NY Style</button>
+    <button class="oc-pizza-btn" data-cat="detroit">Detroit Style</button>
+    <button class="oc-pizza-btn" data-cat="casual">Casual</button>
+  </div>
+
+  <!-- Search Input -->
+  <input type="text" id="ocPizzaSearch" class="oc-pizza-search" placeholder="Search pizza spots...">
+
+  <!-- Listings -->
+  <div class="oc-pizza-listings" id="ocPizzaList"></div>
+</div>
+
+<style>
+.oc-pizza-list-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.oc-pizza-list-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.oc-pizza-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.oc-pizza-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.oc-pizza-btn.active,
+.oc-pizza-btn:hover {
+  background: #ff6b35;
+  color: #fff;
+  border-color: #ff6b35;
+}
+
+/* Search */
+.oc-pizza-search {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+/* Listings */
+.oc-pizza-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Item */
+.oc-pizza-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.oc-pizza-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.oc-pizza-left {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.oc-pizza-img {
+  width: 120px;
+  height: 120px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.oc-pizza-info h2 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.oc-pizza-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.oc-pizza-info a {
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Learn More */
+.oc-pizza-learn {
+  background: #ff6b35;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.oc-pizza-learn:hover {
+  background: #e55a2d;
+}
+
+@media (max-width: 600px) {
+  .oc-pizza-item {
+    flex-direction: column;
+  }
+
+  .oc-pizza-img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .oc-pizza-learn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+// Highly rated Orange County pizza spots
+const pizzaList = [
+  {
+    name: "Fuoco Pizzeria Napoletana (Fullerton)",
+    slug: "fuoco-pizzeria",
+    category: "neapolitan",
+    phone: "(714) 626-0727",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Fuoco+Pizzeria+Fullerton"
+  },
+  {
+    name: "Truly Pizza (Dana Point)",
+    slug: "truly-pizza",
+    category: "neapolitan",
+    phone: "(949) 429-2222",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Truly+Pizza+Dana+Point"
+  },
+  {
+    name: "Sgt. Pepperoni’s Pizza Store (Newport Beach)",
+    slug: "sgt-pepperonis",
+    category: "casual",
+    phone: "(949) 720-8400",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Sgt+Pepperonis+Newport+Beach"
+  },
+  {
+    name: "Rance’s Chicago Pizza (Costa Mesa)",
+    slug: "rances-chicago-pizza",
+    category: "detroit",
+    phone: "(949) 642-5500",
+    hours: "11 AM - 9 PM",
+    reviews: "https://www.google.com/search?q=Rances+Chicago+Pizza+Costa+Mesa"
+  },
+  {
+    name: "Folks Pizzeria (Costa Mesa)",
+    slug: "folks-pizzeria",
+    category: "neapolitan",
+    phone: "(949) 274-7545",
+    hours: "4 PM - 9 PM",
+    reviews: "https://www.google.com/search?q=Folks+Pizzeria+Costa+Mesa"
+  },
+  {
+    name: "Terra Mia (Laguna Hills)",
+    slug: "terra-mia",
+    category: "ny-style",
+    phone: "(949) 588-1553",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Terra+Mia+Laguna+Hills"
+  },
+  {
+    name: "Tony’s Little Italy (Placentia)",
+    slug: "tonys-little-italy",
+    category: "detroit",
+    phone: "(714) 528-2276",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Tonys+Little+Italy+Placentia"
+  },
+  {
+    name: "2145 Eats (Costa Mesa)",
+    slug: "2145-eats",
+    category: "neapolitan",
+    phone: "(949) 873-5853",
+    hours: "5 PM - 10 PM",
+    reviews: "https://www.google.com/search?q=2145+Eats+Costa+Mesa"
+  },
+  {
+    name: "Apizza Doho (Dana Point)",
+    slug: "apizza-doho",
+    category: "ny-style",
+    phone: "(949) 276-4444",
+    hours: "11 AM - 10 PM",
+    reviews: "https://www.google.com/search?q=Apizza+Doho+Dana+Point"
+  }
+];
+
+const listContainer = document.getElementById('ocPizzaList');
+const categoryButtons = document.querySelectorAll('.oc-pizza-btn');
+
+function renderList(items){
+  listContainer.innerHTML = '';
+
+  if(items.length === 0){
+    listContainer.innerHTML = '<p style="text-align:center;color:#6b7280;">No pizza spots found.</p>';
+    return;
+  }
+
+  items.forEach(item=>{
+    const div = document.createElement('div');
+    div.classList.add('oc-pizza-item');
+
+    div.innerHTML = `
+      <div class="oc-pizza-left">
+        <div class="oc-pizza-img"></div>
+        <div class="oc-pizza-info">
+          <h2><a href="/best-pizza/${item.slug}/">${item.name}</a></h2>
+          <p><strong>Phone:</strong> ${item.phone}</p>
+          <p><strong>Hours:</strong> ${item.hours}</p>
+          <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
+          <p><em>Category: ${item.category}</em></p>
+        </div>
+      </div>
+
+      <a class="oc-pizza-learn" href="/best-pizza/${item.slug}/">
+        Learn More
+      </a>
+    `;
+
+    listContainer.appendChild(div);
+  });
+}
+
+// Initial render
+renderList(pizzaList);
+
+// Category filter
+categoryButtons.forEach(btn=>{
+  btn.addEventListener('click', function(){
+    categoryButtons.forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+
+    const cat = this.getAttribute('data-cat');
+    if(cat === 'all') renderList(pizzaList);
+    else renderList(pizzaList.filter(i => i.category === cat));
+  });
+});
+
+// Search filter
+document.getElementById('ocPizzaSearch').addEventListener('input', function(){
+  const query = this.value.toLowerCase();
+  const activeCategory = document.querySelector('.oc-pizza-btn.active').getAttribute('data-cat');
+
+  let filtered = pizzaList.filter(i =>
+    i.name.toLowerCase().includes(query)
+  );
+
+  if(activeCategory !== 'all'){
+    filtered = filtered.filter(i => i.category === activeCategory);
+  }
+
+  renderList(filtered);
+});
+</script>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <div style="height:80px;"></div>
+  
+  <footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/map/">Map</a>
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+  
+  
+</html>
