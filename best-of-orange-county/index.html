@@ -318,7 +318,10 @@ mobileBtn.addEventListener('click', () => {
 }
 </style>
 
-<script>
+  
+  
+  
+  <script>
 // Sample "Best Of" categories / restaurants
 const bestOfItems = [
   { name: "Best Tacos", slug: "best-tacos" },
@@ -341,7 +344,16 @@ function renderBest(items) {
   items.forEach(item => {
     const card = document.createElement('div');
     card.classList.add('oc-best-card');
-    card.innerHTML = `<a href="/best-of-orange-county/${item.slug}/" title="${item.name} in Orange County">${item.name}</a>`;
+
+    // ✅ FIX: removed trailing slash
+    const url = `/best-of-orange-county/${item.slug}`;
+
+    card.innerHTML = `
+      <a href="${url}" title="${item.name} in Orange County">
+        ${item.name}
+      </a>
+    `;
+
     bestGrid.appendChild(card);
   });
 }
@@ -352,11 +364,12 @@ renderBest(bestOfItems);
 // Search filter
 document.getElementById('ocBestSearch').addEventListener('input', function() {
   const query = this.value.toLowerCase();
-  const filtered = bestOfItems.filter(item => item.name.toLowerCase().includes(query));
+  const filtered = bestOfItems.filter(item =>
+    item.name.toLowerCase().includes(query)
+  );
   renderBest(filtered);
 });
 </script>
-  
   
   
   
