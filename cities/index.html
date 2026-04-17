@@ -251,110 +251,94 @@ mobileBtn.addEventListener('click', () => {
   
   
   
-  
-  <!-- CITIES DIRECTORY SECTION -->
-<div class="oc-cities-container">
+  <center>
   <h1>Explore All Orange County Cities</h1>
-  <input type="text" id="ocCitySearch" class="oc-search-input" placeholder="Search for a city...">
-  <div class="oc-city-grid" id="ocCityGrid"></div>
+
+  </center>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="oc-city-grid">
+
+  <a class="city-btn" href="/cities/aliso-viejo/">Aliso Viejo</a>
+  <a class="city-btn" href="/cities/anaheim/">Anaheim</a>
+  <a class="city-btn" href="/cities/brea/">Brea</a>
+  <a class="city-btn" href="/cities/buena-park/">Buena Park</a>
+  <a class="city-btn" href="/cities/costa-mesa/">Costa Mesa</a>
+  <a class="city-btn" href="/cities/cypress/">Cypress</a>
+  <a class="city-btn" href="/cities/dana-point/">Dana Point</a>
+  <a class="city-btn" href="/cities/fountain-valley/">Fountain Valley</a>
+  <a class="city-btn" href="/cities/fullerton/">Fullerton</a>
+  <a class="city-btn" href="/cities/garden-grove/">Garden Grove</a>
+  <a class="city-btn" href="/cities/huntington-beach/">Huntington Beach</a>
+  <a class="city-btn" href="/cities/irvine/">Irvine</a>
+  <a class="city-btn" href="/cities/la-habra/">La Habra</a>
+  <a class="city-btn" href="/cities/laguna-beach/">Laguna Beach</a>
+  <a class="city-btn" href="/cities/laguna-hills/">Laguna Hills</a>
+  <a class="city-btn" href="/cities/laguna-niguel/">Laguna Niguel</a>
+  <a class="city-btn" href="/cities/lake-forest/">Lake Forest</a>
+  <a class="city-btn" href="/cities/la-palma/">La Palma</a>
+  <a class="city-btn" href="/cities/los-alamitos/">Los Alamitos</a>
+  <a class="city-btn" href="/cities/mission-viejo/">Mission Viejo</a>
+  <a class="city-btn" href="/cities/newport-beach/">Newport Beach</a>
+  <a class="city-btn" href="/cities/orange/">Orange</a>
+  <a class="city-btn" href="/cities/placentia/">Placentia</a>
+  <a class="city-btn" href="/cities/rancho-santa-margarita/">Rancho Santa Margarita</a>
+  <a class="city-btn" href="/cities/san-clemente/">San Clemente</a>
+  <a class="city-btn" href="/cities/san-juan-capistrano/">San Juan Capistrano</a>
+  <a class="city-btn" href="/cities/santa-ana/">Santa Ana</a>
+  <a class="city-btn" href="/cities/seal-beach/">Seal Beach</a>
+  <a class="city-btn" href="/cities/stanton/">Stanton</a>
+  <a class="city-btn" href="/cities/tustin/">Tustin</a>
+  <a class="city-btn" href="/cities/villa-park/">Villa Park</a>
+  <a class="city-btn" href="/cities/westminster/">Westminster</a>
+  <a class="city-btn" href="/cities/yorba-linda/">Yorba Linda</a>
+
 </div>
-
-<style>
-/* Cities Section Styles */
-.oc-cities-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 16px;
-}
-
-.oc-cities-container h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.oc-search-input {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto 30px auto;
-  padding: 10px 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
+  
+  
+  
+  <style>
 .oc-city-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.oc-city-card {
-  background: #ffffff;
-  padding: 14px 10px;
-  border-radius: 10px;
+.city-btn {
+  display: block;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.oc-city-card a {
+  padding: 12px 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
   text-decoration: none;
   color: #1f2937;
   font-weight: 600;
-  display: block;
+  font-size: 14px;
+  transition: all 0.2s ease;
 }
 
-.oc-city-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.city-btn:hover {
+  transform: translateY(-3px);
+  border-color: #ff6b35;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  color: #ff6b35;
 }
 
-@media (max-width: 600px) {
-  .oc-cities-container h1 {
-    font-size: 24px;
-  }
+.city-btn:active {
+  transform: scale(0.98);
 }
 </style>
-
-<script>
-// Orange County cities in alphabetical order
-const ocCities = [
-  "Aliso Viejo","Anaheim","Brea","Buena Park","Costa Mesa","Cypress","Dana Point","Fountain Valley",
-  "Fullerton","Garden Grove","Huntington Beach","Irvine","La Habra","Laguna Beach","Laguna Hills",
-  "Laguna Niguel","Lake Forest","La Palma","Los Alamitos","Mission Viejo","Newport Beach","Orange",
-  "Placentia","Rancho Santa Margarita","San Clemente","San Juan Capistrano","Santa Ana","Seal Beach",
-  "Stanton","Tustin","Villa Park","Westminster","Yorba Linda"
-];
-
-const cityGrid = document.getElementById('ocCityGrid');
-
-// Function to render city cards
-function renderCities(list) {
-  cityGrid.innerHTML = '';
-  list.forEach(city => {
-    const slug = city.toLowerCase().replace(/\s+/g,'-');
-    const card = document.createElement('div');
-    card.classList.add('oc-city-card');
-    card.innerHTML = `<a href="/cities/${slug}/" title="Restaurants in ${city}">${city}</a>`;
-    cityGrid.appendChild(card);
-  });
-}
-
-// Initial render
-renderCities(ocCities);
-
-// Search filter
-document.getElementById('ocCitySearch').addEventListener('input', function() {
-  const query = this.value.toLowerCase();
-  const filtered = ocCities.filter(city => city.toLowerCase().includes(query));
-  renderCities(filtered);
-});
-</script>
-  
-  
-  
   
   <div style="height:80px;"></div>
   
