@@ -473,7 +473,7 @@ function renderList(items){
       <div class="oc-tacos-left">
         <div class="oc-tacos-img"></div>
         <div class="oc-tacos-info">
-          <h2><a href="/best-tacos/${item.slug}/">${item.name}</a></h2>
+          <h2><a href="/best-tacos${item.slug}/">${item.name}</a></h2>
           <p><strong>Phone:</strong> ${item.phone}</p>
           <p><strong>Hours:</strong> ${item.hours}</p>
           <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
@@ -481,7 +481,7 @@ function renderList(items){
         </div>
       </div>
 
-      <a class="oc-tacos-learn" href="/best-tacos/${item.slug}/">Learn More</a>
+      <a class="oc-tacos-learn" href="/best-tacos${item.slug}/">Learn More</a>
     `;
 
     listContainer.appendChild(div);
