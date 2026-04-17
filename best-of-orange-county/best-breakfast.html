@@ -504,7 +504,7 @@ function renderList(items){
       <div class="oc-breakfast-left">
         <div class="oc-breakfast-img"></div>
         <div class="oc-breakfast-info">
-          <h2><a href="/best-breakfast/${item.slug}/">${item.name}</a></h2>
+          <h2><a href="/best-breakfast/${item.slug}">${item.name}</a></h2>
           <p><strong>Phone:</strong> ${item.phone}</p>
           <p><strong>Hours:</strong> ${item.hours}</p>
           <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
@@ -512,7 +512,7 @@ function renderList(items){
         </div>
       </div>
 
-      <a class="oc-breakfast-learn" href="/best-breakfast/${item.slug}/">Learn More</a>
+      <a class="oc-breakfast-learn" href="/best-breakfast/${item.slug}">Learn More</a>
     `;
 
     listContainer.appendChild(div);
