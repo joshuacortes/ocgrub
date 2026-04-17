@@ -247,133 +247,60 @@ mobileBtn.addEventListener('click', () => {
   
   
   
-  
-  <!-- BEST OF ORANGE COUNTY SECTION -->
-<div class="oc-best-container">
   <h1>Best of Orange County Restaurants</h1>
-  <input type="text" id="ocBestSearch" class="oc-best-search" placeholder="Search for restaurants or categories...">
 
-  <div class="oc-best-grid" id="ocBestGrid">
-    <!-- Best-of items injected via JS -->
-  </div>
+  
+  <div class="oc-best-grid">
+
+  <a class="best-btn" href="/best-of-orange-county/best-tacos">Best Tacos</a>
+  <a class="best-btn" href="/best-of-orange-county/best-burgers">Best Burgers</a>
+  <a class="best-btn" href="/best-of-orange-county/best-sushi">Best Sushi</a>
+  <a class="best-btn" href="/best-of-orange-county/best-breakfast">Best Breakfast</a>
+  <a class="best-btn" href="/best-of-orange-county/best-pizza">Best Pizza</a>
+  <a class="best-btn" href="/best-of-orange-county/best-vegan-healthy">Best Vegan / Healthy</a>
+  <a class="best-btn" href="/best-of-orange-county/best-late-night">Best Late Night</a>
+  <a class="best-btn" href="/best-of-orange-county/best-coffee-desserts">Best Coffee & Desserts</a>
+  <a class="best-btn" href="/best-of-orange-county/best-seafood">Best Seafood</a>
+  <a class="best-btn" href="/best-of-orange-county/best-asian-cuisine">Best Asian Cuisine</a>
+
 </div>
-
-<style>
-/* Best of Orange County Section */
-.oc-best-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.oc-best-container h1 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.oc-best-search {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto 30px auto;
-  padding: 10px 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
+  
+  
+  <style>
 .oc-best-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.oc-best-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 16px;
+.best-btn {
+  display: block;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.oc-best-card a {
+  padding: 12px 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
   text-decoration: none;
   color: #1f2937;
   font-weight: 600;
-  display: block;
+  font-size: 14px;
+  transition: all 0.2s ease;
 }
 
-.oc-best-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+.best-btn:hover {
+  transform: translateY(-3px);
+  border-color: #ff6b35;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  color: #ff6b35;
 }
 
-@media (max-width: 600px) {
-  .oc-best-container h1 {
-    font-size: 24px;
-  }
+.best-btn:active {
+  transform: scale(0.98);
 }
 </style>
-
-  
-  
-  
-  <script>
-// Sample "Best Of" categories / restaurants
-const bestOfItems = [
-  { name: "Best Tacos", slug: "best-tacos" },
-  { name: "Best Burgers", slug: "best-burgers" },
-  { name: "Best Sushi", slug: "best-sushi" },
-  { name: "Best Breakfast", slug: "best-breakfast" },
-  { name: "Best Pizza", slug: "best-pizza" },
-  { name: "Best Vegan / Healthy", slug: "best-vegan-healthy" },
-  { name: "Best Late Night", slug: "best-late-night" },
-  { name: "Best Coffee & Desserts", slug: "best-coffee-desserts" },
-  { name: "Best Seafood", slug: "best-seafood" },
-  { name: "Best Asian Cuisine", slug: "best-asian-cuisine" }
-];
-
-const bestGrid = document.getElementById('ocBestGrid');
-
-// Render best-of cards
-function renderBest(items) {
-  bestGrid.innerHTML = '';
-  items.forEach(item => {
-    const card = document.createElement('div');
-    card.classList.add('oc-best-card');
-
-    // ✅ FIX: removed trailing slash
-    const url = `/best-of-orange-county/${item.slug}`;
-
-    card.innerHTML = `
-      <a href="${url}" title="${item.name} in Orange County">
-        ${item.name}
-      </a>
-    `;
-
-    bestGrid.appendChild(card);
-  });
-}
-
-// Initial render
-renderBest(bestOfItems);
-
-// Search filter
-document.getElementById('ocBestSearch').addEventListener('input', function() {
-  const query = this.value.toLowerCase();
-  const filtered = bestOfItems.filter(item =>
-    item.name.toLowerCase().includes(query)
-  );
-  renderBest(filtered);
-});
-</script>
-  
-  
-  
-  
   
   
   
