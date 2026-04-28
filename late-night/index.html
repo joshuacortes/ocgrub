@@ -495,14 +495,14 @@ function renderList(items){
       <div class="oc-late-left">
         <a href="/get-featured/"><div class="oc-late-img" title="Click to get featured"></div></a>
         <div class="oc-late-info">
-          <h2><a href="/late-night/${item.slug}/" title="${item.name}">${item.name}</a></h2>
+          <h2><a href="/late-night/${item.slug}" title="${item.name}">${item.name}</a></h2>
           <p><strong>Phone:</strong> ${item.phone}</p>
           <p><strong>Hours:</strong> ${item.hours}</p>
           <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
           <p><em>Category: ${item.category.replace(/-/g,' ')}</em></p>
         </div>
       </div>
-      <a class="oc-late-learn" href="/late-night/${item.slug}/">Learn More</a>
+      <a class="oc-late-learn" href="/late-night/${item.slug}">Learn More</a>
     `;
     listContainer.appendChild(div);
   });
