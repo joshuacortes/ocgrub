@@ -3,710 +3,577 @@
 <head> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Protein - OCGrub - Explore All Orange County Protein</title>
-    <<meta name="description" content="Discover the best protein food options in Orange County with OCGrub. Find restaurants, diners, and delivery spots open late, complete with hours, contact info, and reviews. Never go hungry after hours in OC!">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google tag (gtag.js) -->
+
+<title>Protein Restaurants Orange County CA - Best High Protein Food Spots | OCGrub</title>
+
+<meta name="description" content="Find the best protein restaurants in Orange County CA. Explore popular high-protein food spots including chicken, bowls, steak, healthy fast casual, gymside meals, and macro-friendly restaurants across OC.">
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-378RHVD2SY');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-378RHVD2SY');
 </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215" crossorigin="anonymous"></script>
+
 <style>
-/* RESET */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f7;
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f7f7f7;
 }
 
 /* HEADER */
-.oc-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
-  width: 100%;
+.oc-header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
 }
 
-.oc-header .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 16px;
+.oc-header .container{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 16px;
 }
 
-/* LOGO */
-.oc-logo {
-  color: #1f2937;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 20px;
+.oc-logo{
+  text-decoration:none;
+  color:#111827;
+  font-size:22px;
+  font-weight:700;
 }
 
-/* DESKTOP NAV */
-.oc-desktop-nav {
-  display: flex;
-  gap: 20px;
+.oc-desktop-nav{
+  display:flex;
+  gap:20px;
 }
 
-.oc-desktop-nav a {
-  color: #4b5563;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 4px 0;
-  transition: color 0.2s;
+.oc-desktop-nav a{
+  text-decoration:none;
+  color:#4b5563;
+  font-size:14px;
 }
 
-.oc-desktop-nav a:hover {
-  color: #1f2937;
+.oc-desktop-nav a:hover{
+  color:#111827;
 }
 
-/* CTA BUTTONS */
-.oc-cta {
-  display: flex;
-  gap: 10px;
+.oc-cta{
+  display:flex;
+  gap:10px;
 }
 
-.oc-cta a {
-  text-decoration: none;
-  border-radius: 8px;
-  padding: 8px 14px;
-  font-size: 13px;
-  font-weight: 600;
+.oc-cta a{
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:700;
 }
 
-.oc-cta .btn-primary {
-  background: #ff6b35;
-  color: #ffffff;
+.btn-primary{
+  background:#ff6b35;
+  color:#fff;
 }
 
-.oc-cta .btn-outline {
-  border: 1px solid #d1d5db;
-  color: #1f2937;
-  background: transparent;
+.btn-outline{
+  border:1px solid #d1d5db;
+  color:#111827;
 }
 
-/* MOBILE HEADER BUTTONS */
-.mobile-header-buttons {
-  display: none;
-  gap: 8px;
-  align-items: center;
+/* MOBILE */
+.mobile-header-buttons{
+  display:none;
+  gap:8px;
 }
 
-/* MOBILE NEWS BUTTON */
-.mobile-news-btn {
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #ffffff;
-  background: #ff6b35;
-  padding: 8px 12px;
-  border-radius: 8px;
-  white-space: nowrap;
-  margin-right:10px;
+.mobile-news-btn{
+  text-decoration:none;
+  background:#ff6b35;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:700;
 }
 
-/* HAMBURGER BUTTON */
-.oc-menu-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  cursor: pointer;
+.oc-menu-btn{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  cursor:pointer;
 }
 
-.oc-menu-btn span {
-  width: 22px;
-  height: 2px;
-  background: #000000;
-  display: block;
+.oc-menu-btn span{
+  width:22px;
+  height:2px;
+  background:#000;
 }
 
-/* MOBILE MENU */
-#ocMobileMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  background: #ffffff;
-  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
-  transform: translateX(-100%);
-  transition: transform 0.25s ease;
-  padding: 60px 16px 16px 16px;
-  display: flex;
-  flex-direction: column;
-  z-index: 998;
+#ocMobileMenu{
+  position:fixed;
+  top:0;
+  left:0;
+  width:250px;
+  height:100%;
+  background:#fff;
+  transform:translateX(-100%);
+  transition:.25s;
+  padding:60px 16px 16px;
+  z-index:998;
+  box-shadow:2px 0 12px rgba(0,0,0,.08);
 }
 
-#ocMobileMenu a {
-  display: block;
-  color: #1f2937;
-  text-decoration: none;
-  padding: 16px 0;
-  font-size: 18px;
-  border-bottom: 1px solid #e5e7eb;
+#ocMobileMenu.active{
+  transform:translateX(0);
 }
 
-#ocMobileMenu a.mobile-btn-primary {
-  background: #ff6b35;
-  color: #fff;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
+#ocMobileMenu a{
+  display:block;
+  text-decoration:none;
+  color:#111827;
+  padding:16px 0;
+  border-bottom:1px solid #eee;
 }
 
-#ocMobileMenu a.mobile-btn-outline {
-  border: 1px solid #d1d5db;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
+.mobile-btn-primary{
+  background:#ff6b35;
+  color:#fff !important;
+  border-radius:10px;
+  text-align:center;
+  margin-top:10px;
 }
 
-/* ACTIVE CLASS FOR MOBILE MENU */
-#ocMobileMenu.active {
-  transform: translateX(0);
+.mobile-btn-outline{
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  text-align:center;
+  margin-top:10px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .oc-desktop-nav,
-  .oc-cta {
-    display: none;
+/* MAIN */
+.oc-protein-list-container{
+  max-width:950px;
+  margin:0 auto;
+  padding:40px 16px;
+}
+
+.oc-protein-list-container h1{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.oc-protein-sub{
+  text-align:center;
+  color:#6b7280;
+  margin-bottom:28px;
+}
+
+.oc-protein-categories{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.oc-protein-btn{
+  padding:8px 16px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  background:#fff;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.oc-protein-btn.active,
+.oc-protein-btn:hover{
+  background:#ff6b35;
+  color:#fff;
+  border-color:#ff6b35;
+}
+
+.oc-protein-search{
+  width:100%;
+  max-width:420px;
+  display:block;
+  margin:0 auto 30px;
+  padding:10px 14px;
+  border-radius:8px;
+  border:1px solid #d1d5db;
+}
+
+.oc-protein-listings{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.oc-protein-item{
+  background:#fff;
+  border-radius:12px;
+  padding:16px;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  transition:.2s;
+}
+
+.oc-protein-item:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.oc-protein-left{
+  display:flex;
+  gap:16px;
+  flex:1;
+}
+
+.oc-protein-img{
+  width:130px;
+  height:130px;
+  border-radius:10px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+.oc-protein-info h2{
+  margin:0 0 8px;
+  font-size:20px;
+}
+
+.oc-protein-info h2 a{
+  text-decoration:none;
+  color:#111827;
+}
+
+.oc-protein-info p{
+  margin:5px 0;
+  color:#374151;
+  font-size:14px;
+}
+
+.oc-protein-learn{
+  align-self:center;
+  text-decoration:none;
+  background:#ff6b35;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:8px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.oc-protein-learn:hover{
+  background:#e65b27;
+}
+
+/* FOOTER */
+.oc-footer{
+  background:#f9fafb;
+  border-top:1px solid #e5e7eb;
+  padding:40px 16px 20px;
+}
+
+.footer-container{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-logo{
+  text-decoration:none;
+  font-size:22px;
+  font-weight:700;
+  color:#111827;
+}
+
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  color:#4b5563;
+}
+
+.footer-cta{
+  display:flex;
+  gap:10px;
+}
+
+.footer-social{
+  display:flex;
+  gap:10px;
+}
+
+.footer-social a{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:#e5e7eb;
+  text-align:center;
+  line-height:32px;
+  text-decoration:none;
+  color:#111827;
+}
+
+.footer-micro{
+  text-align:center;
+  margin-top:18px;
+  color:#9ca3af;
+  font-size:12px;
+}
+
+@media(max-width:900px){
+  .oc-desktop-nav,.oc-cta{display:none;}
+  .mobile-header-buttons{display:flex;}
+}
+
+@media(max-width:700px){
+  .oc-protein-item{
+    flex-direction:column;
   }
-  .mobile-header-buttons {
-    display: flex;
+  .oc-protein-left{
+    flex-direction:column;
+  }
+  .oc-protein-img{
+    width:100%;
+    height:180px;
+  }
+  .oc-protein-learn{
+    width:100%;
+    text-align:center;
   }
 }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
-     crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 <header class="oc-header">
-  <div class="container">
-    <a href="/" class="oc-logo">OCGrub</a>
+<div class="container">
+<a href="/" class="oc-logo">OCGrub</a>
 
-    <!-- DESKTOP NAV -->
-    <nav class="oc-desktop-nav">
-      <a href="/cities/">Cities</a>
-      <a href="/best-of-orange-county/">Best Of</a>
-      <a href="/late-night/">Late Night</a>
-      <a href="/deals/">Deals</a>
-      <a href="/protein/">Protein</a>
-    </nav>
+<nav class="oc-desktop-nav">
+<a href="/cities/">Cities</a>
+<a href="/best-of-orange-county/">Best Of</a>
+<a href="/late-night/">Late Night</a>
+<a href="/deals/">Deals</a>
+<a href="/protein/">Protein</a>
+</nav>
 
-    <!-- CTA BUTTONS -->
-    <div class="oc-cta">
-      <a href="/newsletter/" class="btn-outline">Newsletter</a>
-      <a href="/get-featured/" class="btn-primary">Get Featured</a>
-    </div>
+<div class="oc-cta">
+<a href="/newsletter/" class="btn-outline">Newsletter</a>
+<a href="/get-featured/" class="btn-primary">Get Featured</a>
+</div>
 
-    <!-- MOBILE BUTTONS -->
-    <div class="mobile-header-buttons">
-      <a href="/news/" class="mobile-news-btn">News</a>
-      <div class="oc-menu-btn" id="mobileMenuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
+<div class="mobile-header-buttons">
+<a href="/news/" class="mobile-news-btn">News</a>
+<div class="oc-menu-btn" id="mobileMenuBtn">
+<span></span><span></span><span></span>
+</div>
+</div>
+</div>
 </header>
 
-<!-- MOBILE MENU -->
 <div id="ocMobileMenu">
-  <a href="/cities/">Browse Cities</a>
-  <a href="/best-of-orange-county/">Best Of Orange County</a>
-  <a href="/late-night/">Late Night Food</a>
-  <a href="/deals/">Food Deals</a>
-  <a href="/protein/">Protein</a>
-
-  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
-  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+<a href="/cities/">Browse Cities</a>
+<a href="/best-of-orange-county/">Best Of Orange County</a>
+<a href="/late-night/">Late Night Food</a>
+<a href="/deals/">Food Deals</a>
+<a href="/protein/">Protein</a>
+<a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+<a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
 </div>
 
-<script>
-const mobileMenu = document.getElementById('ocMobileMenu');
-const mobileBtn = document.getElementById('mobileMenuBtn');
+<div class="oc-protein-list-container">
+<h1>Best Protein Restaurants in Orange County</h1>
+<p class="oc-protein-sub">Popular chain, public, and common high-protein restaurants across Orange County, CA.</p>
 
-mobileBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-});
-</script>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <!-- LATE NIGHT LISTINGS WITH IMAGE LINK + LEARN MORE BUTTON -->
-<div class="oc-late-list-container">
-  <h1>Late Night Eats in Orange County</h1>
-
-  <!-- Category Buttons -->
-  <div class="oc-late-categories">
-    <button class="oc-late-btn active" data-cat="all">All</button>
-    <button class="oc-late-btn" data-cat="fast-food">Fast Food</button>
-    <button class="oc-late-btn" data-cat="diners">24-Hour Diners</button>
-    <button class="oc-late-btn" data-cat="delivery">Late Night Delivery</button>
-  </div>
-
-  <!-- Search Input -->
-  <input type="text" id="ocLateSearch" class="oc-late-search" placeholder="Search restaurants...">
-
-  <!-- Listings -->
-  <div class="oc-late-listings" id="ocLateList"></div>
+<div class="oc-protein-categories">
+<button class="oc-protein-btn active" data-cat="all">All</button>
+<button class="oc-protein-btn" data-cat="chicken">Chicken</button>
+<button class="oc-protein-btn" data-cat="healthy">Healthy</button>
+<button class="oc-protein-btn" data-cat="steak">Steak</button>
+<button class="oc-protein-btn" data-cat="bowls">Bowls</button>
 </div>
 
-<style>
-.oc-late-list-container {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 40px 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<input type="text" id="proteinSearch" class="oc-protein-search" placeholder="Search protein restaurants...">
 
-.oc-late-list-container h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: center;
-}
+<div class="oc-protein-listings" id="proteinList"></div>
+</div>
 
-/* Category buttons */
-.oc-late-categories {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
+<div style="height:80px;"></div>
 
-.oc-late-btn {
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  background: #ffffff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-}
+<footer class="oc-footer">
+<div class="footer-container">
 
-.oc-late-btn.active,
-.oc-late-btn:hover {
-  background: #ff6b35;
-  color: #ffffff;
-  border-color: #ff6b35;
-}
+<a href="/" class="footer-logo">OCGrub</a>
 
-/* Search Input */
-.oc-late-search {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto 30px auto;
-  padding: 10px 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 16px;
-}
+<div class="footer-links">
+<a href="/cities/">Cities</a>
+<a href="/best-of-orange-county/">Best Of</a>
+<a href="/late-night/">Late Night</a>
+<a href="/deals/">Deals</a>
+<a href="/map/">Map</a>
+<a href="/news/">News</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
+</div>
 
-/* Listings container */
-.oc-late-listings {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
+<div class="footer-cta">
+<a href="/newsletter/" class="btn-outline">Newsletter</a>
+<a href="/get-featured/" class="btn-primary">Get Featured</a>
+</div>
 
-/* Single listing item */
-.oc-late-item {
-  display: flex;
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 16px;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+<div class="footer-social">
+<a href="#">IG</a>
+<a href="#">X</a>
+</div>
 
-.oc-late-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+</div>
 
-/* Left section: image + info */
-.oc-late-left {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  flex: 1;
-}
-
-/* Clickable placeholder image */
-.oc-late-img {
-  width: 120px;
-  height: 120px;
-  background: #e5e7eb;
-  border-radius: 8px;
-  flex-shrink: 0;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.oc-late-img:hover {
-  transform: scale(1.03);
-}
-
-/* Info */
-.oc-late-info h2 {
-  margin: 0 0 6px 0;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.oc-late-info p {
-  margin: 4px 0;
-  font-size: 14px;
-  color: #374151;
-}
-
-.oc-late-info a {
-  color: #ff6b35;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* Learn More Button */
-.oc-late-learn {
-  background: #ff6b35;
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  align-self: center;
-  transition: 0.2s;
-}
-
-.oc-late-learn:hover {
-  background: #e55a2d;
-}
-
-@media (max-width: 600px) {
-  .oc-late-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .oc-late-left {
-    width: 100%;
-  }
-
-  .oc-late-img {
-    width: 100%;
-    height: 140px;
-  }
-
-  .oc-late-learn {
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-  }
-}
-</style>
-
-<script>
-// Late Night Listings
-const lateNightList = [
-  {
-    name: "Taco Express",
-    slug: "taco-express",
-    category: "fast-food",
-    phone: "(714) 555-1234",
-    hours: "10 PM - 4 AM",
-    reviews: "https://www.google.com/search?q=Taco+Express+Anaheim"
-  },
-  {
-    name: "Burger Hub",
-    slug: "burger-hub",
-    category: "fast-food",
-    phone: "(949) 555-5678",
-    hours: "11 PM - 3 AM",
-    reviews: "https://www.google.com/search?q=Burger+Hub+Orange+County"
-  },
-  {
-    name: "24/7 Diner Anaheim",
-    slug: "24-7-diner-anaheim",
-    category: "diners",
-    phone: "(714) 555-9012",
-    hours: "Open 24 hours",
-    reviews: "https://www.google.com/search?q=24/7+Diner+Anaheim"
-  },
-  {
-    name: "Night Owl Delivery",
-    slug: "night-owl-delivery",
-    category: "delivery",
-    phone: "(949) 555-3456",
-    hours: "9 PM - 2 AM",
-    reviews: "https://www.google.com/search?q=Night+Owl+Delivery+OC"
-  }
-];
-
-const listContainer = document.getElementById('ocLateList');
-const categoryButtons = document.querySelectorAll('.oc-late-btn');
-
-function renderList(items){
-  listContainer.innerHTML = '';
-  if(items.length===0){
-    listContainer.innerHTML = '<p style="text-align:center;color:#6b7280;">No restaurants found.</p>';
-    return;
-  }
-
-  items.forEach(item=>{
-    const div = document.createElement('div');
-    div.classList.add('oc-late-item');
-    div.innerHTML = `
-      <div class="oc-late-left">
-        <a href="/get-featured/"><div class="oc-late-img" title="Click to get featured"></div></a>
-        <div class="oc-late-info">
-          <h2><a href="/late-night/${item.slug}/" title="${item.name}">${item.name}</a></h2>
-          <p><strong>Phone:</strong> ${item.phone}</p>
-          <p><strong>Hours:</strong> ${item.hours}</p>
-          <p><a href="${item.reviews}" target="_blank">Google Reviews</a></p>
-          <p><em>Category: ${item.category.replace(/-/g,' ')}</em></p>
-        </div>
-      </div>
-      <a class="oc-late-learn" href="/late-night/${item.slug}/">Learn More</a>
-    `;
-    listContainer.appendChild(div);
-  });
-}
-
-// Initial render
-renderList(lateNightList);
-
-// Category filter
-categoryButtons.forEach(btn=>{
-  btn.addEventListener('click', function(){
-    categoryButtons.forEach(b=>b.classList.remove('active'));
-    this.classList.add('active');
-    const cat=this.getAttribute('data-cat');
-    if(cat==='all') renderList(lateNightList);
-    else renderList(lateNightList.filter(item=>item.category===cat));
-  });
-});
-
-// Search filter
-document.getElementById('ocLateSearch').addEventListener('input', function(){
-  const query=this.value.toLowerCase();
-  const activeCategory=document.querySelector('.oc-late-btn.active').getAttribute('data-cat');
-  let filtered = lateNightList.filter(item=>item.name.toLowerCase().includes(query));
-  if(activeCategory!=='all') filtered = filtered.filter(item=>item.category===activeCategory);
-  renderList(filtered);
-});
-</script>
-</body>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <div style="height:80px;"></div>
-  
-  <footer class="oc-footer">
-  <div class="footer-container">
-    <!-- LOGO -->
-    <a href="/" class="footer-logo">OCGrub</a>
-
-    <!-- QUICK LINKS -->
-    <div class="footer-links">
-      <a href="/cities/">Cities</a>
-      <a href="/best-of-orange-county/">Best Of</a>
-      <a href="/late-night/">Late Night</a>
-      <a href="/deals/">Deals</a>
-      <a href="/map/">Map</a>
-      <a href="/news/">News</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-    </div>
-
-    <!-- CTA BUTTONS -->
-    <div class="footer-cta">
-      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
-      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
-    </div>
-
-    <!-- SOCIAL ICONS -->
-    <div class="footer-social">
-      <a href="#" title="Instagram">IG</a>
-      <a href="#" title="X.com">X</a>
-    </div>
-  </div>
-
-  <!-- MICRO COPYRIGHT -->
-  <div class="footer-micro">
-    &copy;2026 OCGrub. All rights reserved.
-  </div>
+<div class="footer-micro">&copy;2026 OCGrub. All rights reserved.</div>
 </footer>
 
-<style>
-/* FOOTER STYLES */
-.oc-footer {
-  background: #f9fafb;
-  border-top: 1px solid #e2e8f0;
-  padding: 40px 16px 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1f2937;
+<script>
+const mobileMenu=document.getElementById('ocMobileMenu');
+document.getElementById('mobileMenuBtn').addEventListener('click',()=>{
+mobileMenu.classList.toggle('active');
+});
+
+const proteinData=[
+{
+name:"Chipotle Mexican Grill",
+slug:"chipotle-mexican-grill",
+category:"bowls",
+protein:"Chicken, Steak, Double Meat Bowls",
+city:"Orange County",
+img:"https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&q=80"
+},
+{
+name:"Chick-fil-A",
+slug:"chick-fil-a",
+category:"chicken",
+protein:"Grilled Nuggets, Chicken Sandwiches",
+city:"Orange County",
+img:"https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=600&q=80"
+},
+{
+name:"The Habit Burger Grill",
+slug:"the-habit-burger-grill",
+category:"steak",
+protein:"Charburgers, Chicken, Steak",
+city:"Orange County",
+img:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80"
+},
+{
+name:"Waba Grill",
+slug:"waba-grill",
+category:"healthy",
+protein:"Chicken Plates, Steak Bowls",
+city:"Orange County",
+img:""
+},
+{
+name:"Flame Broiler",
+slug:"flame-broiler",
+category:"healthy",
+protein:"Chicken Bowls, Beef Bowls",
+city:"Orange County",
+img:""
+},
+{
+name:"Panera Bread",
+slug:"panera-bread",
+category:"healthy",
+protein:"Chicken Salads, Turkey Sandwiches",
+city:"Orange County",
+img:""
+}
+];
+
+const list=document.getElementById('proteinList');
+const buttons=document.querySelectorAll('.oc-protein-btn');
+
+function render(items){
+list.innerHTML='';
+
+if(items.length===0){
+list.innerHTML='<p style="text-align:center;color:#6b7280;">No listings found.</p>';
+return;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: flex-start;
+items.forEach(item=>{
+const image=item.img
+? `<img src="${item.img}" class="oc-protein-img" alt="${item.name}">`
+: `<div class="oc-protein-img" style="background:#e5e7eb;"></div>`;
+
+list.innerHTML += `
+<div class="oc-protein-item">
+<div class="oc-protein-left">
+<a href="/protein/${item.slug}">${image}</a>
+
+<div class="oc-protein-info">
+<h2><a href="/protein/${item.slug}">${item.name}</a></h2>
+<p><strong>Protein Picks:</strong> ${item.protein}</p>
+<p><strong>Area:</strong> ${item.city}</p>
+<p><em>Category: ${item.category}</em></p>
+</div>
+</div>
+
+<a class="oc-protein-learn" href="/protein/${item.slug}">Learn More</a>
+</div>
+`;
+});
 }
 
-/* LOGO */
-.footer-logo {
-  font-weight: 700;
-  font-size: 20px;
-  text-decoration: none;
-  color: #1f2937;
+render(proteinData);
+
+buttons.forEach(btn=>{
+btn.addEventListener('click',function(){
+buttons.forEach(b=>b.classList.remove('active'));
+this.classList.add('active');
+
+const cat=this.dataset.cat;
+
+if(cat==="all"){
+render(proteinData);
+}else{
+render(proteinData.filter(x=>x.category===cat));
+}
+});
+});
+
+document.getElementById('proteinSearch').addEventListener('input',function(){
+const q=this.value.toLowerCase();
+const active=document.querySelector('.oc-protein-btn.active').dataset.cat;
+
+let filtered=proteinData.filter(x=>x.name.toLowerCase().includes(q));
+
+if(active!=="all"){
+filtered=filtered.filter(x=>x.category===active);
 }
 
-/* QUICK LINKS */
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
+render(filtered);
+});
+</script>
 
-.footer-links a {
-  color: #4b5563;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  color: #1f2937;
-}
-
-/* CTA BUTTONS */
-.footer-cta {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.footer-btn-primary,
-.footer-btn-outline {
-  text-decoration: none;
-  border-radius: 8px;
-  padding: 8px 14px;
-  font-weight: 600;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-.footer-btn-primary {
-  background: #ff6b35;
-  color: #ffffff;
-}
-
-.footer-btn-outline {
-  border: 1px solid #d1d5db;
-  background: transparent;
-  color: #1f2937;
-}
-
-/* SOCIAL ICONS */
-.footer-social {
-  display: flex;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.footer-social a {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: #e5e7eb;
-  border-radius: 50%;
-  color: #1f2937;
-  font-weight: bold;
-  text-align: center;
-  line-height: 32px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: background 0.2s;
-}
-
-.footer-social a:hover {
-  background: #ff6b35;
-  color: #ffffff;
-}
-
-/* MICRO COPYRIGHT */
-.footer-micro {
-  max-width: 1200px;
-  margin: 20px auto 0 auto;
-  font-size: 12px;
-  color: #9ca3af; /* light gray */
-  text-align: center;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer-links {
-    gap: 12px;
-  }
-  .footer-cta {
-    gap: 10px;
-  }
-  .footer-social {
-    gap: 10px;
-  }
-}
-</style>
-  
-  
+</body>
 </html>
