@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCGrub - Top 10 Burgers in Orange County</title>
+    <meta name="description" content="Discover the Top 10 Burgers in Orange County with OCGrub. From smash burgers to gourmet stacks, explore the must-try burger spots across OC.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-378RHVD2SY');
+</script>
+    
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #ff6b35;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+}
+
+/* MOBILE */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* MENU */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  transform: translateX(-100%);
+  transition: 0.25s;
+  padding: 60px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* ARTICLE */
+.article {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.footer-micro {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 20px;
+}
+</style>
+
+<!-- ADSENSE (KEEP THIS) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/protein/">Protein</a>
+    </nav>
+
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="ocMobileMenu">
+  <a href="/cities/">Cities</a>
+  <a href="/best-of-orange-county/">Best Of</a>
+  <a href="/late-night/">Late Night</a>
+  <a href="/deals/">Deals</a>
+  <a href="/protein/">Protein</a>
+</div>
+
+<script>
+document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+  document.getElementById('ocMobileMenu').classList.toggle('active');
+});
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Top 10 Burgers in Orange County</h1>
+    <p>The ultimate OC burger list — from smash burgers to gourmet stacks locals swear by.</p>
+  </div>
+</section>
+
+<!-- ARTICLE -->
+<div class="article">
+
+<h2>#1 Peter’s Gourmade Grill (Tustin)</h2>
+<p>Widely considered one of the best overall burgers in OC, known for juicy patties, bold seasoning, and consistently high-quality builds.</p>
+
+<h2>#2 Hammer Burger (Santa Ana)</h2>
+<p>A smash burger favorite with strong local hype, crispy edges, and simple but addictive flavor.</p>
+
+<h2>#3 The Cut Handcrafted Burgers (Irvine)</h2>
+<p>Gourmet-style burgers with elevated toppings and premium ingredients.</p>
+
+<h2>#4 TK Burgers (Multiple OC Locations)</h2>
+<p>Old-school, fast, and reliable — a classic beachside burger experience.</p>
+
+<h2>#5 In-N-Out Burger</h2>
+<p>The most iconic fast burger in California. Simple, consistent, and always fresh.</p>
+
+<h2>#6 Eureka! (Irvine / Newport)</h2>
+<p>Craft burgers with creative toppings and a modern gastropub feel.</p>
+
+<h2>#7 Habit Burger & Grill</h2>
+<p>Chargrilled flavor that stands out from typical fast food chains.</p>
+
+<h2>#8 Hopdoddy Burger Bar (Newport Beach)</h2>
+<p>Premium burgers with fresh ingredients and craft-style combinations.</p>
+
+<h2>#9 Bunz Burger Joint</h2>
+<p>Known for build-your-own style burgers and strong smash burger options.</p>
+
+<h2>#10 Swagyu Burger</h2>
+<p>Wagyu-focused burgers delivering a richer, more premium bite.</p>
+
+<h2>Final Thoughts</h2>
+<p>Orange County has one of the strongest burger scenes in California. Whether you want fast and simple or gourmet and stacked, there’s something here for every craving.</p>
+
+</div>
+
+<footer class="oc-footer">
+  <div class="footer-container">
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/news/">News</a>
+    </div>
+  </div>
+
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
