@@ -389,24 +389,27 @@ mobileBtn.addEventListener('click', () => {
   }
 }
 </style>
-
 <script>
 const newsArticles = [
   {
     title: "New Late Night Taco Spot Opens in Anaheim",
     slug: "taco-spot-anaheim",
+    img: "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c"
   },
   {
     title: "Top 10 Burger Joints in Orange County 2026",
     slug: "top-10-burgers-oc",
+    img: "https://images.unsplash.com/photo-1550547660-d9450f859934"
   },
   {
     title: "Best Late Night Delivery Apps Ranked",
     slug: "late-night-delivery-rankings",
+    img: "https://images.unsplash.com/photo-1580910051074-3eb694886505"
   },
   {
     title: "OCGrub Launches New Food Deals Section",
-    slug: "ocgrub-deals-launch"
+    slug: "ocgrub-deals-launch",
+    img: "https://images.unsplash.com/photo-1556741533-f6acd647d2fb"
   }
 ];
 
@@ -421,9 +424,9 @@ function renderNews() {
 
     card.innerHTML = `
       <h2 class="oc-news-title">${article.title}</h2>
-      
+
       <a href="/news/${article.slug}">
-        <div class="oc-news-img"></div>
+        <img class="oc-news-img" src="${article.img}" alt="${article.title}">
       </a>
 
       <a class="oc-news-link" href="/news/${article.slug}">
