@@ -394,22 +394,22 @@ const newsArticles = [
   {
     title: "New Late Night Taco Spot Opens in Anaheim",
     slug: "taco-spot-anaheim",
-    img: "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c"
+    img: "https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1400&q=80"
   },
   {
     title: "Top 10 Burger Joints in Orange County 2026",
     slug: "top-10-burgers-oc",
-    img: "https://images.unsplash.com/photo-1550547660-d9450f859934"
+    img: "https://images.unsplash.com/photo-1550547660-d9450f859934?auto=format&fit=crop&w=1400&q=80"
   },
   {
     title: "Best Late Night Delivery Apps Ranked",
     slug: "late-night-delivery-rankings",
-    img: "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+    img: "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1400&q=80"
   },
   {
     title: "OCGrub Launches New Food Deals Section",
     slug: "ocgrub-deals-launch",
-    img: "https://images.unsplash.com/photo-1556741533-f6acd647d2fb"
+    img: "https://images.unsplash.com/photo-1556741533-f5c7e0e2b9f0?auto=format&fit=crop&w=1400&q=80"
   }
 ];
 
@@ -422,11 +422,15 @@ function renderNews() {
     const card = document.createElement("div");
     card.className = "oc-news-card";
 
+    const img = article.img 
+      ? article.img 
+      : "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80";
+
     card.innerHTML = `
       <h2 class="oc-news-title">${article.title}</h2>
 
       <a href="/news/${article.slug}">
-        <img class="oc-news-img" src="${article.img}" alt="${article.title}">
+        <img class="oc-news-img" src="${img}" alt="${article.title}" loading="lazy">
       </a>
 
       <a class="oc-news-link" href="/news/${article.slug}">
