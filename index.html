@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OCGrub | Orange County's Independent Restaurants, Handpicked</title>
-<meta name="description" content="A field guide to Orange County's locally owned restaurants. Handpicked spots for group dinners, date nights and everyday meals. No chains, no corporate menus.">
-<link rel="canonical" href="https://ocgrub.com/">
-<meta property="og:title" content="OCGrub | Orange County's Independent Tables">
-<meta property="og:description" content="Handpicked, locally owned restaurants in Orange County, CA, sorted by the occasion you're planning for.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ocgrub.com/">
-
-<!-- Google tag (gtag.js) -->
+<title>OCGrub - Explore the Official OCGrub Website.</title>
+    <meta name="description" content="Discover the best restaurants, food deals, and protein eats in Orange County with OCGrub. Browse city directories, explore 'Best of OC' reviews, find food maps, and stay updated with the latest culinary news.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'G-378RHVD2SY');
 </script>
-
+    
 <style>
 /* RESET */
-body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #faf5ea; color: #231a14; line-height: 1.6; }
-img { max-width: 100%; }
-a:focus-visible, button:focus-visible { outline: 3px solid #ff6b35; outline-offset: 2px; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
 
 /* HEADER */
 .oc-header {
@@ -188,71 +187,303 @@ a:focus-visible, button:focus-visible { outline: 3px solid #ff6b35; outline-offs
     display: flex;
   }
 }
+</style>
 
-/* PAGE */
-.wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; color: #231a14; }
+
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/protein/">Protein</a>
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  <a href="/late-night/">Late Night Food</a>
+  <a href="/deals/">Food Deals</a>
+  <a href="/protein/">Protein</a>
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ===== OCGRUB HOMEPAGE BODY: paste between your header/mobile menu and your footer ===== -->
+<!-- All classes start with "ochome-" and every rule is scoped to .ochome, so nothing here touches your nav/footer styles. -->
+
+<style>
+.ochome { background: #faf5ea; color: #231a14; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+.ochome *, .ochome *::before, .ochome *::after { box-sizing: border-box; }
+.ochome h1, .ochome h2, .ochome h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; color: #231a14; }
+.ochome a:focus-visible { outline: 3px solid #ff6b35; outline-offset: 2px; }
+.ochome-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
 /* INTRO */
-.intro { padding: 56px 0 28px; }
-.intro h1 { font-size: 52px; line-height: 1.08; letter-spacing: -0.5px; margin: 0 0 16px; max-width: 760px; }
-.intro p { font-size: 19px; max-width: 640px; margin: 0; color: #4a3d33; font-family: Georgia, serif; line-height: 1.65; }
+.ochome-intro { padding-top: 56px; padding-bottom: 28px; }
+.ochome-intro h1 { font-size: 52px; line-height: 1.08; letter-spacing: -0.5px; margin: 0 0 16px; max-width: 760px; }
+.ochome-intro p { font-size: 19px; max-width: 640px; margin: 0; color: #4a3d33; font-family: Georgia, serif; line-height: 1.65; }
 
 /* TWO DOORS */
-.doors { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px 0 48px; }
-.door { position: relative; min-height: 420px; display: flex; align-items: flex-end; color: #fff; text-decoration: none; overflow: hidden; border-radius: 4px; background: #3a2a20; }
-.door-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.5s ease; }
-.door:hover .door-bg { transform: scale(1.04); }
-.door::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,12,6,0.85) 0%, rgba(20,12,6,0.25) 60%, rgba(20,12,6,0.1) 100%); }
-.door-text { position: relative; z-index: 2; padding: 28px; }
-.door h2 { color: #fff; font-size: 32px; line-height: 1.15; margin: 0 0 8px; }
-.door p { margin: 0 0 16px; font-size: 16px; color: #f3ebe0; max-width: 420px; }
-.door-btn { display: inline-block; background: #ff6b35; color: #fff; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px; }
+.ochome-doors { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-top: 20px; padding-bottom: 48px; }
+.ochome-door { position: relative; min-height: 420px; display: flex; align-items: flex-end; color: #fff; text-decoration: none; overflow: hidden; border-radius: 4px; background: #3a2a20; }
+.ochome-door-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.5s ease; }
+.ochome-door:hover .ochome-door-bg { transform: scale(1.04); }
+.ochome-door::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,12,6,0.85) 0%, rgba(20,12,6,0.25) 60%, rgba(20,12,6,0.1) 100%); }
+.ochome-door-text { position: relative; z-index: 2; padding: 28px; }
+.ochome-door h2 { color: #fff; font-size: 32px; line-height: 1.15; margin: 0 0 8px; }
+.ochome-door p { margin: 0 0 16px; font-size: 16px; color: #f3ebe0; max-width: 420px; }
+.ochome-btn { display: inline-block; background: #ff6b35; color: #fff; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; }
 
 /* SECTIONS */
-.section { padding: 44px 0; border-top: 1px solid #e3d8c3; }
-.section h2 { font-size: 32px; margin: 0 0 10px; line-height: 1.2; }
-.section .lede { font-size: 17px; max-width: 680px; color: #4a3d33; margin: 0 0 28px; }
+.ochome-section { padding-top: 44px; padding-bottom: 44px; border-top: 1px solid #e3d8c3; }
+.ochome-section h2 { font-size: 32px; margin: 0 0 10px; line-height: 1.2; }
+.ochome-lede { font-size: 17px; max-width: 680px; color: #4a3d33; margin: 0 0 28px; }
 
 /* CITIES AS A MENU */
-.city-menu { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 56px; max-width: 760px; }
-.city-menu li { break-inside: avoid; }
-.city-menu a { display: flex; align-items: baseline; gap: 8px; padding: 9px 0; text-decoration: none; color: #231a14; font-family: Georgia, serif; font-size: 19px; }
-.city-menu a::after { content: ""; order: 2; flex: 1; border-bottom: 2px dotted #c9b99c; transform: translateY(-4px); }
-.city-menu a span { order: 3; font-family: Arial, sans-serif; font-size: 13px; color: #7a6a5a; }
-.city-menu a:hover { color: #c2410c; }
-.more-link { display: inline-block; margin-top: 18px; color: #c2410c; font-weight: 600; text-decoration: underline; }
+.ochome-cities { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 56px; max-width: 760px; }
+.ochome-cities li { break-inside: avoid; }
+.ochome-cities a { display: flex; align-items: baseline; gap: 8px; padding: 9px 0; text-decoration: none; color: #231a14; font-family: Georgia, serif; font-size: 19px; }
+.ochome-cities a::after { content: ""; flex: 1; border-bottom: 2px dotted #c9b99c; transform: translateY(-4px); }
+.ochome-cities a:hover { color: #c2410c; }
+.ochome-more { display: inline-block; margin-top: 18px; color: #c2410c; font-weight: 600; text-decoration: underline; }
 
 /* NEWLY ADDED */
-.new-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.new-card { text-decoration: none; color: inherit; border-top: 3px solid #231a14; padding-top: 12px; }
-.new-card img { width: 100%; height: 190px; object-fit: cover; display: block; margin-bottom: 10px; }
-.new-card h3 { margin: 0 0 4px; font-size: 21px; }
-.new-card p { margin: 0; font-size: 15px; color: #4a3d33; }
-.new-card .meta { font-size: 13px; color: #7a6a5a; margin-bottom: 6px; }
+.ochome-new-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.ochome-new-card { text-decoration: none; color: inherit; border-top: 3px solid #231a14; padding-top: 12px; display: block; }
+.ochome-new-card img { width: 100%; max-width: 100%; height: 190px; object-fit: cover; display: block; margin-bottom: 10px; }
+.ochome-new-card h3 { margin: 0 0 4px; font-size: 21px; }
+.ochome-new-card p { margin: 0; font-size: 15px; color: #4a3d33; }
+.ochome-new-meta { font-size: 13px; color: #6b5b4b; margin-bottom: 6px; }
 
 /* HOW WE PICK */
-.pick-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 48px; }
-.pick-grid h3 { margin: 0 0 6px; font-size: 21px; }
-.pick-grid p { margin: 0; font-size: 16px; color: #4a3d33; }
+.ochome-pick { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 48px; }
+.ochome-pick h3 { margin: 0 0 6px; font-size: 21px; }
+.ochome-pick p { margin: 0; font-size: 16px; color: #4a3d33; }
+.ochome-pick a { color: #c2410c; }
 
 /* OWNERS */
-.owners { background: #2b2018; color: #f3ebe0; padding: 52px 0; margin-top: 20px; }
-.owners h2 { color: #fff; font-size: 32px; margin: 0 0 12px; }
-.owners p { max-width: 620px; font-size: 17px; margin: 0 0 22px; font-family: Georgia, serif; }
-.owners .door-btn { text-decoration: none; }
+.ochome-owners { background: #2b2018; color: #f3ebe0; padding-top: 52px; padding-bottom: 52px; }
+.ochome-owners h2 { color: #fff; font-size: 32px; margin: 0 0 12px; }
+.ochome-owners p { max-width: 620px; font-size: 17px; margin: 0 0 22px; font-family: Georgia, serif; }
 
 @media (max-width: 800px) {
-  .intro { padding-top: 36px; }
-  .intro h1 { font-size: 36px; }
-  .intro p { font-size: 17px; }
-  .doors { grid-template-columns: 1fr; }
-  .door { min-height: 340px; }
-  .city-menu { columns: 1; }
-  .new-grid, .pick-grid { grid-template-columns: 1fr; }
+  .ochome-intro { padding-top: 36px; }
+  .ochome-intro h1 { font-size: 36px; }
+  .ochome-intro p { font-size: 17px; }
+  .ochome-doors { grid-template-columns: 1fr; }
+  .ochome-door { min-height: 340px; }
+  .ochome-cities { columns: 1; }
+  .ochome-new-grid, .ochome-pick { grid-template-columns: 1fr; }
 }
-@media (prefers-reduced-motion: reduce) { .door-bg, #ocMobileMenu { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .ochome-door-bg { transition: none; } }
+</style>
 
+<main class="ochome">
+
+  <!-- INTRO -->
+  <section class="ochome-wrap ochome-intro">
+    <h1>Orange County's independent tables.</h1>
+    <p>A field guide to the locally owned restaurants worth your night out. No chains, no corporate menus, no star ratings. Just places we've picked by hand, sorted by the occasion you're planning for.</p>
+  </section>
+
+  <!-- TWO DOORS -->
+  <section class="ochome-wrap ochome-doors" aria-label="Choose your occasion">
+    <a class="ochome-door" href="/groups/">
+      <div class="ochome-door-bg" style="background-image:url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1170');" role="img" aria-label="A long table of friends sharing a meal"></div>
+      <div class="ochome-door-text">
+        <h2>Best Restaurants for Groups</h2>
+        <p>Big tables, private rooms and kitchens that handle a crowd. Family dinners, team outings, birthdays and double dates.</p>
+        <span class="ochome-btn">See group picks</span>
+      </div>
+    </a>
+    <a class="ochome-door" href="/date-and-everyday/">
+      <div class="ochome-door-bg" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1170');" role="img" aria-label="A warmly lit restaurant interior"></div>
+      <div class="ochome-door-text">
+        <h2>Everyday &amp; Date Dining</h2>
+        <p>One to three people. Couples, solo diners and anyone who wants a great meal without the production.</p>
+        <span class="ochome-btn">See everyday picks</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- BROWSE BY CITY -->
+  <section class="ochome-wrap ochome-section">
+    <h2>Browse by city</h2>
+    <p class="ochome-lede">Every city in Orange County has its own neighborhood spots. Start with where you are, or where you're headed.</p>
+    <!-- Remove any city that doesn't have a page yet so there are no broken links. -->
+    <ul class="ochome-cities">
+      <li><a href="/cities/anaheim/">Anaheim</a></li>
+      <li><a href="/cities/santa-ana/">Santa Ana</a></li>
+      <li><a href="/cities/irvine/">Irvine</a></li>
+      <li><a href="/cities/costa-mesa/">Costa Mesa</a></li>
+      <li><a href="/cities/huntington-beach/">Huntington Beach</a></li>
+      <li><a href="/cities/fullerton/">Fullerton</a></li>
+      <li><a href="/cities/orange/">Orange</a></li>
+      <li><a href="/cities/laguna-beach/">Laguna Beach</a></li>
+      <li><a href="/cities/garden-grove/">Garden Grove</a></li>
+      <li><a href="/cities/tustin/">Tustin</a></li>
+    </ul>
+    <a class="ochome-more" href="/cities/">See all Orange County cities</a>
+  </section>
+
+  <!-- NEWLY ADDED: remove the "hidden" attribute once you have 3 real listings.
+       Copy one .ochome-new-card per restaurant, with your own photo, city, and a one-line opinion. -->
+  <section class="ochome-wrap ochome-section" hidden>
+    <h2>Newly added</h2>
+    <p class="ochome-lede">The latest independents to join the guide.</p>
+    <div class="ochome-new-grid">
+      <!--
+      <a class="ochome-new-card" href="/restaurants/your-restaurant/">
+        <img src="/images/your-restaurant.jpg" alt="Describe the photo" loading="lazy">
+        <div class="ochome-new-meta">City &middot; Cuisine &middot; Added Month Year</div>
+        <h3>Restaurant Name</h3>
+        <p>One honest sentence on why it earned a spot.</p>
+      </a>
+      -->
+    </div>
+  </section>
+
+  <!-- HOW WE PICK -->
+  <section class="ochome-wrap ochome-section">
+    <h2>How we pick</h2>
+    <p class="ochome-lede">Every restaurant in this guide is independently owned and chosen by a person, not an algorithm. Here is what gets a place on the list.</p>
+    <div class="ochome-pick">
+      <div>
+        <h3>Locally owned, always</h3>
+        <p>No chains, franchises or corporate-owned groups. If a family or a local operator runs it, it's eligible.</p>
+      </div>
+      <div>
+        <h3>Worth the drive</h3>
+        <p>The food has to stand on its own. We look for consistency, care in the kitchen and something you'll want to tell a friend about.</p>
+      </div>
+      <div>
+        <h3>Right for the occasion</h3>
+        <p>A great taco counter and a great birthday venue are different things. We note seating, noise, parking and group capacity so you can plan with confidence.</p>
+      </div>
+      <div>
+        <h3>Kept up to date</h3>
+        <p>Hours, menus and details change. Owners can update their own listing, and we revisit the guide regularly. Read the full <a href="/how-we-pick/">selection criteria</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR OWNERS -->
+  <section class="ochome-owners">
+    <div class="ochome-wrap">
+      <h2>Run an independent restaurant in OC?</h2>
+      <p>Listing is free. Claim your page, keep your hours and menu current, and add details like private rooms and group capacity so the right guests find you. There are no reviews to manage and no commissions to pay.</p>
+      <a class="ochome-btn" href="/get-featured/">Get your restaurant featured</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== END HOMEPAGE BODY ===== -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+  
+  
+  
+  
+  
+  
+  <div style="height:80px;"></div>
+  
+  <footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      <a href="/late-night/">Late Night</a>
+      <a href="/deals/">Deals</a>
+      <a href="/map/">Map</a>
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+<style>
 /* FOOTER STYLES */
 .oc-footer {
   background: #f9fafb;
@@ -379,190 +610,6 @@ h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; c
   }
 }
 </style>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<header class="oc-header">
-  <div class="container">
-    <a href="/" class="oc-logo">OCGrub</a>
-
-    <!-- DESKTOP NAV -->
-    <nav class="oc-desktop-nav">
-      <a href="/cities/">Cities</a>
-      <a href="/best-of-orange-county/">Best Of</a>
-      <a href="/late-night/">Late Night</a>
-      <a href="/deals/">Deals</a>
-      <a href="/protein/">Protein</a>
-    </nav>
-
-    <!-- CTA BUTTONS -->
-    <div class="oc-cta">
-      <a href="/newsletter/" class="btn-outline">Newsletter</a>
-      <a href="/get-featured/" class="btn-primary">Get Featured</a>
-    </div>
-
-    <!-- MOBILE BUTTONS -->
-    <div class="mobile-header-buttons">
-      <a href="/news/" class="mobile-news-btn">News</a>
-      <div class="oc-menu-btn" id="mobileMenuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- MOBILE MENU -->
-<div id="ocMobileMenu">
-  <a href="/cities/">Browse Cities</a>
-  <a href="/best-of-orange-county/">Best Of Orange County</a>
-  <a href="/late-night/">Late Night Food</a>
-  <a href="/deals/">Food Deals</a>
-  <a href="/protein/">Protein</a>
-
-  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
-  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
-</div>
-
-<main>
-  <section class="wrap intro">
-    <h1>Orange County's independent tables.</h1>
-    <p>A field guide to the locally owned restaurants worth your night out. No chains, no corporate menus, no star ratings. Just places we've picked by hand, sorted by the occasion you're planning for.</p>
-  </section>
-
-  <section class="wrap doors" aria-label="Choose your occasion">
-    <a class="door" href="/groups/">
-      <div class="door-bg" style="background-image:url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1170');" role="img" aria-label="A long table of friends sharing a meal"></div>
-      <div class="door-text">
-        <h2>Best Restaurants for Groups</h2>
-        <p>Big tables, private rooms and kitchens that handle a crowd. Family dinners, team outings, birthdays and double dates.</p>
-        <span class="door-btn">See group picks</span>
-      </div>
-    </a>
-    <a class="door" href="/date-and-everyday/">
-      <div class="door-bg" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1170');" role="img" aria-label="A warmly lit restaurant interior"></div>
-      <div class="door-text">
-        <h2>Everyday &amp; Date Dining</h2>
-        <p>One to three people. Couples, solo diners and anyone who wants a great meal without the production.</p>
-        <span class="door-btn">See everyday picks</span>
-      </div>
-    </a>
-  </section>
-
-  <section class="wrap section">
-    <h2>Browse by city</h2>
-    <p class="lede">Every city in Orange County has its own neighborhood spots. Start with where you are, or where you're headed.</p>
-    <!-- Remove any city that doesn't have a page yet so there are no broken links. -->
-    <ul class="city-menu">
-      <li><a href="/cities/anaheim/">Anaheim</a></li>
-      <li><a href="/cities/santa-ana/">Santa Ana</a></li>
-      <li><a href="/cities/irvine/">Irvine</a></li>
-      <li><a href="/cities/costa-mesa/">Costa Mesa</a></li>
-      <li><a href="/cities/huntington-beach/">Huntington Beach</a></li>
-      <li><a href="/cities/fullerton/">Fullerton</a></li>
-      <li><a href="/cities/orange/">Orange</a></li>
-      <li><a href="/cities/laguna-beach/">Laguna Beach</a></li>
-      <li><a href="/cities/garden-grove/">Garden Grove</a></li>
-      <li><a href="/cities/tustin/">Tustin</a></li>
-    </ul>
-    <a class="more-link" href="/cities/">See all Orange County cities</a>
-  </section>
-
-  <!-- NEWLY ADDED: remove the "hidden" attribute once you have 3 real listings.
-       Copy a .new-card per restaurant, with your own photo, city, and a one-line opinion. -->
-  <section class="wrap section" id="newly-added" hidden>
-    <h2>Newly added</h2>
-    <p class="lede">The latest independents to join the guide.</p>
-    <div class="new-grid">
-      <!--
-      <a class="new-card" href="/restaurants/your-restaurant/">
-        <img src="/images/your-restaurant.jpg" alt="Describe the photo" loading="lazy">
-        <div class="meta">City &middot; Cuisine &middot; Added Month Year</div>
-        <h3>Restaurant Name</h3>
-        <p>One honest sentence on why it earned a spot.</p>
-      </a>
-      -->
-    </div>
-  </section>
-
-  <section class="wrap section">
-    <h2>How we pick</h2>
-    <p class="lede">Every restaurant in this guide is independently owned and chosen by a person, not an algorithm. Here is what gets a place on the list.</p>
-    <div class="pick-grid">
-      <div>
-        <h3>Locally owned, always</h3>
-        <p>No chains, franchises or corporate-owned groups. If a family or a local operator runs it, it's eligible.</p>
-      </div>
-      <div>
-        <h3>Worth the drive</h3>
-        <p>The food has to stand on its own. We look for consistency, care in the kitchen and something you'll want to tell a friend about.</p>
-      </div>
-      <div>
-        <h3>Right for the occasion</h3>
-        <p>A great taco counter and a great birthday venue are different things. We note seating, noise, parking and group capacity so you can plan with confidence.</p>
-      </div>
-      <div>
-        <h3>Kept up to date</h3>
-        <p>Hours, menus and details change. Owners can update their own listing, and we revisit the guide regularly. Read the full <a href="/how-we-pick/">selection criteria</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="owners">
-    <div class="wrap">
-      <h2>Run an independent restaurant in OC?</h2>
-      <p>Listing is free. Claim your page, keep your hours and menu current, and add details like private rooms and group capacity so the right guests find you. There are no reviews to manage and no commissions to pay.</p>
-      <a class="door-btn" href="/get-featured/">Get your restaurant featured</a>
-    </div>
-  </section>
-</main>
-
-<footer class="oc-footer">
-  <div class="footer-container">
-    <!-- LOGO -->
-    <a href="/" class="footer-logo">OCGrub</a>
-
-    <!-- QUICK LINKS -->
-    <div class="footer-links">
-      <a href="/cities/">Cities</a>
-      <a href="/best-of-orange-county/">Best Of</a>
-      <a href="/late-night/">Late Night</a>
-      <a href="/deals/">Deals</a>
-      <a href="/map/">Map</a>
-      <a href="/news/">News</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-    </div>
-
-    <!-- CTA BUTTONS -->
-    <div class="footer-cta">
-      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
-      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
-    </div>
-
-    <!-- SOCIAL ICONS -->
-    <div class="footer-social">
-      <a href="#" title="Instagram">IG</a>
-      <a href="#" title="X.com">X</a>
-    </div>
-  </div>
-
-  <!-- MICRO COPYRIGHT -->
-  <div class="footer-micro">
-    &copy;2026 OCGrub. All rights reserved.
-  </div>
-</footer>
-
-<script>
-const mobileMenu = document.getElementById('ocMobileMenu');
-const mobileBtn = document.getElementById('mobileMenuBtn');
-
-mobileBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-});
-</script>
-</body>
+  
+  
 </html>
