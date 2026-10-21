@@ -283,8 +283,11 @@ mobileBtn.addEventListener('click', () => {
   
   
 
+
+
+
   <!-- ===== OC GRUB BLOG SECTION: paste into your template's text/body area ===== -->
-<!-- ONLY EDIT THE "ALL POSTS" LIST BELOW. The top section builds itself from the first 4 posts. -->
+<!-- ONLY EDIT THE "ALL POSTS" LIST BELOW. The top section builds itself from the first 5 posts. -->
 
 <section class="ocg" id="ocg">
 
@@ -298,7 +301,7 @@ mobileBtn.addEventListener('click', () => {
     <!-- ===== POSTNOW TEMPLATE: copy one <article> and paste it at the TOP of this list ===== -->
 
     <article class="ocg-post">
-      <a class="ocg-post__img" href="#a-la-brava"><img src="https://placehold.co/800x600/e8d9c4/333?text=Thai+Bite" alt="Thai Bite Thai Cuisine"></a>
+      <a class="ocg-post__img" href="#a-la-brava"><img src="https://unsplash.com/photos/YiBV-s9nZfQ/download?force=true&w=1200" alt="Thai Bite Thai Cuisine"></a>
       <div class="ocg-post__body">
         <h3 class="ocg-post__title"><a href="#a-la-brava">Thai Bite Thai Cuisine</a></h3>
         <div class="ocg-post__tags"><span>Thai Bite Thai Cuisine</span><span>Aliso Viejo</span></div>
@@ -310,12 +313,8 @@ mobileBtn.addEventListener('click', () => {
       </div>
     </article>
 
-
-
-
-    
     <article class="ocg-post">
-      <a class="ocg-post__img" href="#a-la-brava"><img src="https://placehold.co/800x600/e8d9c4/333?text=A+La+Brava" alt="A La Brava Mexican Kitchen"></a>
+      <a class="ocg-post__img" href="#a-la-brava"><img src="https://unsplash.com/photos/4p5t91rONXE/download?force=true&w=1200" alt="A La Brava Mexican Kitchen"></a>
       <div class="ocg-post__body">
         <h3 class="ocg-post__title"><a href="#a-la-brava">The Best Modern Mexican In Aliso Viejo</a></h3>
         <div class="ocg-post__tags"><span>Mexican</span><span>Aliso Viejo</span></div>
@@ -328,7 +327,7 @@ mobileBtn.addEventListener('click', () => {
     </article>
 
     <article class="ocg-post">
-      <a class="ocg-post__img" href="#fennel"><img src="https://placehold.co/800x600/d9e4d0/333?text=Fennel" alt="Fennel Kitchen &amp; Bar"></a>
+      <a class="ocg-post__img" href="#fennel"><img src="https://unsplash.com/photos/2U1E1jedY-A/download?force=true&w=1200" alt="Fennel Kitchen &amp; Bar"></a>
       <div class="ocg-post__body">
         <h3 class="ocg-post__title"><a href="#fennel">The Best Neighborhood Dinner In Aliso Viejo</a></h3>
         <div class="ocg-post__tags"><span>American</span><span>Aliso Viejo</span></div>
@@ -341,7 +340,7 @@ mobileBtn.addEventListener('click', () => {
     </article>
 
     <article class="ocg-post">
-      <a class="ocg-post__img" href="#birria"><img src="https://placehold.co/800x600/f0cfc0/333?text=Birria" alt="Tacos De Birria El Más Chingón"></a>
+      <a class="ocg-post__img" href="#birria"><img src="https://unsplash.com/photos/0hoHehzHObI/download?force=true&w=1200" alt="Tacos De Birria El Más Chingón"></a>
       <div class="ocg-post__body">
         <h3 class="ocg-post__title"><a href="#birria">The Best Birria Tacos In Aliso Viejo</a></h3>
         <div class="ocg-post__tags"><span>Tacos</span><span>Aliso Viejo</span></div>
@@ -354,7 +353,7 @@ mobileBtn.addEventListener('click', () => {
     </article>
 
     <article class="ocg-post">
-      <a class="ocg-post__img" href="#mangia-bene"><img src="https://placehold.co/800x600/f3e3b8/333?text=Mangia+Bene" alt="Mangia Bene Cucina"></a>
+      <a class="ocg-post__img" href="#mangia-bene"><img src="https://unsplash.com/photos/khQeenz99H0/download?force=true&w=1200" alt="Mangia Bene Cucina"></a>
       <div class="ocg-post__body">
         <h3 class="ocg-post__title"><a href="#mangia-bene">The Best Italian In Aliso Viejo</a></h3>
         <div class="ocg-post__tags"><span>Italian</span><span>Aliso Viejo</span></div>
@@ -388,6 +387,36 @@ mobileBtn.addEventListener('click', () => {
   .ocg-card:nth-child(3){grid-column:1/-1;display:grid;grid-template-columns:1fr 1.1fr;gap:16px;align-items:center}
   .ocg-card:nth-child(3) .ocg-card__title{margin:0}
 
+  /* 5th creative banner (desktop): wide image, big title over it */
+  .ocg-top>.ocg-feature{grid-column:1/-1;position:relative;border-radius:10px;overflow:hidden;aspect-ratio:21/8;display:block}
+  .ocg-top>.ocg-feature .ocg-card__img{position:absolute;inset:0;aspect-ratio:auto;border-radius:0}
+  .ocg-top>.ocg-feature::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+    background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,.05) 65%);transition:opacity .4s}
+  .ocg-top>.ocg-feature .ocg-card__title{position:absolute;z-index:2;left:30px;right:30px;bottom:26px;margin:0;color:#fff;
+    font-weight:900;text-transform:uppercase;line-height:.95;font-size:clamp(30px,5vw,68px)}
+  .ocg-top>.ocg-feature .ocg-read{top:20px;right:20px;left:auto;bottom:auto;z-index:3}
+
+  /* hover element */
+  .ocg-card__img,.ocg-hero__img{position:relative}
+  .ocg-read{position:absolute;left:14px;bottom:14px;z-index:2;background:#fff;color:var(--ocg-ink);font-size:12px;font-weight:800;
+    text-transform:uppercase;letter-spacing:.04em;padding:8px 14px;border-radius:999px;opacity:0;transform:translateY(10px);
+    transition:opacity .3s,transform .3s;pointer-events:none}
+  .ocg-hero__img::after,.ocg-card__img::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .35s;
+    background:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0) 60%)}
+  .ocg-top img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  .ocg-hero__title a,.ocg-card__title a{background:linear-gradient(currentColor,currentColor) 0 100%/0 .09em no-repeat;
+    transition:background-size .4s ease;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .ocg-hero,.ocg-card{transition:transform .35s ease}
+  @media (hover:hover){
+    .ocg-hero:hover .ocg-hero__img img,.ocg-card:hover .ocg-card__img img{transform:scale(1.07)}
+    .ocg-hero:hover .ocg-hero__img::after,.ocg-card:hover .ocg-card__img::after{opacity:1}
+    .ocg-hero:hover .ocg-read,.ocg-card:hover .ocg-read{opacity:1;transform:none}
+    .ocg-hero:hover .ocg-hero__title a,.ocg-card:hover .ocg-card__title a{background-size:100% .09em}
+    .ocg-card:hover{transform:translateY(-4px)}
+    .ocg-top>.ocg-feature:hover{transform:none}
+    .ocg-top>.ocg-feature:hover::after{opacity:.85}
+  }
+
   /* ---------- ALL POSTS ---------- */
   .ocg-heading{font-size:26px;font-weight:900;margin:0 0 18px}
   .ocg-list{display:flex;flex-direction:column;gap:18px;max-width:860px}
@@ -413,6 +442,7 @@ mobileBtn.addEventListener('click', () => {
     .ocg-rail::-webkit-scrollbar{display:none}
     .ocg-card,.ocg-card:nth-child(3){display:block;flex:0 0 62%;scroll-snap-align:start}
     .ocg-card:nth-child(3) .ocg-card__title{margin:10px 0 0}
+    .ocg-read{display:none}
     .ocg-post{grid-template-columns:1fr;gap:12px}
     .ocg-post__title{font-size:22px}
   }
@@ -420,7 +450,7 @@ mobileBtn.addEventListener('click', () => {
 
 <script>
 (function () {
-  var TOP_COUNT = 4;   // hero + 3 secondary. Change if you want more/less in the top section.
+  var TOP_COUNT = 5;   // hero + 3 secondary + 1 creative banner. Change if you want more/less in the top section.
   var list = document.getElementById('ocg-list');
   var top = document.getElementById('ocg-top');
   if (!list || !top) return;
@@ -441,6 +471,7 @@ mobileBtn.addEventListener('click', () => {
   function pic(parent, cls, d) {
     var a = el('a', cls, parent); a.href = d.href;
     var i = el('img', '', a); i.src = d.src; i.alt = d.alt; i.loading = 'lazy';
+    var r = el('span', 'ocg-read', a); r.textContent = 'Read now \u2192'; r.setAttribute('aria-hidden', 'true');
     return a;
   }
   function title(parent, cls, tag, d) {
@@ -455,19 +486,29 @@ mobileBtn.addEventListener('click', () => {
   pic(h, 'ocg-hero__img', items[0]);
   title(h, 'ocg-hero__title', 'h2', items[0]);
 
+  var rail = null, feature = null;
   if (items.length > 1) {
-    var rail = el('div', 'ocg-rail', top);
-    items.slice(1).forEach(function (d) {
+    rail = el('div', 'ocg-rail', top);
+    items.slice(1, 4).forEach(function (d) {
       var c = el('div', 'ocg-card', rail);
       pic(c, 'ocg-card__img', d);
       title(c, 'ocg-card__title', 'h3', d);
     });
   }
+
+  // 5th post: wide creative banner on desktop, joins the slider on mobile
+  if (items.length > 4) {
+    feature = el('div', 'ocg-card ocg-feature');
+    pic(feature, 'ocg-card__img', items[4]);
+    title(feature, 'ocg-card__title', 'h3', items[4]);
+    var mq = window.matchMedia('(max-width:700px)');
+    var place = function () { (mq.matches ? rail : top).appendChild(feature); };
+    place();
+    if (mq.addEventListener) mq.addEventListener('change', place); else mq.addListener(place);
+  }
 })();
 </script>
 <!-- ===== END OC GRUB BLOG SECTION ===== -->
-  
-  
   
   
   
