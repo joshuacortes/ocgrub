@@ -1,0 +1,554 @@
+<!DOCTYPE html><html><head><title>Bruno's Italian Kitchen - The Best Home-Style Italian In Brea - OCGrub</title><meta name="description" content="Bruno's Italian Kitchen serves comforting Italian favorites in Brea."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+
+
+\
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+<style>
+.restaurant-article *{box-sizing:border-box}
+.restaurant-article h1{font-size:clamp(36px,5.5vw,64px);line-height:.98;letter-spacing:-2px;text-transform:uppercase;margin:18px 0;font-weight:900}
+.restaurant-article h2{font-size:clamp(25px,3vw,34px);line-height:1.15;letter-spacing:-.7px;margin:34px 0 12px}
+.restaurant-article h3{font-size:21px;line-height:1.3;margin:20px 0 8px}
+.restaurant-article p{font-size:16px;margin:0 0 16px}
+.restaurant-article .business-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch}
+.restaurant-article .hero-image{width:100%;height:100%;min-height:280px;max-height:410px;object-fit:cover;border-radius:10px;display:block}
+.restaurant-article .business-card{background:#f0f0ee;padding:26px;border-radius:10px;display:flex;flex-direction:column;justify-content:center}
+.restaurant-article .eyebrow{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#a34b2a;margin-bottom:8px}
+.restaurant-article .business-name{font-size:clamp(25px,3vw,36px);font-weight:900;line-height:1.08;letter-spacing:-1px;margin:0 0 15px}
+.restaurant-article .detail{border-top:1px solid #d3d3d0;padding:12px 0;font-size:15px;overflow-wrap:anywhere}
+.restaurant-article .detail strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:#777;margin-bottom:3px}
+.restaurant-article .call-link{display:inline-block;background:#171717;color:#fff;text-decoration:none;border-radius:30px;padding:11px 18px;font-size:12px;font-weight:800;letter-spacing:.6px;align-self:flex-start;margin-top:10px}
+.restaurant-article .article-intro{font-size:18px;line-height:1.7;color:#454545;margin:24px 0}
+.restaurant-article .section-rule{height:5px;width:95px;background:#171717;margin:18px 0 25px}
+.restaurant-article .article-note{background:#f7eee8;border-radius:10px;padding:20px;margin:22px 0}
+@media(max-width:700px){
+.restaurant-article{padding:8px}
+.restaurant-article .business-layout{grid-template-columns:1fr;gap:12px}
+.restaurant-article .hero-image{height:auto;min-height:0;max-height:340px;aspect-ratio:16/10}
+.restaurant-article .business-card{padding:22px}
+.restaurant-article h1{letter-spacing:-1.3px}
+.restaurant-article .article-intro{font-size:17px}
+}
+</style>
+
+<div class="restaurant-article">
+
+  <div class="business-layout">
+    <div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1762631883229-95cfb6a063ad?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" alt="Italian-inspired dining and pasta representing the homemade Italian cuisine at Bruno's Italian Kitchen in Brea, California" fetchpriority="high">
+    </div>
+    <div class="business-card">
+      <div class="eyebrow">Restaurant Spotlight · Brea, CA</div>
+      <h2 class="business-name">Bruno's Italian Kitchen</h2>
+      <div class="detail">
+        <strong>Cuisine</strong>
+        Italian · Homemade Pasta · Bar
+      </div>
+      <div class="detail">
+        <strong>Location</strong>
+        210 W Birch St<br>Brea, CA 92821
+      </div>
+      <div class="detail">
+        <strong>Shopping Center</strong>
+        Brea Gateway
+      </div>
+      <div class="detail">
+        <strong>Phone</strong>
+        <a href="tel:+17142571000" style="color:#171717;text-decoration:none;">(714) 257-1000</a>
+      </div>
+      <a class="call-link" href="tel:+17142571000">CALL RESTAURANT ↗</a>
+    </div>
+  </div>
+
+  <h1>Bruno's Italian Kitchen: Homemade Italian Food in Brea</h1>
+  <div class="section-rule"></div>
+
+  <p class="article-intro">Searching for Italian food in Brea, California, with homemade pasta, a welcoming atmosphere, and outdoor seating? Bruno's Italian Kitchen brings these elements together at 210 W Birch St in Brea Gateway. With its warm neighborhood feel, Italian-inspired menu, and weekly specials, this bar and eatery offers a setting for enjoying a relaxed lunch, gathering for dinner, or taking time over a comforting Italian meal.</p>
+
+  <h2>Get to Know Bruno's Italian Kitchen in Brea</h2>
+
+  <p>Italian cooking has a way of turning familiar ingredients into memorable meals. Fresh pasta, savory sauces, herbs, cheese, and carefully prepared ingredients form the foundation of many beloved Italian dishes. At Bruno's Italian Kitchen, homemade pasta is part of the restaurant's appeal, making it a destination to consider when you're craving the comforting flavors associated with Italian dining.</p>
+
+  <p>Located within Brea Gateway, Bruno's Italian Kitchen combines the character of an Italian eatery with a bar atmosphere and inviting dining environment. Its mix of food, weekly specials, and outdoor seating gives guests different ways to enjoy a visit, whether the plan is a casual meal or an evening out.</p>
+
+  <h2>Homemade Pasta at Bruno's Italian Kitchen</h2>
+
+  <h3>The Appeal of Freshly Prepared Pasta</h3>
+
+  <p>Pasta is one of the cornerstones of Italian cuisine, valued for its versatility and ability to work with an extensive range of sauces and ingredients. The texture of the pasta, the richness of the sauce, and the balance of seasonings all contribute to the character of the finished dish.</p>
+
+  <p>Homemade pasta adds another dimension to the experience. Preparation techniques can influence its consistency and texture, helping create a foundation that works beautifully with complementary ingredients. For diners looking for pasta dishes in Brea, Bruno's Italian Kitchen offers a restaurant setting centered on Italian food and the appeal of homemade pasta.</p>
+
+  <h3>Italian Comfort Food in a Relaxed Setting</h3>
+
+  <p>Part of the attraction of Italian dining is its ability to feel both satisfying and approachable. A pasta meal can be a simple weekday lunch or the centerpiece of a longer dinner shared with good company. Familiar flavors and a relaxed environment make it easy to settle in and enjoy the occasion.</p>
+
+  <p>Bruno's Italian Kitchen pairs its Italian food focus with a warm atmosphere, giving diners a place to enjoy a meal without the experience feeling overly formal. For anyone searching for a welcoming Italian restaurant in Brea, that combination can be an important part of the appeal.</p>
+
+  <h2>Weekly Specials Worth Asking About</h2>
+
+  <p>Weekly restaurant specials give diners another reason to check in and see what's available. Special offerings can introduce different dishes, provide variety beyond the regular menu, or give returning guests something new to consider on their next visit.</p>
+
+  <p>Bruno's Italian Kitchen features weekly specials, adding an extra element to its Italian dining experience. If you're planning a visit around a particular meal or looking for something different from your usual order, asking about the current specials is a practical way to learn what's being offered.</p>
+
+  <p>Because specials can change, contact Bruno's Italian Kitchen directly for current details, including the featured dishes, availability, and any applicable pricing.</p>
+
+  <h2>Outdoor Seating and a Warm Neighborhood Atmosphere</h2>
+
+  <p>The setting can make a meal feel just as memorable as the food. Outdoor seating offers a different way to enjoy a restaurant visit, allowing guests to dine in the open air while catching up with friends, spending time with family, or taking a break from a busy day.</p>
+
+  <p>Bruno's Italian Kitchen offers outdoor seating alongside its warm, inviting atmosphere. This gives diners another option when choosing how they want to enjoy their meal. Whether you're interested in an outdoor table or prefer dining inside, calling ahead can help you confirm the current seating arrangements.</p>
+
+  <p>The restaurant's approachable character also suits occasions when you want a comfortable place to enjoy Italian food without planning an elaborate night out. Its combination of homemade pasta, weekly specials, and a bar setting brings several aspects of casual dining together in one location.</p>
+
+  <div class="article-note">
+    <h3 style="margin-top:0;">Tips for Planning Your Visit</h3>
+    <p style="margin-bottom:0;">Before visiting Bruno's Italian Kitchen, consider calling to confirm current operating hours, weekly specials, menu availability, and outdoor seating arrangements. If you're planning a group dinner or have a preferred seating area, checking with the restaurant in advance can help you make the most of your visit.</p>
+  </div>
+
+  <h2>An Italian Bar and Eatery for Casual Dining</h2>
+
+  <p>Sometimes choosing where to eat comes down to finding the right balance of food, atmosphere, and convenience. An Italian eatery with a bar can provide a flexible setting for different occasions, from a relaxed lunch to an evening meal when you want to unwind.</p>
+
+  <p>Bruno's Italian Kitchen brings together Italian-inspired dining and a bar atmosphere in Brea. Its homemade pasta dishes give Italian food lovers a reason to explore the menu, while weekly specials add variety for those who enjoy trying something different.</p>
+
+  <p>Outdoor seating provides an additional dining option, and the restaurant's location at Brea Gateway makes it a place to keep in mind when planning a meal in the area. For the latest information about food, specials, and seating, the restaurant can provide the most accurate details directly.</p>
+
+  <h2>Why Visit Bruno's Italian Kitchen in Brea?</h2>
+
+  <p>When searching for an Italian restaurant in Brea, it helps to find a place that matches the kind of experience you're looking for. Bruno's Italian Kitchen combines homemade pasta dishes, weekly specials, a warm atmosphere, and outdoor seating, offering several features that can make a casual meal enjoyable.</p>
+
+  <p>Here are some highlights to remember when considering a visit:</p>
+
+  <ul style="padding-left:24px;margin:12px 0 22px;">
+    <li>Italian bar and eatery in Brea, California.</li>
+    <li>Homemade pasta dishes for fans of Italian cuisine.</li>
+    <li>Weekly specials that provide additional menu variety.</li>
+    <li>Outdoor seating for an open-air dining option.</li>
+    <li>A warm, inviting atmosphere for a casual meal.</li>
+    <li>Convenient location at Brea Gateway on West Birch Street.</li>
+  </ul>
+
+  <h2>Visit Bruno's Italian Kitchen at Brea Gateway</h2>
+
+  <p>If you're looking for homemade pasta and Italian food in Brea, Bruno's Italian Kitchen is a local dining option to consider. Its combination of Italian-inspired dishes, weekly specials, outdoor seating, and a welcoming bar-and-eatery atmosphere creates a setting suited to a variety of casual dining occasions.</p>
+
+  <p>Bruno's Italian Kitchen is located at 210 W Birch St, Brea, CA 92821, within Brea Gateway. Call ahead to ask about the current menu, upcoming specials, hours, or outdoor seating before making your plans.</p>
+
+  <div style="background:#171717;color:#fff;padding:25px;border-radius:10px;margin-top:28px;">
+    <div style="font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#e6a17f;font-weight:800;margin-bottom:8px;">Plan Your Visit</div>
+    <h2 style="margin:0 0 15px;color:#fff;">Bruno's Italian Kitchen</h2>
+    <p style="color:#eee;">Brea Gateway<br>210 W Birch St<br>Brea, CA 92821</p>
+    <p style="color:#eee;margin-bottom:0;">Phone: <a href="tel:+17142571000" style="color:#fff;">(714) 257-1000</a></p>
+  </div>
+
+</div>
+</article>
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
