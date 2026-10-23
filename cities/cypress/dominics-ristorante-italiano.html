@@ -1,0 +1,820 @@
+<!DOCTYPE html><html><head><title>Dominic's Ristorante Italiano - Casual Italian spot serves all the classic dishes, homestyle, plus party trays, happy hours & more - OCGrub</title><meta name="description" content="Dominic's Ristorante Italiano serves traditional Italian dishes for a sit-down night out in Cypress."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+  <style>
+    .restaurant-article * {
+      box-sizing: border-box;
+    }
+
+    .restaurant-article .business-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-bottom: 36px;
+    }
+
+    .restaurant-article .hero-image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .restaurant-article .business-card {
+      background: #f5f3ef;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .restaurant-article .eyebrow {
+      color: #8b3b21;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin: 0 0 10px;
+    }
+
+    .restaurant-article .business-name {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      letter-spacing: -1.3px;
+      margin: 0 0 14px;
+    }
+
+    .restaurant-article .business-summary {
+      font-size: 16px;
+      color: #48443f;
+      margin: 0 0 22px;
+    }
+
+    .restaurant-article .detail {
+      border-top: 1px solid #ded9d1;
+      padding: 13px 0;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .restaurant-article .detail strong {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 4px;
+      color: #70675f;
+    }
+
+    .restaurant-article .call-link {
+      display: inline-block;
+      background: #171717;
+      color: #fff;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 12px;
+      align-self: flex-start;
+    }
+
+    .restaurant-article .article-intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #38332f;
+      max-width: 900px;
+      margin: 0 0 28px;
+    }
+
+    .restaurant-article h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin: 0 0 22px;
+    }
+
+    .restaurant-article h2 {
+      font-size: clamp(23px, 3vw, 31px);
+      line-height: 1.2;
+      letter-spacing: -.6px;
+      margin: 0 0 14px;
+    }
+
+    .restaurant-article h3 {
+      font-size: 19px;
+      line-height: 1.3;
+      margin: 22px 0 8px;
+    }
+
+    .restaurant-article p {
+      margin: 0 0 17px;
+    }
+
+    .restaurant-article .section-rule {
+      border: 0;
+      height: 1px;
+      background: #e7e2dc;
+      margin: 32px 0;
+    }
+
+    .restaurant-article .article-note {
+      background: #f5f3ef;
+      border-left: 4px solid #8b3b21;
+      padding: 21px 24px;
+      border-radius: 0 10px 10px 0;
+      margin: 26px 0;
+    }
+
+    .restaurant-article .article-note strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-article .article-list {
+      padding-left: 22px;
+      margin: 10px 0 20px;
+    }
+
+    .restaurant-article .article-list li {
+      padding: 4px 0;
+    }
+
+    .restaurant-article .closing-panel {
+      background: #171717;
+      color: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 34px;
+    }
+
+    .restaurant-article .closing-panel h2 {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .restaurant-article .closing-panel p {
+      color: #e4e0dc;
+    }
+
+    .restaurant-article .closing-details {
+      border-top: 1px solid #454545;
+      padding-top: 17px;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .restaurant-article .closing-details strong {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.3px;
+      color: #c9a58f;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-article .closing-details a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      .restaurant-article .business-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .restaurant-article .hero-image {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+
+      .restaurant-article .business-card {
+        padding: 23px;
+      }
+
+      .restaurant-article .closing-panel {
+        padding: 23px;
+      }
+
+      .restaurant-article .closing-details {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .restaurant-article .call-link {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div class="restaurant-article">
+
+    <section class="business-layout" aria-label="Dominic's Ristorante Italiano restaurant information">
+      <div>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"
+          alt="Italian pasta dish representing the classic homestyle Italian cuisine at Dominic's Ristorante Italiano in Cypress"
+          loading="eager"
+        />
+      </div>
+
+      <div class="business-card">
+        <p class="eyebrow">Cypress, California</p>
+        <h2 class="business-name">Dominic's Ristorante Italiano</h2>
+        <p class="business-summary">
+          A casual Italian restaurant serving classic homestyle dishes, with party trays, happy hour food, and cocktails for a variety of dining occasions. Vegan options are also among its listed features.
+        </p>
+
+        <div class="detail">
+          <strong>Address</strong>
+          9921 Walker St, Cypress, CA 90630
+        </div>
+
+        <div class="detail">
+          <strong>Phone</strong>
+          (714) 821-8080
+        </div>
+
+        <div class="detail">
+          <strong>Located In</strong>
+          Cypress Plaza
+        </div>
+
+        <div class="detail">
+          <strong>Dining Highlights</strong>
+          Classic Italian dishes · Party trays · Happy hour food · Cocktails
+        </div>
+
+        <a class="call-link" href="tel:+17148218080">Call the Restaurant</a>
+      </div>
+    </section>
+
+    <header>
+      <p class="eyebrow">Cypress Italian Dining Guide</p>
+      <h1>Dominic's Ristorante Italiano in Cypress: Homestyle Italian Food, Party Trays, and Happy Hour</h1>
+      <p class="article-intro">
+        When you're looking for Italian food in Cypress, <strong>Dominic's Ristorante Italiano</strong> offers a casual dining concept centered on classic dishes and homestyle flavors. Located in Cypress Plaza on Walker Street, the restaurant combines traditional Italian-inspired meals with practical options for gatherings, including party trays. Happy hour food, cocktails, and vegan options add further variety for guests planning a meal, a social outing, or food for a group.
+      </p>
+    </header>
+
+    <section>
+      <h2>Classic Italian Comfort Food at Dominic's Ristorante Italiano</h2>
+      <p>
+        Italian comfort food is often associated with familiar recipes, satisfying portions, and dishes that bring people together around the table. Dominic's Ristorante Italiano focuses on classic homestyle Italian fare, making it an option for diners who appreciate a casual meal built around traditional flavors.
+      </p>
+      <p>
+        From pasta-centered meals to other familiar Italian-inspired favorites, this style of dining can suit lunch, dinner, and relaxed get-togethers. For details about current entrees, ingredients, and daily offerings, contact the restaurant directly before visiting.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>A Casual Restaurant for Everyday Italian Dining</h2>
+      <p>
+        Not every Italian meal needs a formal occasion. A casual restaurant offers a convenient way to enjoy familiar food with family, meet friends for dinner, or take a break for a satisfying lunch. Dominic's Ristorante Italiano brings that approachable style to its Cypress location.
+      </p>
+      <p>
+        Its homestyle focus makes it a place to consider when you're in the mood for Italian-inspired comfort food without planning an elaborate night out. If you're visiting with a group or have specific menu preferences, a quick call can help you check current selections and seating details.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Party Trays for Gatherings and Special Occasions</h2>
+      <p>
+        Organizing food for a group can be easier when dishes are prepared to share. Party trays offer a practical format for family celebrations, office lunches, casual get-togethers, and events where individual ordering may not be convenient.
+      </p>
+      <p>
+        Dominic's Ristorante Italiano highlights party trays as part of its offering, making it worth contacting for group meal planning. Ask about available tray selections, serving sizes, ordering deadlines, pickup arrangements, and whether advance notice is needed for larger orders.
+      </p>
+
+      <div class="article-note">
+        <strong>Planning food for a group?</strong>
+        Call Dominic's Ristorante Italiano to confirm the current party tray menu, approximate servings, pricing, and lead time. Ordering details may vary depending on the dishes and quantity requested.
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Happy Hour Food and Cocktails in Cypress</h2>
+      <p>
+        Happy hour can make an informal meetup feel like a proper occasion, especially when food and drinks are part of the plan. Dominic's Ristorante Italiano lists happy hour food and great cocktails among its highlights, giving guests another reason to consider the restaurant for a relaxed social visit.
+      </p>
+      <p>
+        Whether you're meeting coworkers after the workday or catching up with friends, check which food specials and drinks are currently available. Happy hour schedules, qualifying menu items, prices, and beverage selections can change, so confirm the latest information directly with the restaurant.
+      </p>
+
+      <h3>What to Ask Before Visiting</h3>
+      <ul class="article-list">
+        <li>Which days and times does happy hour take place?</li>
+        <li>What food specials are currently available?</li>
+        <li>Which cocktails and other beverages are offered?</li>
+        <li>Are happy hour items available for dine-in only?</li>
+      </ul>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Vegan Options and Dietary Preferences</h2>
+      <p>
+        Sharing a meal is easier when diners have choices that suit different dietary needs. Dominic's Ristorante Italiano lists vegan options among its features, making it worth asking about plant-based selections when reviewing the menu.
+      </p>
+      <p>
+        Italian cuisine includes a range of ingredients, from vegetables and tomato-based sauces to pasta and herbs. However, pasta, sauces, and other preparations may contain eggs, dairy, or additional animal-derived ingredients. Guests following a vegan diet should verify each dish's ingredients and preparation methods with restaurant staff.
+      </p>
+
+      <h3>Questions for Vegan Diners</h3>
+      <ul class="article-list">
+        <li>Which menu items are currently fully vegan?</li>
+        <li>Are any pasta options made without eggs?</li>
+        <li>Can sauces or dishes be prepared without dairy or cheese?</li>
+        <li>Are ingredient and allergen details available upon request?</li>
+      </ul>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Italian Food for Family Meals and Group Dining</h2>
+      <p>
+        Classic Italian dishes work well for a range of occasions because they can be served as individual meals or shared as part of a larger spread. Dominic's Ristorante Italiano offers a combination of casual dining and party tray options that may be useful for guests arranging meals for different group sizes.
+      </p>
+      <p>
+        For an ordinary visit, reviewing the menu ahead of time can help everyone decide what they would like. For a celebration or group order, contacting the restaurant early gives you time to discuss quantities, available dishes, pricing, and pickup arrangements.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Find Dominic's Ristorante Italiano in Cypress Plaza</h2>
+      <p>
+        Dominic's Ristorante Italiano is located at 9921 Walker Street, Cypress, CA 90630, within Cypress Plaza. Its location makes it a convenient address to keep in mind when looking for classic Italian food in Cypress or arranging a party tray order.
+      </p>
+      <p>
+        Before your visit, call to confirm current business hours, menu availability, happy hour details, and vegan selections. If you're ordering for an event, ask about party tray options and how far in advance the restaurant needs your order.
+      </p>
+
+      <ul class="article-list">
+        <li><strong>For Italian food:</strong> Ask about current classic dishes and homestyle favorites.</li>
+        <li><strong>For events:</strong> Discuss party tray selections and serving sizes.</li>
+        <li><strong>For happy hour:</strong> Confirm current food specials and cocktail offerings.</li>
+        <li><strong>For vegan diners:</strong> Verify ingredients and preparation details.</li>
+        <li><strong>For planning ahead:</strong> Check operating hours and ordering requirements by phone.</li>
+      </ul>
+    </section>
+
+    <section class="closing-panel">
+      <p class="eyebrow" style="color:#c9a58f;">Cypress Restaurant Spotlight</p>
+      <h2>Enjoy Classic Italian Fare at Dominic's Ristorante Italiano</h2>
+      <p>
+        Dominic's Ristorante Italiano offers a casual Cypress dining option for classic homestyle Italian dishes, with party trays for group occasions and happy hour food and cocktails for social outings. Vegan options are also listed among its features. Contact the restaurant directly to confirm its current menu, specials, dietary accommodations, and party tray ordering details.
+      </p>
+
+      <div class="closing-details">
+        <div>
+          <strong>Restaurant</strong>
+          Dominic's Ristorante Italiano
+        </div>
+        <div>
+          <strong>Address</strong>
+          9921 Walker St<br />
+          Cypress, CA 90630
+        </div>
+        <div>
+          <strong>Phone</strong>
+          <a href="tel:+17148218080">(714) 821-8080</a>
+        </div>
+        <div>
+          <strong>Dining Highlights</strong>
+          Homestyle Italian food · Party trays<br />
+          Happy hour · Cocktails · Vegan options
+        </div>
+      </div>
+    </section>
+
+  </div>
+</article>
+
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
