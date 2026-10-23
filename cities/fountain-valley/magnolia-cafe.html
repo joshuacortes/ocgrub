@@ -1,0 +1,569 @@
+<!DOCTYPE html><html><head><title>Magnolia Café offers homemade breakfast, sandwiches, hamburgers, salads, seafood, local wine, beer and more for dine-in and take-out in the Fountain Valley, CA area.  - OCGrub</title><meta name="description" content="Everyday classics dished up from morning to night in an old-school space with counter seats at Magnolia Cafe in Fountain Valley, CA.
+
+"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+<article class="restaurant-article" style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+<style>
+.restaurant-article *{box-sizing:border-box}
+.business-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-bottom:36px;align-items:stretch}
+.hero-image{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;border-radius:16px}
+.business-card{background:#f5f3ef;padding:30px;border-radius:16px;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{color:#8b3b21;letter-spacing:2px;font-size:12px;font-weight:700;text-transform:uppercase;margin:0 0 12px}
+.business-name{font-size:clamp(28px,4vw,42px);line-height:1.12;letter-spacing:-1.2px;margin:0 0 16px;font-weight:800}
+.business-summary{font-size:16px;line-height:1.75;margin:0 0 20px;color:#393939}
+.detail{border-top:1px solid #d8d3ca;padding:13px 0}
+.detail-label{display:block;color:#68645e;text-transform:uppercase;font-size:11px;letter-spacing:1.4px;font-weight:700;margin-bottom:4px}
+.detail-value{font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.call-link{display:inline-block;background:#171717;color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:14px 20px;border-radius:7px;margin-top:14px;text-align:center;align-self:flex-start}
+.article-header{padding:8px 0 12px}
+.article-title{font-size:clamp(32px,5vw,54px);line-height:1.1;letter-spacing:-1.5px;margin:10px 0 20px;font-weight:800}
+.article-intro{font-size:18px;line-height:1.8;color:#383838;max-width:960px}
+.article-section{margin:34px 0}
+.article-section h2{font-size:clamp(23px,3vw,31px);line-height:1.2;letter-spacing:-.5px;margin:0 0 14px;font-weight:800}
+.section-rule{width:58px;height:4px;background:#8b3b21;border-radius:2px;margin:0 0 18px}
+.article-section p{font-size:16px;line-height:1.85;color:#393939;margin:0 0 15px}
+.article-list{padding-left:22px;margin:12px 0;color:#393939}
+.article-list li{padding:5px 0;line-height:1.7}
+.article-note{border-left:4px solid #8b3b21;background:#f5f3ef;padding:20px 22px;margin:24px 0;border-radius:0 10px 10px 0}
+.article-note p{margin:0}
+.closing-panel{background:#171717;color:#fff;padding:32px;border-radius:16px;margin-top:42px}
+.closing-panel h2{font-size:clamp(26px,4vw,38px);line-height:1.15;letter-spacing:-.7px;margin:0 0 14px}
+.closing-panel p{font-size:15px;line-height:1.8;color:#e3e3e3;margin:0 0 18px}
+.closing-details{display:grid;grid-template-columns:1fr 1fr;gap:18px;border-top:1px solid #484848;padding-top:20px;margin-top:22px}
+.closing-label{display:block;color:#bdbdbd;text-transform:uppercase;font-size:11px;letter-spacing:1.4px;font-weight:700;margin-bottom:5px}
+.closing-value{font-size:15px;font-weight:600;color:#fff}
+.closing-panel .call-link{background:#fff;color:#171717;margin-top:22px}
+@media(max-width:700px){.business-layout{grid-template-columns:1fr;gap:0}.hero-image{height:auto;aspect-ratio:16/10;min-height:0;border-radius:13px 13px 0 0}.business-card{padding:23px;border-radius:0 0 13px 13px}.business-name{font-size:34px}.call-link{width:100%;align-self:stretch}.article-intro{font-size:17px}.closing-panel{padding:24px}.closing-details{grid-template-columns:1fr;gap:15px}.article-section{margin:29px 0}}
+</style>
+
+<section class="business-layout" aria-label="Magnolia Café business information">
+<img class="hero-image" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" alt="A casual breakfast spread with eggs, toast, and fresh ingredients" />
+<div class="business-card">
+<p class="eyebrow">Classic American Cafe · Fountain Valley</p>
+<h2 class="business-name">Magnolia Café</h2>
+<p class="business-summary">An old-school neighborhood cafe serving everyday favorites from morning through evening, with a relaxed atmosphere and classic counter seating.</p>
+<div class="detail">
+<span class="detail-label">Address</span>
+<span class="detail-value">8988 Warner Ave, Fountain Valley, CA 92708</span>
+</div>
+<div class="detail">
+<span class="detail-label">Phone</span>
+<span class="detail-value">(714) 842-2844</span>
+</div>
+<div class="detail">
+<span class="detail-label">Dining Style</span>
+<span class="detail-value">Traditional cafe · Counter seating · Casual atmosphere</span>
+</div>
+<div class="detail">
+<span class="detail-label">Meal Occasions</span>
+<span class="detail-value">Breakfast · Lunch · Dinner</span>
+</div>
+<a class="call-link" href="tel:+17148422844">Call Magnolia Café · (714) 842-2844</a>
+</div>
+</section>
+
+<header class="article-header">
+<p class="eyebrow">Everyday Comfort Food</p>
+<h1 class="article-title">Magnolia Café in Fountain Valley: A Classic Neighborhood Cafe for Any Time of Day</h1>
+<p class="article-intro">Some restaurants have a familiar feel that makes them easy to return to, whether you're heading out for breakfast or looking for a relaxed meal later in the day. <strong>Magnolia Café in Fountain Valley, California</strong> brings that old-school cafe atmosphere to Warner Avenue, serving everyday classics in a setting that includes traditional counter seats. With a casual style built around familiar food and flexible meal times, it's the kind of place to keep in mind when you want a straightforward dining experience without the fuss.</p>
+</header>
+
+<section class="article-section">
+<h2>A Traditional Cafe Feel on Warner Avenue</h2>
+<div class="section-rule"></div>
+<p>Magnolia Café has the appeal of an old-fashioned neighborhood eatery, where the atmosphere is part of the experience. Counter seating adds a classic touch, bringing to mind the kind of cafe where guests can settle in for a meal without needing a special occasion to visit.</p>
+<p>Situated at 8988 Warner Avenue in Fountain Valley, the cafe offers a local dining option for people who appreciate familiar surroundings and an uncomplicated approach to eating out. Whether you're stopping in on your own or meeting someone for a casual meal, the traditional setup lends itself to an easygoing visit.</p>
+<p>For diners who prefer a comfortable cafe over a formal restaurant setting, Magnolia Café's old-school character is a central part of its appeal.</p>
+</section>
+
+<section class="article-section">
+<h2>Breakfast Classics to Start the Morning</h2>
+<div class="section-rule"></div>
+<p>Breakfast is one of those meals where familiar favorites often hit the spot. A relaxed cafe setting provides a place to take your time, enjoy a morning meal and get ready for the day ahead without turning breakfast into a complicated plan.</p>
+<p>Magnolia Café serves everyday classics, making it a name to consider when you're looking for a traditional breakfast outing in Fountain Valley. Whether you're meeting a friend early or fitting a meal into a busy morning, the cafe's casual style suits a range of routines.</p>
+<p>If you're planning a visit around a particular breakfast dish, call ahead to confirm current menu offerings and serving times before heading over.</p>
+</section>
+
+<section class="article-section">
+<h2>Casual Lunch for a Midday Break</h2>
+<div class="section-rule"></div>
+<p>A good lunch spot needs to fit comfortably into the middle of the day. Sometimes you want a full sit-down break; other times, you just need a familiar place to recharge before returning to your schedule. The everyday cafe format makes Magnolia Café worth considering for either kind of visit.</p>
+<p>Its location on Warner Avenue offers Fountain Valley diners a local option for a relaxed midday meal. The traditional atmosphere works well for catching up with a friend, taking a break from work or enjoying a casual meal without a formal dining agenda.</p>
+<p>For anyone coordinating lunch with others, checking the current menu and hours by phone can help make planning easier.</p>
+</section>
+
+<section class="article-section">
+<h2>Everyday Favorites for Dinner</h2>
+<div class="section-rule"></div>
+<p>Not every evening calls for an elaborate dinner. A familiar cafe can be a welcome choice when you want to sit down, enjoy a meal and keep the evening simple. Magnolia Café serves food from morning through night, making it an option to consider beyond the usual breakfast or lunch visit.</p>
+<p>That flexibility is useful when meal plans change or you want a casual place to eat without committing to a special-occasion setting. The focus on everyday classics gives the cafe a familiar, approachable identity for diners who prefer straightforward comfort food.</p>
+<p>Since menus and serving hours can change, contact Magnolia Café directly if you're planning a visit specifically for dinner.</p>
+</section>
+
+<section class="article-section">
+<h2>Counter Seating and Old-School Charm</h2>
+<div class="section-rule"></div>
+<p>Counter seats are a small detail that can give a cafe plenty of personality. They create a traditional dining layout and can be a comfortable choice for solo diners or anyone who enjoys the classic feel of sitting at a counter for a meal.</p>
+<p>At Magnolia Café, that old-school atmosphere helps distinguish the experience from more modern, fast-paced dining spaces. It suits the idea of a neighborhood cafe where a quick breakfast, a casual lunch or a simple dinner can all feel at home.</p>
+<p>If you have a seating preference or need a particular arrangement for your visit, it's a good idea to call and ask about current seating options.</p>
+</section>
+
+<section class="article-section">
+<h2>A Convenient Choice for Everyday Dining in Fountain Valley</h2>
+<div class="section-rule"></div>
+<p>Having a dependable local cafe in mind can make daily meal decisions easier. Magnolia Café's all-day approach gives guests flexibility when deciding where to eat, whether they're making breakfast plans, stepping away for lunch or looking for a relaxed dinner.</p>
+<p>The atmosphere also makes it suitable for a range of casual occasions. You might stop in for a meal by yourself, catch up with a friend or bring family along for an easy outing. The old-school cafe setting keeps the focus on enjoying familiar food in a comfortable environment.</p>
+<p>For local residents and visitors exploring Fountain Valley, Magnolia Café is an address worth remembering for traditional cafe-style dining.</p>
+</section>
+
+<section class="article-section">
+<h2>Planning Your Visit to Magnolia Café</h2>
+<div class="section-rule"></div>
+<p>Magnolia Café is located at <strong>8988 Warner Ave, Fountain Valley, CA 92708</strong>. If you're planning to visit during a specific meal period, especially when coordinating with friends or family, checking details before you go can help avoid surprises.</p>
+<p>Call the cafe to ask about current menu selections, hours and seating availability. This is particularly useful if you're planning around an early breakfast or an evening meal and want to confirm the cafe's current schedule.</p>
+<div class="article-note">
+<p><strong>Need details before stopping by?</strong> Contact Magnolia Café at <a href="tel:+17148422844" style="color:#8b3b21;font-weight:700;text-decoration:none;">(714) 842-2844</a> for current information about visiting and dining options.</p>
+</div>
+</section>
+
+<section class="article-section">
+<h2>Keep Magnolia Café in Mind for Your Next Casual Meal</h2>
+<div class="section-rule"></div>
+<p>With its traditional counter seating, old-school atmosphere and everyday cafe fare, Magnolia Café offers a straightforward approach to dining in Fountain Valley. It's a place to consider when you want a comfortable meal rather than a big production, with the flexibility to visit at different times of the day.</p>
+<p>Whether you're heading out for breakfast, taking a break at lunchtime or looking for a simple dinner, Magnolia Café brings the familiar feel of a classic neighborhood cafe to Warner Avenue. Give the restaurant a call to confirm the details and plan your visit.</p>
+</section>
+
+<section class="closing-panel">
+<p class="eyebrow" style="color:#d8a18c;">Classic Cafe Dining in Fountain Valley</p>
+<h2>Magnolia Café</h2>
+<p>For everyday cafe classics in an old-school setting, Magnolia Café offers a relaxed dining option in Fountain Valley. With counter seating and food served from morning through night, it's a place to consider for breakfast, lunch or a casual dinner.</p>
+<div class="closing-details">
+<div>
+<span class="closing-label">Address</span>
+<span class="closing-value">8988 Warner Ave<br />Fountain Valley, CA 92708</span>
+</div>
+<div>
+<span class="closing-label">Phone</span>
+<span class="closing-value">(714) 842-2844</span>
+</div>
+<div>
+<span class="closing-label">Dining Style</span>
+<span class="closing-value">Old-school cafe with counter seating</span>
+</div>
+<div>
+<span class="closing-label">Meal Times</span>
+<span class="closing-value">Morning through evening</span>
+</div>
+</div>
+<a class="call-link" href="tel:+17148422844">Call Magnolia Café</a>
+</section>
+</article>
+
+
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
