@@ -1,0 +1,810 @@
+<!DOCTYPE html><html><head><title>Pasta Connection - Where Costa Mesa Goes For A Bowl Of Pasta - OCGrub</title><meta name="description" content="Pasta Connection is a Costa Mesa spot for comforting, pasta-focused Italian meals."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+
+ <article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+  <style>
+    .restaurant-article * {
+      box-sizing: border-box;
+    }
+
+    .restaurant-article .business-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-bottom: 36px;
+    }
+
+    .restaurant-article .hero-image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .restaurant-article .business-card {
+      background: #f5f3ef;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .restaurant-article .eyebrow {
+      color: #8b3b21;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin: 0 0 10px;
+    }
+
+    .restaurant-article .business-name {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      letter-spacing: -1.3px;
+      margin: 0 0 14px;
+    }
+
+    .restaurant-article .business-summary {
+      font-size: 16px;
+      color: #48443f;
+      margin: 0 0 22px;
+    }
+
+    .restaurant-article .detail {
+      border-top: 1px solid #ded9d1;
+      padding: 13px 0;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .restaurant-article .detail strong {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 4px;
+      color: #70675f;
+    }
+
+    .restaurant-article .call-link {
+      display: inline-block;
+      background: #171717;
+      color: #fff;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 12px;
+      align-self: flex-start;
+    }
+
+    .restaurant-article .article-intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #38332f;
+      max-width: 900px;
+      margin: 0 0 28px;
+    }
+
+    .restaurant-article h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin: 0 0 22px;
+    }
+
+    .restaurant-article h2 {
+      font-size: clamp(23px, 3vw, 31px);
+      line-height: 1.2;
+      letter-spacing: -.6px;
+      margin: 0 0 14px;
+    }
+
+    .restaurant-article h3 {
+      font-size: 19px;
+      line-height: 1.3;
+      margin: 22px 0 8px;
+    }
+
+    .restaurant-article p {
+      margin: 0 0 17px;
+    }
+
+    .restaurant-article .section-rule {
+      border: 0;
+      height: 1px;
+      background: #e7e2dc;
+      margin: 32px 0;
+    }
+
+    .restaurant-article .article-note {
+      background: #f5f3ef;
+      border-left: 4px solid #8b3b21;
+      padding: 21px 24px;
+      border-radius: 0 10px 10px 0;
+      margin: 26px 0;
+    }
+
+    .restaurant-article .article-note strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-article .article-list {
+      padding-left: 22px;
+      margin: 10px 0 20px;
+    }
+
+    .restaurant-article .article-list li {
+      padding: 4px 0;
+    }
+
+    .restaurant-article .closing-panel {
+      background: #171717;
+      color: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 34px;
+    }
+
+    .restaurant-article .closing-panel h2 {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .restaurant-article .closing-panel p {
+      color: #e4e0dc;
+    }
+
+    .restaurant-article .closing-details {
+      border-top: 1px solid #454545;
+      padding-top: 17px;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .restaurant-article .closing-details strong {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.3px;
+      color: #c9a58f;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-article .closing-details a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      .restaurant-article .business-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .restaurant-article .hero-image {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+
+      .restaurant-article .business-card {
+        padding: 23px;
+      }
+
+      .restaurant-article .closing-panel {
+        padding: 23px;
+      }
+
+      .restaurant-article .closing-details {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .restaurant-article .call-link {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div class="restaurant-article">
+
+    <section class="business-layout" aria-label="Pasta Connection restaurant information">
+      <div>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=70"
+          alt="Fresh Italian pasta served at Pasta Connection in Costa Mesa, California"
+          loading="eager"
+        />
+      </div>
+
+      <div class="business-card">
+        <p class="eyebrow">Costa Mesa, California</p>
+        <h2 class="business-name">Pasta Connection</h2>
+        <p class="business-summary">
+          A welcoming Italian eatery known for fresh-made-daily pasta, salads, and a selection of Argentinean-inspired dishes. Enjoy a relaxed meal with outdoor seating, cocktails, and vegetarian options.
+        </p>
+
+        <div class="detail">
+          <strong>Address</strong>
+          1969 Harbor Blvd, Costa Mesa, CA 92627
+        </div>
+
+        <div class="detail">
+          <strong>Phone</strong>
+          (949) 646-3484
+        </div>
+
+        <div class="detail">
+          <strong>Highlights</strong>
+          Fresh pasta · Outdoor seating · Cocktails · Vegetarian options
+        </div>
+
+        <a class="call-link" href="tel:+19496463484">Call the Restaurant</a>
+      </div>
+    </section>
+
+    <header>
+      <p class="eyebrow">Costa Mesa Italian Dining Guide</p>
+      <h1>Pasta Connection in Costa Mesa: Fresh Pasta, Italian Favorites, and Argentinean Flavors</h1>
+      <p class="article-intro">
+        Searching for Italian food in Costa Mesa with a focus on freshly prepared pasta? <strong>Pasta Connection</strong> offers a homey dining experience built around classic pasta dishes made fresh daily, salads, and a few Argentinean specialties. Located on Harbor Boulevard, this neighborhood eatery is worth considering for a relaxed lunch or dinner, with outdoor seating and cocktail options adding to its casual appeal.
+      </p>
+    </header>
+
+    <section>
+      <h2>Fresh-Made-Daily Pasta at Pasta Connection</h2>
+      <p>
+        Fresh pasta brings a distinctive texture and character to an Italian meal. At Pasta Connection, the emphasis on pasta made fresh daily is a defining part of the restaurant's identity, appealing to diners who appreciate traditional Italian-inspired comfort food.
+      </p>
+      <p>
+        Pasta can be enjoyed in many ways, from simple preparations that let the noodles shine to dishes featuring sauces and complementary ingredients. If you have a particular pasta style in mind, call ahead to ask which dishes are currently available and whether daily selections have changed.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Classic Italian Comfort Food and Fresh Salads</h2>
+      <p>
+        Italian dining often balances satisfying main dishes with lighter options, and Pasta Connection brings both pasta and salads into its offering. A salad can be a refreshing start to a meal, a side for a pasta dish, or a practical choice for guests who prefer something lighter.
+      </p>
+      <p>
+        The combination makes the restaurant suitable for different appetites and occasions. Whether you're planning a sit-down meal or meeting someone for a casual bite, ask about the current menu to find the pasta dishes, salad options, and combinations that best suit your visit.
+      </p>
+
+      <div class="article-note">
+        <strong>Menu tip</strong>
+        Pasta and salad selections can vary. Contact Pasta Connection directly for current menu details, portion information, and any daily specials before placing an order.
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>A Taste of Italian and Argentinean Cuisine</h2>
+      <p>
+        One distinctive aspect of Pasta Connection is its mix of classic Italian dishes and a few Argentinean offerings. This combination gives diners an opportunity to explore a menu that extends beyond a single culinary tradition while keeping pasta and familiar comfort-food favorites at its center.
+      </p>
+      <p>
+        Argentinean cuisine has its own rich food culture, making the presence of Argentinean dishes an interesting addition to an Italian-focused meal. Guests curious about these selections can ask the staff which specialties are available and how they are prepared.
+      </p>
+      <p>
+        If you're dining with a group, this blend of influences can also be a useful conversation starter when deciding what everyone wants to order. Checking the menu in advance is the best way to understand the restaurant's current range of dishes.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Outdoor Seating for a Relaxed Costa Mesa Meal</h2>
+      <p>
+        Sometimes the setting matters just as much as the food. Outdoor seating offers another way to enjoy a meal, whether you're meeting a friend, sharing a casual lunch, or taking time over dinner. Pasta Connection lists outdoor seating among its service options, giving guests a feature to consider when planning their visit.
+      </p>
+      <p>
+        Seating availability can depend on the time of day, weather, and demand. If an outdoor table is important to your plans, call ahead to ask about availability and whether reservations or specific seating requests can be accommodated.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Cocktails and a Comfortable Dining Atmosphere</h2>
+      <p>
+        A cocktail can complement an evening meal or make a casual meet-up feel a little more special. Pasta Connection highlights its cocktails as part of the dining experience, making it an option for adults looking to pair food with a drink in a relaxed setting.
+      </p>
+      <p>
+        Whether you're planning a dinner out or simply want to unwind over Italian-inspired food, check with the restaurant for current beverage selections, availability, and pricing. Drink menus and offerings may change over time.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Vegetarian Options for More Flexible Dining</h2>
+      <p>
+        Dining out with different dietary preferences is easier when a restaurant offers choices beyond meat-centered dishes. Pasta Connection lists vegetarian options, which may make it worth exploring for guests looking for meat-free selections alongside its pasta and salad offerings.
+      </p>
+      <p>
+        Vegetarian preferences can differ, particularly when sauces, cheese, stocks, or other ingredients are involved. If you follow a specific diet, explain your requirements to the restaurant and confirm ingredients and preparation methods directly with the staff.
+      </p>
+
+      <h3>Helpful Questions for Vegetarian Diners</h3>
+      <ul class="article-list">
+        <li>Which pasta dishes are currently available without meat?</li>
+        <li>Are there vegetarian sauces or salad combinations to choose from?</li>
+        <li>Can dishes be adjusted to accommodate dietary preferences?</li>
+        <li>Are ingredient or allergen details available upon request?</li>
+      </ul>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Planning Your Visit to Pasta Connection on Harbor Boulevard</h2>
+      <p>
+        Convenient planning starts with knowing what matters most for your meal. Pasta Connection is located at 1969 Harbor Boulevard in Costa Mesa, making it easy to identify when arranging a visit. Calling ahead can help you check operating hours, current menu offerings, seating availability, and any details that may affect your plans.
+      </p>
+      <p>
+        For a first visit, consider asking about the day's fresh pasta options and the Argentinean dishes on the menu. If you're visiting with a vegetarian diner or hoping to sit outdoors, mentioning those preferences when you call can help you get the information you need before arriving.
+      </p>
+
+      <ul class="article-list">
+        <li><strong>Check the menu:</strong> Ask which fresh pasta dishes and salads are currently offered.</li>
+        <li><strong>Explore the specialties:</strong> Find out which Argentinean-inspired dishes are available.</li>
+        <li><strong>Ask about outdoor tables:</strong> Confirm seating availability before heading over.</li>
+        <li><strong>Discuss dietary needs:</strong> Verify vegetarian ingredients and possible modifications.</li>
+        <li><strong>Confirm hours and prices:</strong> Call the restaurant for the latest information.</li>
+      </ul>
+    </section>
+
+    <section class="closing-panel">
+      <p class="eyebrow" style="color:#c9a58f;">Costa Mesa Restaurant Spotlight</p>
+      <h2>Discover Fresh Pasta and Italian Favorites at Pasta Connection</h2>
+      <p>
+        For Italian food in Costa Mesa, Pasta Connection brings together fresh-made-daily pasta, salads, and selected Argentinean dishes in a homey setting. Outdoor seating, cocktails, and vegetarian options round out the features guests can ask about when planning a visit. Contact the restaurant directly to confirm its current menu, hours, and seating availability.
+      </p>
+
+      <div class="closing-details">
+        <div>
+          <strong>Restaurant</strong>
+          Pasta Connection
+        </div>
+        <div>
+          <strong>Address</strong>
+          1969 Harbor Blvd<br />
+          Costa Mesa, CA 92627
+        </div>
+        <div>
+          <strong>Phone</strong>
+          <a href="tel:+19496463484">(949) 646-3484</a>
+        </div>
+        <div>
+          <strong>Dining Highlights</strong>
+          Fresh pasta · Salads<br />
+          Argentinean dishes · Outdoor seating
+        </div>
+      </div>
+    </section>
+
+  </div>
+</article>
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
