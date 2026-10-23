@@ -1,0 +1,805 @@
+<!DOCTYPE html><html><head><title>Chabai Thai - Bold Thai Flavors Await In Cypress - OCGrub</title><meta name="description" content="Chaba Thai is a Cypress stop for fragrant, flavorful Thai dishes.
+
+
+"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+  <style>
+    .restaurant-article * { box-sizing: border-box; }
+
+    .business-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      margin-bottom: 36px;
+      align-items: stretch;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .business-card {
+      background: #f5f3ef;
+      padding: 30px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      color: #8b3b21;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+
+    .business-name {
+      font-size: clamp(28px,4vw,42px);
+      line-height: 1.12;
+      letter-spacing: -1.2px;
+      margin: 0 0 18px;
+    }
+
+    .business-description {
+      font-size: 16px;
+      color: #444;
+      margin: 0 0 22px;
+    }
+
+    .detail {
+      border-top: 1px solid #d8d3ca;
+      padding: 13px 0;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-label {
+      display: block;
+      color: #777067;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .call-link {
+      display: inline-block;
+      background: #171717;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 6px;
+      margin-top: 18px;
+      width: fit-content;
+    }
+
+    .article-intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #373737;
+      max-width: 950px;
+      margin: 0 0 32px;
+    }
+
+    .article-title {
+      font-size: clamp(32px,5vw,54px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin: 0 0 22px;
+    }
+
+    .article-section { margin: 34px 0; }
+
+    .article-section h2 {
+      font-size: clamp(23px,3vw,31px);
+      line-height: 1.25;
+      letter-spacing: -.5px;
+      margin: 0 0 14px;
+    }
+
+    .article-section h3 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin: 22px 0 8px;
+    }
+
+    .section-rule {
+      width: 58px;
+      height: 4px;
+      background: #8b3b21;
+      border-radius: 4px;
+      margin: 0 0 18px;
+    }
+
+    .article-section p {
+      margin: 0 0 15px;
+      color: #393939;
+    }
+
+    .article-list {
+      padding-left: 22px;
+      margin: 12px 0 18px;
+      color: #393939;
+    }
+
+    .article-list li { padding: 4px 0; }
+
+    .article-note {
+      background: #f5f3ef;
+      border-left: 4px solid #8b3b21;
+      padding: 20px 22px;
+      margin: 28px 0;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .article-note strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .closing-panel {
+      background: #171717;
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 42px;
+    }
+
+    .closing-panel .eyebrow { color: #e5a58c; }
+
+    .closing-panel h2 {
+      font-size: clamp(26px,4vw,38px);
+      line-height: 1.2;
+      letter-spacing: -.7px;
+      margin: 0 0 14px;
+    }
+
+    .closing-panel p {
+      color: #e0e0e0;
+      margin: 0 0 22px;
+    }
+
+    .closing-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      border-top: 1px solid #454545;
+      padding-top: 20px;
+    }
+
+    .closing-details .detail-label { color: #b7b7b7; }
+
+    .closing-details a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .closing-panel .call-link {
+      background: #fff;
+      color: #171717;
+    }
+
+    @media (max-width:700px) {
+      .business-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .hero-image {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+
+      .business-card { padding: 23px; }
+      .closing-panel { padding: 23px; }
+
+      .closing-details {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .call-link { width: 100%; }
+      .article-intro { font-size: 17px; }
+    }
+  </style>
+
+  <div class="restaurant-article">
+
+    <section class="business-layout">
+      <div>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1200&q=70"
+          alt="Thai-inspired meal representing Chaba Thai in Cypress, California"
+          loading="eager"
+        />
+      </div>
+
+      <div class="business-card">
+        <p class="eyebrow">Thai Cuisine · Cypress, California</p>
+        <h2 class="business-name">Chaba Thai</h2>
+        <p class="business-description">
+          A relaxed Thai restaurant serving generous portions of traditional curries and noodle dishes, with vegetarian options available.
+        </p>
+
+        <div class="detail">
+          <span class="detail-label">Address</span>
+          5111 Ball Rd, Cypress, CA 90630
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Phone</span>
+          <a href="tel:+17147236966" style="color:#171717;text-decoration:none;">(714) 723-6966</a>
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Dining Features</span>
+          Vegetarian options · High chairs
+        </div>
+
+        <a class="call-link" href="tel:+17147236966">CALL CHABA THAI</a>
+      </div>
+    </section>
+
+    <header>
+      <p class="eyebrow">Cypress Restaurant Guide</p>
+      <h1 class="article-title">Chaba Thai in Cypress, CA: Authentic Thai Curries, Noodles and Generous Portions</h1>
+      <p class="article-intro">
+        For anyone searching for Thai food in Cypress, California, <strong>Chaba Thai</strong> offers a relaxed dining experience centered on traditional curries, noodle dishes, and satisfying portions. Located on Ball Road, this casual Thai eatery is an option for diners who enjoy aromatic flavors, comforting meals, and a menu inspired by Thai cuisine. With vegetarian options and high chairs listed among its features, Chaba Thai can also be considered when choosing a place to dine with different preferences in mind.
+      </p>
+    </header>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Enjoy Thai Cuisine at Chaba Thai in Cypress</h2>
+      <p>
+        Thai cooking brings together fragrant herbs, spices, savory ingredients, and a balance of flavor that can make each dish distinctive. At Chaba Thai, the focus on curries and noodles gives guests a chance to explore familiar Thai food favorites in a casual setting.
+      </p>
+      <p>
+        Whether you're planning a meal during the week or looking for somewhere to sit down and enjoy a flavorful dish, Chaba Thai is a local option worth considering. Its relaxed atmosphere pairs naturally with the kind of hearty Thai cooking that appeals to diners seeking a satisfying lunch or dinner.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Thai Curries Packed with Flavor</h2>
+      <p>
+        Curry is one of the best-known parts of Thai cuisine, appreciated for its aromatic ingredients and varied flavor profiles. Depending on the recipe, Thai curries may feature fragrant spices, coconut-based sauces, vegetables, and other ingredients that create a rich and comforting meal.
+      </p>
+      <p>
+        For guests visiting Chaba Thai, curries are a natural place to start when exploring the restaurant's Thai-inspired offerings. If you have a preferred spice level or particular ingredients in mind, ask the restaurant which curry options are currently available and whether the kitchen can accommodate your preferences.
+      </p>
+
+      <div class="article-note">
+        <strong>Helpful ordering tip</strong>
+        Spice levels and ingredients can differ by dish. Contact Chaba Thai to confirm available curries and discuss your preferred level of heat before ordering.
+      </div>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Noodle Dishes for a Comforting Thai Meal</h2>
+      <p>
+        Noodles are another staple of Thai dining, offering a versatile base for sauces, vegetables, and a range of savory flavors. From stir-fried preparations to saucier noodle dishes, different styles can provide distinct textures and tastes while remaining filling and approachable.
+      </p>
+      <p>
+        Chaba Thai's emphasis on noodles makes it a place to consider for diners who want a hearty meal with classic Thai influences. If you have a favorite noodle style or need to check for specific ingredients, call ahead to learn more about the current menu.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Generous Portions for a Satisfying Dining Experience</h2>
+      <p>
+        A filling meal can make a casual restaurant visit especially appealing, and Chaba Thai is described as serving generous portions. This makes the restaurant worth considering when you're arriving hungry or want a substantial plate built around Thai curry or noodles.
+      </p>
+      <p>
+        Portion sizes and menu details may vary by dish, so check with the restaurant if you're ordering for a group or planning to share several items. Calling ahead can also help you confirm current offerings and any takeout arrangements that may be available.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Vegetarian Options at Chaba Thai</h2>
+      <p>
+        Vegetarian options give diners more flexibility when choosing a meal, especially when people at the same table have different dietary preferences. Thai cuisine often makes use of vegetables, herbs, noodles, and flavorful sauces, although ingredients and preparation methods can differ from one dish to another.
+      </p>
+      <p>
+        If you follow a vegetarian diet, contact Chaba Thai to identify suitable menu choices and confirm whether sauces, broths, or other ingredients meet your needs. Guests with food allergies or strict dietary requirements should explain those restrictions to the restaurant before placing an order.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>A Casual Thai Restaurant for Family Dining</h2>
+      <p>
+        Chaba Thai lists high chairs among its service features, which can be useful for families dining with young children. Its casual style makes it an option to consider for an informal meal when you want Thai food in a relaxed environment.
+      </p>
+      <p>
+        Families planning a visit may want to call in advance to ask about seating and confirm any details that could make dining with children easier. Checking current operating hours before leaving home is also a practical way to plan your meal.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Why Visit Chaba Thai in Cypress?</h2>
+      <p>
+        Chaba Thai brings several appealing features together for people exploring local Thai restaurants. Its focus on curry and noodle dishes, generous portions, and listed vegetarian and family-friendly options gives diners a useful starting point when deciding where to eat in Cypress.
+      </p>
+
+      <ul class="article-list">
+        <li><strong>Thai curry dishes:</strong> A chance to explore flavorful curry-based meals.</li>
+        <li><strong>Noodle favorites:</strong> Comforting options inspired by Thai cooking traditions.</li>
+        <li><strong>Generous portions:</strong> A satisfying choice for diners looking for a hearty meal.</li>
+        <li><strong>Vegetarian options:</strong> Choices to ask about when planning a meat-free meal.</li>
+        <li><strong>High chairs:</strong> A helpful feature for families with young children.</li>
+        <li><strong>Convenient Cypress location:</strong> Situated on Ball Road in Cypress, California.</li>
+      </ul>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Plan Your Visit to Chaba Thai on Ball Road</h2>
+      <p>
+        Chaba Thai is located at 5111 Ball Road, Cypress, CA 90630. Whether you're interested in curry, noodles, or exploring Thai cuisine with family, it is a local dining option to consider for a casual meal.
+      </p>
+      <p>
+        Before visiting, call to confirm current business hours, menu availability, vegetarian selections, and seating details. A quick conversation with the restaurant can help you plan around dietary preferences and make sure the dishes you're interested in are available.
+      </p>
+    </section>
+
+    <section class="closing-panel">
+      <p class="eyebrow">Chaba Thai · Cypress, CA</p>
+      <h2>Explore Thai Curries and Noodles at Chaba Thai</h2>
+      <p>
+        For Thai cuisine in Cypress, Chaba Thai offers a casual setting with generous portions, curry dishes, and noodles. Vegetarian options and high chairs add flexibility for different dining needs. Contact the restaurant directly for current menu information and visit details.
+      </p>
+
+      <div class="closing-details">
+        <div>
+          <span class="detail-label">Business Name</span>
+          <strong>Chaba Thai</strong>
+        </div>
+        <div>
+          <span class="detail-label">Address</span>
+          5111 Ball Rd<br />
+          Cypress, CA 90630
+        </div>
+        <div>
+          <span class="detail-label">Phone</span>
+          <a href="tel:+17147236966">(714) 723-6966</a>
+        </div>
+        <div>
+          <span class="detail-label">Known For</span>
+          Thai curries, noodle dishes, and generous portions
+        </div>
+      </div>
+
+      <a class="call-link" href="tel:+17147236966">CALL (714) 723-6966</a>
+    </section>
+
+  </div>
+</article>
+
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
