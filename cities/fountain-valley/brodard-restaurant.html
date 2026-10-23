@@ -1,0 +1,816 @@
+<!DOCTYPE html><html><head><title>Brodard Restaurant - Anaheim's Vietnamese Favorite Worth The Wait - OCGrub</title><meta name="description" content="Brodard Restaurant serves fresh, flavorful Vietnamese dishes that keep Anaheim diners coming back."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+  <style>
+    .restaurant-article * { box-sizing: border-box; }
+
+    .business-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      margin-bottom: 36px;
+      align-items: stretch;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .business-card {
+      background: #f5f3ef;
+      padding: 30px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      color: #8b3b21;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+
+    .business-name {
+      font-size: clamp(28px,4vw,42px);
+      line-height: 1.12;
+      letter-spacing: -1.2px;
+      margin: 0 0 18px;
+    }
+
+    .business-description {
+      font-size: 16px;
+      color: #444;
+      margin: 0 0 22px;
+    }
+
+    .detail {
+      border-top: 1px solid #d8d3ca;
+      padding: 13px 0;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-label {
+      display: block;
+      color: #777067;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .call-link {
+      display: inline-block;
+      background: #171717;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 6px;
+      margin-top: 18px;
+      width: fit-content;
+    }
+
+    .article-intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #373737;
+      max-width: 950px;
+      margin: 0 0 32px;
+    }
+
+    .article-title {
+      font-size: clamp(32px,5vw,54px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin: 0 0 22px;
+    }
+
+    .article-section { margin: 34px 0; }
+
+    .article-section h2 {
+      font-size: clamp(23px,3vw,31px);
+      line-height: 1.25;
+      letter-spacing: -.5px;
+      margin: 0 0 14px;
+    }
+
+    .article-section h3 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin: 22px 0 8px;
+    }
+
+    .section-rule {
+      width: 58px;
+      height: 4px;
+      background: #8b3b21;
+      border-radius: 4px;
+      margin: 0 0 18px;
+    }
+
+    .article-section p {
+      margin: 0 0 15px;
+      color: #393939;
+    }
+
+    .article-list {
+      padding-left: 22px;
+      margin: 12px 0 18px;
+      color: #393939;
+    }
+
+    .article-list li { padding: 4px 0; }
+
+    .article-note {
+      background: #f5f3ef;
+      border-left: 4px solid #8b3b21;
+      padding: 20px 22px;
+      margin: 28px 0;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .article-note strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .closing-panel {
+      background: #171717;
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 42px;
+    }
+
+    .closing-panel .eyebrow { color: #e5a58c; }
+
+    .closing-panel h2 {
+      font-size: clamp(26px,4vw,38px);
+      line-height: 1.2;
+      letter-spacing: -.7px;
+      margin: 0 0 14px;
+    }
+
+    .closing-panel p {
+      color: #e0e0e0;
+      margin: 0 0 22px;
+    }
+
+    .closing-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      border-top: 1px solid #454545;
+      padding-top: 20px;
+    }
+
+    .closing-details .detail-label { color: #b7b7b7; }
+
+    .closing-details a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .closing-panel .call-link {
+      background: #fff;
+      color: #171717;
+    }
+
+    @media (max-width:700px) {
+      .business-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .hero-image {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+
+      .business-card { padding: 23px; }
+      .closing-panel { padding: 23px; }
+
+      .closing-details {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .call-link { width: 100%; }
+      .article-intro { font-size: 17px; }
+    }
+  </style>
+
+  <div class="restaurant-article">
+
+    <section class="business-layout">
+      <div>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1200&q=70"
+          alt="Vietnamese-inspired cuisine representing Brodard Restaurant in Fountain Valley, California"
+          loading="eager"
+        />
+      </div>
+
+      <div class="business-card">
+        <p class="eyebrow">Vietnamese Cuisine · Fountain Valley, CA</p>
+        <h2 class="business-name">Brodard Restaurant</h2>
+        <p class="business-description">
+          Modern Vietnamese cooking with Asian-fusion influences, specialty cocktails, and a sleek contemporary dining atmosphere.
+        </p>
+
+        <div class="detail">
+          <span class="detail-label">Address</span>
+          16105 Brookhurst St, Fountain Valley, CA 92708
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Phone</span>
+          <a href="tel:+16572474401" style="color:#171717;text-decoration:none;">(657) 247-4401</a>
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Located In</span>
+          Fountain Valley Town Center
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Dining Features</span>
+          Vegetarian options · High chairs · Dogs allowed inside
+        </div>
+
+        <a class="call-link" href="tel:+16572474401">CALL BRODARD RESTAURANT</a>
+      </div>
+    </section>
+
+    <header>
+      <p class="eyebrow">Fountain Valley Restaurant Guide</p>
+      <h1 class="article-title">Brodard Restaurant in Fountain Valley, CA: Modern Vietnamese Cuisine and Asian-Fusion Dining</h1>
+      <p class="article-intro">
+        <strong>Brodard Restaurant</strong> brings a contemporary take on Vietnamese dining to Fountain Valley, pairing Vietnamese-inspired cooking with touches of broader Asian-fusion cuisine. Located inside Fountain Valley Town Center on Brookhurst Street, the restaurant offers a setting for guests who want something more distinctive than an everyday meal out. Specialty cocktails add another dimension to the experience, while vegetarian options, high chairs, and indoor dog-friendly dining provide useful details for planning a visit.
+      </p>
+    </header>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>A Contemporary Approach to Vietnamese Food</h2>
+      <p>
+        Vietnamese cuisine is known for its fresh herbs, lively sauces, layered textures, and balance between savory, bright, and aromatic flavors. At Brodard Restaurant, that culinary foundation meets a modern presentation and Asian-fusion influences, creating a dining experience that feels suited to both casual outings and meals worth lingering over.
+      </p>
+      <p>
+        The appeal is in the mix of familiar Vietnamese flavors and a more contemporary restaurant setting. Whether you're already a fan of Vietnamese cooking or looking to explore it further, Brodard offers a place to discover dishes that draw on tradition while embracing a modern dining style.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Vietnamese Favorites with an Asian-Fusion Twist</h2>
+      <p>
+        Fusion cooking gives chefs room to bring different ingredients, techniques, and presentations together. Vietnamese food provides a natural starting point for this approach, with its use of fresh produce, herbs, noodles, and sauces that can complement a wide range of flavors.
+      </p>
+      <p>
+        At Brodard Restaurant, the Asian-fusion influence adds another layer to the overall dining concept. It makes the restaurant worth considering for diners who enjoy trying new combinations while still appreciating the flavors associated with Vietnamese cuisine. For the most accurate information about current dishes and ingredients, check the menu directly with the restaurant.
+      </p>
+
+      <div class="article-note">
+        <strong>Planning what to order?</strong>
+        Call Brodard Restaurant to ask about current menu selections, ingredient details, and available options for your dietary preferences.
+      </div>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Specialty Cocktails for a Complete Night Out</h2>
+      <p>
+        Specialty cocktails bring a social element to the Brodard Restaurant experience. Whether you're meeting friends, enjoying a date, or catching up over dinner, a thoughtfully prepared drink can complement the meal and give the occasion a more leisurely feel.
+      </p>
+      <p>
+        Guests interested in the beverage selection can ask about current cocktails and available nonalcoholic alternatives when contacting the restaurant. Checking ahead is especially helpful if you have a particular drink in mind or are coordinating a visit with a group.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>A Sleek Setting for Casual Dining and Special Plans</h2>
+      <p>
+        Brodard's contemporary atmosphere gives it flexibility for different occasions. It can be a place to catch up with friends, share a meal with family, or plan an evening centered on Vietnamese food and cocktails. The modern setting offers a different mood from a purely traditional dining room without losing sight of the food itself.
+      </p>
+      <p>
+        Its location at Fountain Valley Town Center also makes it straightforward to include in a local outing. If you're visiting with a larger group or have a specific seating preference, contact the restaurant ahead of time to discuss arrangements and confirm current hours.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Vegetarian Options at Brodard Restaurant</h2>
+      <p>
+        Vegetarian choices can make a restaurant easier to enjoy when everyone at the table has different preferences. Vietnamese cooking often uses vegetables, herbs, rice, and noodles in a variety of preparations, though the ingredients in sauces and broths can differ from dish to dish.
+      </p>
+      <p>
+        Brodard Restaurant lists vegetarian options among its service features. If you follow a vegetarian diet, ask the staff which dishes are suitable and whether any adjustments are possible. Anyone managing a food allergy or a strict dietary restriction should explain their needs directly to the restaurant before ordering.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Family-Friendly Details and Indoor Dog-Friendly Dining</h2>
+      <p>
+        A few practical amenities can make a difference when choosing where to eat. Brodard Restaurant lists high chairs for guests dining with young children, giving families another detail to consider when planning a meal.
+      </p>
+      <p>
+        The restaurant also lists dogs as allowed inside. If you're hoping to bring your dog, contact Brodard before arriving to confirm its current pet policy, any seating restrictions, and whether advance arrangements are recommended. Policies can vary depending on circumstances, so checking directly is the safest way to plan.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>What to Know Before Visiting Brodard in Fountain Valley</h2>
+      <p>
+        Brodard Restaurant combines modern Vietnamese cuisine, Asian-fusion influences, and specialty cocktails in one contemporary setting. Its listed dining features also make it useful to consider when your group includes vegetarian diners, young children, or guests hoping to bring a dog.
+      </p>
+
+      <ul class="article-list">
+        <li><strong>Vietnamese cuisine:</strong> A modern take on flavors rooted in Vietnamese cooking.</li>
+        <li><strong>Asian-fusion influences:</strong> A broader culinary approach for guests who enjoy variety.</li>
+        <li><strong>Specialty cocktails:</strong> Beverage options suited to a relaxed meal or evening out.</li>
+        <li><strong>Vegetarian options:</strong> Choices to confirm when planning a meat-free meal.</li>
+        <li><strong>High chairs:</strong> A helpful amenity for families with young children.</li>
+        <li><strong>Dogs allowed inside:</strong> Check the current policy and seating details before bringing a pet.</li>
+        <li><strong>Town Center location:</strong> Found on Brookhurst Street in Fountain Valley.</li>
+      </ul>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Find Brodard Restaurant at Fountain Valley Town Center</h2>
+      <p>
+        Brodard Restaurant is located at 16105 Brookhurst St, Fountain Valley, CA 92708, inside Fountain Valley Town Center. Its contemporary atmosphere and Vietnamese-inspired menu make it an option for guests looking to try modern Vietnamese food with Asian-fusion touches.
+      </p>
+      <p>
+        Before heading over, call to confirm opening hours, current menu choices, and any seating or dietary questions. If you're visiting with children or bringing a dog, it is also worth checking the restaurant's current arrangements in advance.
+      </p>
+    </section>
+
+    <section class="closing-panel">
+      <p class="eyebrow">Brodard Restaurant · Fountain Valley, CA</p>
+      <h2>Experience Modern Vietnamese Dining at Brodard Restaurant</h2>
+      <p>
+        With Vietnamese-inspired cuisine, Asian-fusion touches, and specialty cocktails, Brodard Restaurant offers a contemporary place to enjoy a meal in Fountain Valley. Vegetarian options, high chairs, and its listed indoor dog-friendly policy provide additional details to consider when planning your visit.
+      </p>
+
+      <div class="closing-details">
+        <div>
+          <span class="detail-label">Business Name</span>
+          <strong>Brodard Restaurant</strong>
+        </div>
+        <div>
+          <span class="detail-label">Address</span>
+          16105 Brookhurst St<br />
+          Fountain Valley, CA 92708
+        </div>
+        <div>
+          <span class="detail-label">Phone</span>
+          <a href="tel:+16572474401">(657) 247-4401</a>
+        </div>
+        <div>
+          <span class="detail-label">Located In</span>
+          Fountain Valley Town Center
+        </div>
+        <div>
+          <span class="detail-label">Cuisine & Drinks</span>
+          Modern Vietnamese, Asian-fusion dishes, specialty cocktails
+        </div>
+        <div>
+          <span class="detail-label">Dining Features</span>
+          Vegetarian options, high chairs, dogs allowed inside
+        </div>
+      </div>
+
+      <a class="call-link" href="tel:+16572474401">CALL (657) 247-4401</a>
+    </section>
+
+  </div>
+</article>
+
+
+
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
