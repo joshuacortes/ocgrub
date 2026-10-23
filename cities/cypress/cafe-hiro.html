@@ -1,0 +1,784 @@
+<!DOCTYPE html><html><head><title>Cafe Hiro, A Japanese Cafe Find Tucked Into Cypress - OCGrub</title><meta name="description" content="Cafe Hiro brings a relaxed, Japanese-inspired cafe meal to Cypress.
+
+"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+  <style>
+    .restaurant-article * { box-sizing: border-box; }
+
+    .business-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      margin-bottom: 36px;
+      align-items: stretch;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .business-card {
+      background: #f5f3ef;
+      padding: 30px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      color: #8b3b21;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+
+    .business-name {
+      font-size: clamp(28px,4vw,42px);
+      line-height: 1.12;
+      letter-spacing: -1.2px;
+      margin: 0 0 18px;
+    }
+
+    .business-description {
+      font-size: 16px;
+      color: #444;
+      margin: 0 0 22px;
+    }
+
+    .detail {
+      border-top: 1px solid #d8d3ca;
+      padding: 13px 0;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-label {
+      display: block;
+      color: #777067;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .call-link {
+      display: inline-block;
+      background: #171717;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 6px;
+      margin-top: 18px;
+      width: fit-content;
+    }
+
+    .article-intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #373737;
+      max-width: 950px;
+      margin: 0 0 32px;
+    }
+
+    .article-title {
+      font-size: clamp(32px,5vw,54px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin: 0 0 22px;
+    }
+
+    .article-section { margin: 34px 0; }
+
+    .article-section h2 {
+      font-size: clamp(23px,3vw,31px);
+      line-height: 1.25;
+      letter-spacing: -.5px;
+      margin: 0 0 14px;
+    }
+
+    .article-section h3 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin: 22px 0 8px;
+    }
+
+    .section-rule {
+      width: 58px;
+      height: 4px;
+      background: #8b3b21;
+      border-radius: 4px;
+      margin: 0 0 18px;
+    }
+
+    .article-section p {
+      margin: 0 0 15px;
+      color: #393939;
+    }
+
+    .article-list {
+      padding-left: 22px;
+      margin: 12px 0 18px;
+      color: #393939;
+    }
+
+    .article-list li { padding: 4px 0; }
+
+    .article-note {
+      background: #f5f3ef;
+      border-left: 4px solid #8b3b21;
+      padding: 20px 22px;
+      margin: 28px 0;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .article-note strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .closing-panel {
+      background: #171717;
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 42px;
+    }
+
+    .closing-panel .eyebrow { color: #e5a58c; }
+
+    .closing-panel h2 {
+      font-size: clamp(26px,4vw,38px);
+      line-height: 1.2;
+      letter-spacing: -.7px;
+      margin: 0 0 14px;
+    }
+
+    .closing-panel p {
+      color: #e0e0e0;
+      margin: 0 0 22px;
+    }
+
+    .closing-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      border-top: 1px solid #454545;
+      padding-top: 20px;
+    }
+
+    .closing-details .detail-label { color: #b7b7b7; }
+
+    .closing-panel .call-link {
+      background: #fff;
+      color: #171717;
+    }
+
+    @media (max-width:700px) {
+      .business-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .hero-image {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+
+      .business-card { padding: 23px; }
+      .closing-panel { padding: 23px; }
+
+      .closing-details {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .call-link { width: 100%; }
+      .article-intro { font-size: 17px; }
+    }
+  </style>
+
+  <div class="restaurant-article">
+
+    <section class="business-layout">
+      <div>
+        <img
+          class="hero-image"
+          src="https://unsplash.com/photos/YiBV-s9nZfQ/download?force=true&w=1200"
+          alt="Fusion dining atmosphere representing Cafe Hiro in Cypress, California"
+          loading="eager"
+        />
+      </div>
+
+      <div class="business-card">
+        <p class="eyebrow">Japanese-Italian Fusion · Cypress, California</p>
+        <h2 class="business-name">Cafe Hiro</h2>
+        <p class="business-description">
+          A casual Cypress eatery bringing Japanese influences and Italian-inspired cooking together in an inventive fusion dining experience.
+        </p>
+
+        <div class="detail">
+          <span class="detail-label">Address</span>
+          10509 Valley View St, Cypress, CA 90630
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Dining Features</span>
+          Vegetarian options · High chairs
+        </div>
+
+        <div class="detail">
+          <span class="detail-label">Restaurant Style</span>
+          Casual dining · Japanese-Italian fusion
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <p class="eyebrow">Cypress Restaurant Guide</p>
+      <h1 class="article-title">Cafe Hiro in Cypress, CA: Japanese-Italian Fusion with a Creative Twist</h1>
+      <p class="article-intro">
+        At <strong>Cafe Hiro in Cypress, California</strong>, Japanese and Italian culinary influences meet in a dining concept that puts a fresh spin on familiar entrees. Located on Valley View Street, this casual restaurant is known for blending ideas from two distinct food traditions, offering an alternative for diners interested in something beyond a conventional Japanese or Italian menu. Vegetarian options and high chairs also make it worth considering for a range of dining needs.
+      </p>
+    </header>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Discover Japanese-Italian Fusion at Cafe Hiro</h2>
+      <p>
+        Fusion cuisine brings different cooking traditions into conversation, creating dishes that borrow inspiration from more than one culinary culture. Cafe Hiro embraces this approach by pairing Japanese influences with Italian-inspired plates, giving familiar entree styles a distinctive direction.
+      </p>
+      <p>
+        This combination is part of what makes Cafe Hiro an interesting dining destination in Cypress. Guests who enjoy exploring new flavor combinations can find a different perspective on classic dishes, while the casual atmosphere keeps the experience approachable for an everyday lunch or dinner outing.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Italian-Inspired Entrees with a Japanese Influence</h2>
+      <p>
+        Italian cooking is associated with comforting pastas, savory sauces, and satisfying main dishes, while Japanese cuisine brings its own ingredients, techniques, and balance of flavors. Combining these influences opens the door to creative interpretations of familiar entrees.
+      </p>
+      <p>
+        At Cafe Hiro, this cross-cultural approach is central to its identity. Instead of treating Japanese and Italian food as separate experiences, the restaurant brings them together in a way that encourages guests to try something a little different. For diners who like discovering unexpected combinations, fusion cooking can make a meal feel like an exploration rather than a routine order.
+      </p>
+
+      <div class="article-note">
+        <strong>Curious about the current menu?</strong>
+        Contact Cafe Hiro directly to ask about available fusion entrees, ingredients, and daily menu selections before your visit.
+      </div>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>A Casual Restaurant for Curious Food Lovers</h2>
+      <p>
+        Cafe Hiro's casual dining style suits people who want to focus on the food without needing a formal occasion. Its Japanese-Italian concept also gives friends, couples, and families a conversation starter: the opportunity to experience familiar culinary traditions interpreted in a different way.
+      </p>
+      <p>
+        Whether you're already a fan of fusion cuisine or simply want to try a new dining style in Cypress, Cafe Hiro offers a reason to look beyond standard menu categories. Checking the current offerings ahead of time can help you decide which dishes best fit your preferences.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Vegetarian Options at Cafe Hiro</h2>
+      <p>
+        Having vegetarian options available is useful for diners who avoid meat or prefer plant-focused meals. At a fusion restaurant, the ingredients and preparation styles can vary across dishes, so it is worth asking which choices are suitable for your dietary needs.
+      </p>
+      <p>
+        If you're vegetarian or dining with someone who is, contact Cafe Hiro to confirm current meat-free selections and ask about ingredients such as broth, sauces, and cooking methods. Guests with allergies or specific dietary requirements should communicate those needs directly to the restaurant before ordering.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Family Dining and High Chairs</h2>
+      <p>
+        Cafe Hiro offers high chairs, a helpful feature for guests dining with young children. This practical amenity can make it easier for families to plan a restaurant outing while enjoying a menu built around a creative mix of Japanese and Italian influences.
+      </p>
+      <p>
+        If you're bringing a baby or toddler, you may wish to call ahead to confirm seating arrangements and any details that could make your visit more comfortable. Planning in advance is especially useful when dining with children or a larger group.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>What Makes Cafe Hiro Stand Out in Cypress?</h2>
+      <p>
+        Cafe Hiro offers a distinct alternative for diners interested in food that crosses cultural boundaries. Its Japanese-Italian fusion identity, casual setting, and listed family-friendly and vegetarian features give visitors several reasons to consider it when choosing where to eat in Cypress.
+      </p>
+
+      <ul class="article-list">
+        <li><strong>Japanese-Italian fusion:</strong> A culinary concept that combines influences from both traditions.</li>
+        <li><strong>Creative entrees:</strong> Familiar meal styles approached from a fusion perspective.</li>
+        <li><strong>Vegetarian options:</strong> Choices to ask about when planning a meat-free meal.</li>
+        <li><strong>High chairs available:</strong> A practical feature for families with young children.</li>
+        <li><strong>Casual atmosphere:</strong> Suitable for an informal dining experience.</li>
+        <li><strong>Cypress location:</strong> Found on Valley View Street in Cypress, California.</li>
+      </ul>
+    </section>
+
+    <section class="article-section">
+      <div class="section-rule"></div>
+      <h2>Plan Your Cafe Hiro Visit in Cypress, California</h2>
+      <p>
+        Cafe Hiro is located at 10509 Valley View St, Cypress, CA 90630. Its blend of Japanese and Italian influences makes it an option for anyone looking to explore fusion cuisine in a casual restaurant setting.
+      </p>
+      <p>
+        Before visiting, check directly with the restaurant for current operating hours, menu availability, and any details related to vegetarian selections or family seating. Confirming these details in advance can help you choose a visit that works for your group.
+      </p>
+    </section>
+
+    <section class="closing-panel">
+      <p class="eyebrow">Cafe Hiro · Cypress, CA</p>
+      <h2>Explore Japanese-Italian Fusion at Cafe Hiro</h2>
+      <p>
+        For a dining experience that puts a creative spin on familiar entrees, Cafe Hiro brings Japanese and Italian inspiration together in Cypress. With vegetarian options and high chairs listed among its features, it is a place to consider for a casual meal with friends or family.
+      </p>
+
+      <div class="closing-details">
+        <div>
+          <span class="detail-label">Business Name</span>
+          <strong>Cafe Hiro</strong>
+        </div>
+        <div>
+          <span class="detail-label">Address</span>
+          10509 Valley View St<br />
+          Cypress, CA 90630
+        </div>
+        <div>
+          <span class="detail-label">Cuisine</span>
+          Japanese-Italian fusion
+        </div>
+        <div>
+          <span class="detail-label">Dining Features</span>
+          Vegetarian options and high chairs
+        </div>
+      </div>
+    </section>
+
+  </div>
+</article>
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
