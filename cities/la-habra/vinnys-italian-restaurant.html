@@ -1,0 +1,530 @@
+<!DOCTYPE html><html><head><title>Vinny's Italian Restaurant - The Best Old-School Italian Dinner In La Habra - OCGrub</title><meta name="description" content="Vinny's Italian Restaurant dishes up classic, comforting Italian plates in La Habra."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+<style>
+.restaurant-article *{box-sizing:border-box}
+.restaurant-article h1{font-size:clamp(36px,5.5vw,64px);line-height:.98;letter-spacing:-2px;text-transform:uppercase;margin:18px 0;font-weight:900}
+.restaurant-article h2{font-size:clamp(25px,3vw,34px);line-height:1.15;letter-spacing:-.7px;margin:34px 0 12px}
+.restaurant-article h3{font-size:21px;line-height:1.3;margin:20px 0 8px}
+.restaurant-article p{font-size:16px;margin:0 0 16px}
+.restaurant-article .business-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch}
+.restaurant-article .hero-image{width:100%;height:100%;min-height:280px;max-height:410px;object-fit:cover;border-radius:10px;display:block}
+.restaurant-article .business-card{background:#f0f0ee;padding:26px;border-radius:10px;display:flex;flex-direction:column;justify-content:center}
+.restaurant-article .eyebrow{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#a34b2a;margin-bottom:8px}
+.restaurant-article .business-name{font-size:clamp(25px,3vw,36px);font-weight:900;line-height:1.08;letter-spacing:-1px;margin:0 0 15px}
+.restaurant-article .detail{border-top:1px solid #d3d3d0;padding:12px 0;font-size:15px;overflow-wrap:anywhere}
+.restaurant-article .detail strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:#777;margin-bottom:3px}
+.restaurant-article .call-link{display:inline-block;background:#171717;color:#fff;text-decoration:none;border-radius:30px;padding:11px 18px;font-size:12px;font-weight:800;letter-spacing:.6px;align-self:flex-start;margin-top:10px}
+.restaurant-article .article-intro{font-size:18px;line-height:1.7;color:#454545;margin:24px 0}
+.restaurant-article .section-rule{height:5px;width:95px;background:#171717;margin:18px 0 25px}
+.restaurant-article .article-note{background:#f7eee8;border-radius:10px;padding:20px;margin:22px 0}
+@media(max-width:700px){
+.restaurant-article{padding:8px}
+.restaurant-article .business-layout{grid-template-columns:1fr;gap:12px}
+.restaurant-article .hero-image{height:auto;min-height:0;max-height:340px;aspect-ratio:16/10}
+.restaurant-article .business-card{padding:22px}
+.restaurant-article h1{letter-spacing:-1.3px}
+.restaurant-article .article-intro{font-size:17px}
+}
+</style>
+
+<div class="restaurant-article">
+  <div class="business-layout">
+    <div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=70" alt="Italian pasta served with sauce and fresh herbs" fetchpriority="high">
+    </div>
+    <div class="business-card">
+      <div class="eyebrow">Restaurant Spotlight · La Habra, CA</div>
+      <h2 class="business-name">Vinny's Italian Restaurant</h2>
+      <div class="detail"><strong>Cuisine</strong>Italian-Sicilian classics, including pizza, pasta, and traditional favorites</div>
+      <div class="detail"><strong>Location</strong>2101 E Lambert Rd<br>La Habra, CA 90631</div>
+      <div class="detail"><strong>Phone</strong><a href="tel:+15626943400" style="color:#171717;text-decoration:none;">(562) 694-3400</a></div>
+      <div class="detail"><strong>Dining Options</strong>Vegetarian options · Kids' menu · Dogs allowed outside</div>
+      <a class="call-link" href="tel:+15626943400">CALL RESTAURANT ↗</a>
+    </div>
+  </div>
+
+  <h1>Vinny's Italian Restaurant: Family-Owned Italian Food in La Habra</h1>
+  <div class="section-rule"></div>
+
+  <p class="article-intro">There is something special about a neighborhood Italian restaurant where a pizza night, a pasta craving, or a family dinner can turn into a reason to spend a little more time together. Vinny's Italian Restaurant in La Habra brings that familiar appeal to the table with a laid-back, family-owned atmosphere and a menu centered on Italian-Sicilian favorites. Located on East Lambert Road, Vinny's is an option for diners looking for classic comfort food, a casual meal with the kids, or a relaxed outing that doesn't need a special occasion.</p>
+
+  <h2>A Family-Owned Italian Restaurant With a Casual Feel</h2>
+
+  <p>Family-owned restaurants often have a different kind of charm. The experience feels less like a formal night out and more like a chance to settle in, catch up, and enjoy food that feels familiar. Vinny's Italian Restaurant embraces that laid-back spirit, making it a place to consider when you're craving Italian food without the need to dress up the occasion.</p>
+
+  <p>The restaurant serves Italian-Sicilian dishes, including pizza, pasta, and other classic favorites. That mix makes it a natural choice for a variety of appetites, whether someone at the table wants a comforting pasta dish or the group is leaning toward sharing a pizza. Sometimes, having a few familiar options is exactly what makes choosing where to eat easier.</p>
+
+  <h2>Pizza, Pasta, and the Comfort of Italian Classics</h2>
+
+  <p>Italian food has a way of bringing people together. A pizza in the middle of the table invites everyone to grab a slice, while a plate of pasta can make an ordinary lunch or dinner feel especially satisfying. These are dishes people return to because they are familiar, versatile, and easy to enjoy with company.</p>
+
+  <p>At Vinny's Italian Restaurant, pizza and pasta are part of the classic Italian-Sicilian offering. Whether you're planning a casual dinner or simply looking for a comforting meal after a busy day, those familiar categories provide a straightforward starting point when deciding what sounds good.</p>
+
+  <h3>Italian-Sicilian Food for Everyday Occasions</h3>
+
+  <p>One of the best things about classic Italian dining is that it can suit almost any kind of outing. You don't need a birthday or anniversary to enjoy pizza and pasta with people you care about. A weeknight meal, an easy weekend lunch, or an impromptu dinner with family can be reason enough to head out and enjoy a change of pace.</p>
+
+  <div class="article-note">
+    <h3 style="margin-top:0;">Why Consider Vinny's Italian Restaurant?</h3>
+    <p style="margin-bottom:0;">Vinny's combines a family-owned identity with an approachable menu of Italian-Sicilian favorites. Pizza, pasta, vegetarian options, a kids' menu, and outdoor seating that allows dogs make it worth considering for a relaxed meal in La Habra.</p>
+  </div>
+
+  <h2>A Relaxed Choice for Family Meals</h2>
+
+  <p>Getting everyone to agree on dinner can be a challenge, particularly when you're dining with children. A restaurant serving familiar favorites can make the decision feel simpler, and Vinny's Italian Restaurant offers a kids' menu for younger diners. That extra option can help families plan a meal where children have something to choose from while adults enjoy their own dinner.</p>
+
+  <p>The laid-back atmosphere also suits occasions when you want the focus to stay on spending time together. It could be dinner after a busy day, a meal with relatives, or a casual catch-up where no one needs to rush through the conversation. For families looking for an Italian restaurant in La Habra, Vinny's is a place to keep in mind.</p>
+
+  <h2>Vegetarian Options for More Dining Choices</h2>
+
+  <p>Dining out is easier when a restaurant offers choices for different eating preferences. Vinny's Italian Restaurant has vegetarian options, which can be useful when you're choosing a place for a group that doesn't all eat the same way. Italian cuisine includes many familiar meat-free possibilities, and having vegetarian selections available gives diners another reason to explore the menu.</p>
+
+  <p>If you follow a vegetarian diet, it's worth asking the restaurant which dishes are currently suitable and whether any ingredients or preparation methods should be considered. Menu details can vary, so a quick phone call is a helpful way to check before arriving.</p>
+
+  <h2>Enjoy Outdoor Dining With Your Dog</h2>
+
+  <p>For many people, a dog is part of the family, and leaving a four-legged companion at home isn't always the preferred option. Vinny's Italian Restaurant allows dogs outside, giving dog owners an opportunity to consider an outdoor meal when they want to bring their pet along.</p>
+
+  <p>If you're planning to dine with your dog, call ahead to confirm the current outdoor seating arrangements and any guidelines for pets. Bringing a leash and making sure your dog is comfortable around other diners can help make the visit pleasant for everyone.</p>
+
+  <h2>Planning a Visit to Vinny's in La Habra</h2>
+
+  <p>Vinny's Italian Restaurant is located at 2101 E Lambert Road in La Habra, California. Its casual, family-oriented appeal makes it an option to consider for a meal with relatives, a relaxed dinner with friends, or a simple craving for Italian food.</p>
+
+  <p>Before setting out, you can call the restaurant to ask about current hours, menu selections, vegetarian dishes, or outdoor seating with a dog. If you're visiting with children, you can also confirm details about the kids' menu. Getting those questions answered in advance can make planning your meal easier.</p>
+
+  <h3>What to Keep in Mind</h3>
+
+  <ul style="padding-left:22px;margin:0 0 20px;">
+    <li style="margin-bottom:8px;"><strong>Family-owned atmosphere:</strong> A relaxed setting for casual Italian dining.</li>
+    <li style="margin-bottom:8px;"><strong>Classic favorites:</strong> Pizza, pasta, and other Italian-Sicilian dishes.</li>
+    <li style="margin-bottom:8px;"><strong>Vegetarian options:</strong> Choices are available for diners seeking meat-free meals.</li>
+    <li style="margin-bottom:8px;"><strong>Kids' menu:</strong> An option for families dining with younger guests.</li>
+    <li style="margin-bottom:8px;"><strong>Dogs allowed outside:</strong> Contact the restaurant to confirm outdoor seating details before bringing your pet.</li>
+  </ul>
+
+  <h2>A La Habra Spot for Classic Italian Comfort Food</h2>
+
+  <p>When you're deciding where to eat, a dependable menu and a relaxed atmosphere can be just as appealing as a special dining experience. Vinny's Italian Restaurant brings together the familiar pleasures of pizza, pasta, and Italian-Sicilian cooking with the welcoming character of a family-owned business.</p>
+
+  <p>Whether you're arranging dinner with the family, searching for vegetarian choices, or hoping to enjoy an outdoor meal with your dog, Vinny's offers several reasons to consider a visit. For classic Italian food in La Habra, add Vinny's Italian Restaurant to your list and call ahead for the details you need to plan your meal.</p>
+
+  <div style="background:#171717;color:#fff;padding:25px;border-radius:10px;margin-top:28px;">
+    <div style="font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#e6a17f;font-weight:800;margin-bottom:8px;">Plan Your Visit</div>
+    <h2 style="margin:0 0 15px;color:#fff;">Vinny's Italian Restaurant</h2>
+    <p style="color:#eee;">2101 E Lambert Rd<br>La Habra, CA 90631</p>
+    <p style="color:#eee;margin-bottom:0;">Phone: <a href="tel:+15626943400" style="color:#fff;">(562) 694-3400</a></p>
+  </div>
+</div>
+</article>
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
