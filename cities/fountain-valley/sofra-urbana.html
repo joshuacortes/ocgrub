@@ -1,0 +1,576 @@
+<!DOCTYPE html><html><head><title>Sofra Grill - A Fresh Mediterranean Table In Anaheim - OCGrub</title><meta name="description" content="Sofra Urbana brings a bright, share-friendly Mediterranean meal to Anaheim.
+
+"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+
+
+<article class="restaurant-article" style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+<style>
+.restaurant-article *{box-sizing:border-box}
+.business-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-bottom:36px;align-items:stretch}
+.hero-image{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;border-radius:16px}
+.business-card{background:#f5f3ef;padding:30px;border-radius:16px;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{color:#8b3b21;letter-spacing:2px;font-size:12px;font-weight:700;text-transform:uppercase;margin:0 0 12px}
+.business-name{font-size:clamp(28px,4vw,42px);line-height:1.12;letter-spacing:-1.2px;margin:0 0 16px;font-weight:800}
+.business-summary{font-size:16px;line-height:1.75;margin:0 0 20px;color:#393939}
+.detail{border-top:1px solid #d8d3ca;padding:13px 0}
+.detail-label{display:block;color:#68645e;text-transform:uppercase;font-size:11px;letter-spacing:1.4px;font-weight:700;margin-bottom:4px}
+.detail-value{font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.call-link{display:inline-block;background:#171717;color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:14px 20px;border-radius:7px;margin-top:14px;text-align:center;align-self:flex-start}
+.article-header{padding:8px 0 12px}
+.article-title{font-size:clamp(32px,5vw,54px);line-height:1.1;letter-spacing:-1.5px;margin:10px 0 20px;font-weight:800}
+.article-intro{font-size:18px;line-height:1.8;color:#383838;max-width:960px}
+.article-section{margin:34px 0}
+.article-section h2{font-size:clamp(23px,3vw,31px);line-height:1.2;letter-spacing:-.5px;margin:0 0 14px;font-weight:800}
+.section-rule{width:58px;height:4px;background:#8b3b21;border-radius:2px;margin:0 0 18px}
+.article-section p{font-size:16px;line-height:1.85;color:#393939;margin:0 0 15px}
+.article-list{padding-left:22px;margin:12px 0;color:#393939}
+.article-list li{padding:5px 0;line-height:1.7}
+.article-note{border-left:4px solid #8b3b21;background:#f5f3ef;padding:20px 22px;margin:24px 0;border-radius:0 10px 10px 0}
+.article-note p{margin:0}
+.closing-panel{background:#171717;color:#fff;padding:32px;border-radius:16px;margin-top:42px}
+.closing-panel h2{font-size:clamp(26px,4vw,38px);line-height:1.15;letter-spacing:-.7px;margin:0 0 14px}
+.closing-panel p{font-size:15px;line-height:1.8;color:#e3e3e3;margin:0 0 18px}
+.closing-details{display:grid;grid-template-columns:1fr 1fr;gap:18px;border-top:1px solid #484848;padding-top:20px;margin-top:22px}
+.closing-label{display:block;color:#bdbdbd;text-transform:uppercase;font-size:11px;letter-spacing:1.4px;font-weight:700;margin-bottom:5px}
+.closing-value{font-size:15px;font-weight:600;color:#fff}
+.closing-panel .call-link{background:#fff;color:#171717;margin-top:22px}
+@media(max-width:700px){.business-layout{grid-template-columns:1fr;gap:0}.hero-image{height:auto;aspect-ratio:16/10;min-height:0;border-radius:13px 13px 0 0}.business-card{padding:23px;border-radius:0 0 13px 13px}.business-name{font-size:34px}.call-link{width:100%;align-self:stretch}.article-intro{font-size:17px}.closing-panel{padding:24px}.closing-details{grid-template-columns:1fr;gap:15px}.article-section{margin:29px 0}}
+</style>
+
+<section class="business-layout" aria-label="Sofra Urbana business information">
+<img class="hero-image" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" alt="Fresh Mediterranean-style salad with colorful vegetables and greens" />
+<div class="business-card">
+<p class="eyebrow">Bosnian &amp; Balkan Cuisine · Fountain Valley</p>
+<h2 class="business-name">Sofra Urbana</h2>
+<p class="business-summary">A fast-casual Mediterranean restaurant bringing Bosnian and Balkan food to Fountain Valley, with cevapi, burek, grilled meats, fresh salads and traditional favorites.</p>
+<div class="detail">
+<span class="detail-label">Address</span>
+<span class="detail-value">17098 Magnolia Street, Fountain Valley, CA 92708</span>
+</div>
+<div class="detail">
+<span class="detail-label">Phone</span>
+<span class="detail-value">(714) 843-3233</span>
+</div>
+<div class="detail">
+<span class="detail-label">Cuisine</span>
+<span class="detail-value">Bosnian · Balkan · Mediterranean</span>
+</div>
+<div class="detail">
+<span class="detail-label">Dining Options</span>
+<span class="detail-value">Dine-in · Takeout · Catering</span>
+</div>
+<a class="call-link" href="tel:+17148433233">Call Sofra Urbana · (714) 843-3233</a>
+</div>
+</section>
+
+<header class="article-header">
+<p class="eyebrow">Traditional Flavor, Casual Dining</p>
+<h1 class="article-title">Sofra Urbana in Fountain Valley: Discover Bosnian and Balkan Cuisine</h1>
+<p class="article-intro">For a meal that goes beyond the usual fast-casual choices, <strong>Sofra Urbana in Fountain Valley, California</strong> brings the flavors of Bosnia and the wider Balkan region to Magnolia Street. The menu features traditional favorites such as cevapi and burek alongside grilled meats, sandwiches and fresh salads. Whether you're looking for a satisfying lunch, picking up dinner on the way home or arranging food for a gathering, Sofra Urbana offers a welcoming place to enjoy Mediterranean-inspired cooking with a distinct Balkan identity.</p>
+</header>
+
+<section class="article-section">
+<h2>Explore Bosnian and Balkan Food in Fountain Valley</h2>
+<div class="section-rule"></div>
+<p>Balkan cuisine draws on a rich tradition of home-style cooking, grilled specialties, savory pastries and meals made to be shared. At Sofra Urbana, those influences give diners an opportunity to discover familiar comfort food alongside dishes that may be new to them.</p>
+<p>Located at 17098 Magnolia Street, Sofra Urbana serves the Fountain Valley community in a fast-casual setting. It's an approachable choice for a weekday lunch, an easy dinner or a meal with family when everyone wants something flavorful without a formal dining experience.</p>
+<p>For anyone curious about Bosnian food, trying a traditional dish is a great way to get acquainted with the cuisine. For guests who already enjoy Balkan cooking, Sofra Urbana offers a local place to return to those recognizable flavors.</p>
+</section>
+
+<section class="article-section">
+<h2>Cevapi: A Balkan Grilled Favorite</h2>
+<div class="section-rule"></div>
+<p>Cevapi is one of the best-known dishes associated with Balkan cooking. These small, grilled portions of seasoned meat are popular for their savory flavor and straightforward preparation. They're a natural choice for anyone interested in exploring traditional Bosnian food for the first time.</p>
+<p>At Sofra Urbana, cevapi are part of the restaurant's focus on Balkan specialties. The dish can be a good starting point for guests who want to experience something rooted in regional food traditions rather than ordering a standard sandwich or salad.</p>
+<p>If you're unfamiliar with cevapi, consider asking the team about the current preparation and how the dish is served. A quick conversation can help you choose a meal that suits your preferences.</p>
+</section>
+
+<section class="article-section">
+<h2>Burek and the Appeal of Savory Pastries</h2>
+<div class="section-rule"></div>
+<p>Burek is another traditional Balkan food worth discovering. Made with thin layers of pastry and a savory filling, it has a place in everyday meals across the region and is often enjoyed as a filling bite for lunch or a casual meal.</p>
+<p>Its pastry-based format offers a different experience from grilled dishes, giving diners another way to explore the variety of Bosnian and Balkan cuisine. For guests who enjoy baked savory foods, burek is a worthwhile dish to ask about when visiting Sofra Urbana.</p>
+<p>Because fillings and serving options can vary, contact the restaurant for details about the current selection and ingredients before placing your order.</p>
+</section>
+
+<section class="article-section">
+<h2>Grilled Meats, Sandwiches and Fresh Salads</h2>
+<div class="section-rule"></div>
+<p>Traditional specialties are only part of the appeal at Sofra Urbana. Grilled meats offer a hearty option for guests looking for a substantial meal, while sandwiches provide a convenient choice for lunch breaks or a quick bite between errands.</p>
+<p>Fresh salads add another direction to the menu, bringing vegetables and lighter options into the mix. That range can make ordering easier when you're dining with family, meeting a coworker for lunch or trying to accommodate different appetites at the same table.</p>
+<ul class="article-list">
+<li><strong>Cevapi:</strong> A classic Balkan grilled specialty.</li>
+<li><strong>Burek:</strong> A savory pastry associated with regional food traditions.</li>
+<li><strong>Grilled meats:</strong> A satisfying option for fans of savory, fire-grilled dishes.</li>
+<li><strong>Sandwiches:</strong> A practical choice for a casual lunch or easy meal.</li>
+<li><strong>Fresh salads:</strong> A vegetable-forward alternative or accompaniment.</li>
+</ul>
+<p>For current menu details, portion sizes and available combinations, check directly with the restaurant.</p>
+</section>
+
+<section class="article-section">
+<h2>Halal-Friendly Choices and Ingredient Questions</h2>
+<div class="section-rule"></div>
+<p>Sofra Urbana describes its menu as offering halal-friendly options, making it a restaurant to consider for diners seeking food that aligns with their preferences. If halal requirements are important to you, it's best to speak with the team about the specific dishes available and the restaurant's current ingredient and preparation practices.</p>
+<p>The same approach applies to food allergies, dietary restrictions and individual ingredient concerns. Asking before ordering helps you make a more informed choice and gives the restaurant an opportunity to explain what can be accommodated.</p>
+<div class="article-note">
+<p><strong>Have a dietary question?</strong> Call Sofra Urbana at <a href="tel:+17148433233" style="color:#8b3b21;font-weight:700;text-decoration:none;">(714) 843-3233</a> to ask about current menu items, ingredients and preparation details.</p>
+</div>
+</section>
+
+<section class="article-section">
+<h2>A Welcoming Stop for Families and Local Workers</h2>
+<div class="section-rule"></div>
+<p>A good neighborhood restaurant needs to work for more than one kind of visit. Sofra Urbana's fast-casual approach makes it a practical option for families looking for a relaxed meal, local residents planning dinner and nearby employees who want a satisfying lunch during the workday.</p>
+<p>The menu's mix of traditional dishes and familiar choices also gives groups some flexibility. One person can explore a Balkan specialty while another chooses a sandwich or salad, making it easier to share a meal without everyone needing the same thing.</p>
+<p>Whether you're already familiar with Bosnian cooking or simply interested in trying a different style of Mediterranean food, Sofra Urbana offers a way to experience those flavors in a casual local setting.</p>
+</section>
+
+<section class="article-section">
+<h2>Order Takeout or Plan Catering with Sofra Urbana</h2>
+<div class="section-rule"></div>
+<p>Not every meal needs to happen at a restaurant table. Sofra Urbana offers takeout for customers who want to bring their food home, back to the office or to another convenient spot. It's a useful option for busy weekdays when preparing a meal isn't part of the plan.</p>
+<p>The restaurant also offers catering, giving local families and businesses another option when organizing food for a gathering. Traditional dishes, grilled specialties and other menu choices may be worth discussing when planning a group order.</p>
+<p>For catering inquiries, reach out ahead of time to discuss your guest count, menu preferences, timing and any dietary considerations. Confirming the details directly helps you understand current availability and which options are suitable for your event.</p>
+</section>
+
+<section class="article-section">
+<h2>Visit Sofra Urbana on Magnolia Street</h2>
+<div class="section-rule"></div>
+<p>You'll find Sofra Urbana at <strong>17098 Magnolia Street, Fountain Valley, CA 92708</strong>. Its location makes it a local option for discovering Bosnian and Balkan specialties, grabbing a quick lunch or arranging food for a gathering.</p>
+<p>Whether cevapi has long been a favorite or burek is something you're trying for the first time, the restaurant's menu provides a starting point for exploring regional flavors. Calling ahead is the best way to ask about the day's offerings, takeout details, catering availability or specific dietary needs.</p>
+</section>
+
+<section class="closing-panel">
+<p class="eyebrow" style="color:#d8a18c;">Traditional Balkan Flavors in Orange County</p>
+<h2>Sofra Urbana</h2>
+<p>Looking for Bosnian and Balkan cuisine in Fountain Valley? Sofra Urbana serves cevapi, burek, grilled meats, sandwiches and fresh salads in a fast-casual setting. Visit for a meal, arrange takeout or contact the team to discuss catering for your next gathering.</p>
+<div class="closing-details">
+<div>
+<span class="closing-label">Address</span>
+<span class="closing-value">17098 Magnolia Street<br />Fountain Valley, CA 92708</span>
+</div>
+<div>
+<span class="closing-label">Phone</span>
+<span class="closing-value">(714) 843-3233</span>
+</div>
+<div>
+<span class="closing-label">Cuisine</span>
+<span class="closing-value">Bosnian, Balkan and Mediterranean</span>
+</div>
+<div>
+<span class="closing-label">Services</span>
+<span class="closing-value">Dine-in, takeout and catering</span>
+</div>
+</div>
+<a class="call-link" href="tel:+17148433233">Call Sofra Urbana</a>
+</section>
+</article>
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
