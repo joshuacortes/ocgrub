@@ -1,0 +1,539 @@
+<!DOCTYPE html><html><head><title>Ruby Red's BBQ - The Best Smoky BBQ In La Habra - OCGrub</title><meta name="description" content="Ruby Red's BBQ is the La Habra stop for slow-smoked, sauce-friendly barbecue."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+
+
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+<style>
+.restaurant-article *{box-sizing:border-box}
+.restaurant-article h1{font-size:clamp(36px,5.5vw,64px);line-height:.98;letter-spacing:-2px;text-transform:uppercase;margin:18px 0;font-weight:900}
+.restaurant-article h2{font-size:clamp(25px,3vw,34px);line-height:1.15;letter-spacing:-.7px;margin:34px 0 12px}
+.restaurant-article h3{font-size:21px;line-height:1.3;margin:20px 0 8px}
+.restaurant-article p{font-size:16px;margin:0 0 16px}
+.restaurant-article .business-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch}
+.restaurant-article .hero-image{width:100%;height:100%;min-height:280px;max-height:410px;object-fit:cover;border-radius:10px;display:block}
+.restaurant-article .business-card{background:#f0f0ee;padding:26px;border-radius:10px;display:flex;flex-direction:column;justify-content:center}
+.restaurant-article .eyebrow{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#a34b2a;margin-bottom:8px}
+.restaurant-article .business-name{font-size:clamp(25px,3vw,36px);font-weight:900;line-height:1.08;letter-spacing:-1px;margin:0 0 15px}
+.restaurant-article .detail{border-top:1px solid #d3d3d0;padding:12px 0;font-size:15px;overflow-wrap:anywhere}
+.restaurant-article .detail strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:#777;margin-bottom:3px}
+.restaurant-article .call-link{display:inline-block;background:#171717;color:#fff;text-decoration:none;border-radius:30px;padding:11px 18px;font-size:12px;font-weight:800;letter-spacing:.6px;align-self:flex-start;margin-top:10px}
+.restaurant-article .article-intro{font-size:18px;line-height:1.7;color:#454545;margin:24px 0}
+.restaurant-article .section-rule{height:5px;width:95px;background:#171717;margin:18px 0 25px}
+.restaurant-article .article-note{background:#f7eee8;border-radius:10px;padding:20px;margin:22px 0}
+@media(max-width:700px){
+.restaurant-article{padding:8px}
+.restaurant-article .business-layout{grid-template-columns:1fr;gap:12px}
+.restaurant-article .hero-image{height:auto;min-height:0;max-height:340px;aspect-ratio:16/10}
+.restaurant-article .business-card{padding:22px}
+.restaurant-article h1{letter-spacing:-1.3px}
+.restaurant-article .article-intro{font-size:17px}
+}
+</style>
+
+<div class="restaurant-article">
+  <div class="business-layout">
+    <div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=70" alt="Smoky barbecue ribs and grilled meat served with classic barbecue sides" fetchpriority="high">
+    </div>
+    <div class="business-card">
+      <div class="eyebrow">Restaurant Spotlight · La Habra, CA</div>
+      <h2 class="business-name">Ruby Red's BBQ</h2>
+      <div class="detail"><strong>Cuisine</strong>Western-style barbecue featuring smoked brisket, ribs, and pulled pork</div>
+      <div class="detail"><strong>Location</strong>1841 W Imperial Hwy<br>La Habra, CA 90631<br>Located in La Habra Marketplace</div>
+      <div class="detail"><strong>Phone</strong><a href="tel:+15627354545" style="color:#171717;text-decoration:none;">(562) 735-4545</a></div>
+      <div class="detail"><strong>Dining Experience</strong>Outdoor seating · Fireplace · Good for watching sports</div>
+      <a class="call-link" href="tel:+15627354545">CALL RESTAURANT ↗</a>
+    </div>
+  </div>
+
+  <h1>Ruby Red's BBQ: Smoked Brisket, Ribs and Western-Style Barbecue in La Habra</h1>
+  <div class="section-rule"></div>
+
+  <p class="article-intro">The smell of slow-smoked meat, the first bite of tender brisket, and a table full of barbecue favorites can turn an ordinary meal into something worth looking forward to. Ruby Red's BBQ brings a Western-themed barbecue experience to La Habra, specializing in smoked brisket, ribs, and pulled pork. Located in La Habra Marketplace on West Imperial Highway, this is a spot to consider when you're craving hearty barbecue in a relaxed setting. With outdoor seating, a fireplace, and an atmosphere suited to watching sports, Ruby Red's BBQ offers plenty of reasons to gather around a meal.</p>
+
+  <h2>A Western-Themed Barbecue Experience in La Habra</h2>
+
+  <p>Barbecue has its own personality. It's hearty, welcoming, and often associated with the kind of meal people enjoy taking their time over. A Western-themed restaurant adds to that feeling, bringing a rugged, laid-back character to the dining experience. Ruby Red's BBQ embraces that barbecue spirit, making it an option for diners who want something more substantial than a quick bite.</p>
+
+  <p>Whether you're planning lunch, meeting friends for dinner, or simply in the mood for smoked meat, the restaurant's focus on classic barbecue staples gives you a clear place to start. Brisket, ribs, and pulled pork each bring a different texture and flavor to the plate, making barbecue appealing to people with different preferences.</p>
+
+  <h2>Smoked Brisket for Serious Barbecue Fans</h2>
+
+  <p>Brisket has earned a special place in barbecue culture because it rewards patience. This cut of beef is often cooked low and slow, allowing the meat to become tender while developing the smoky character that fans look for. When prepared well, brisket delivers a satisfying combination of rich flavor, a savory crust, and meat that slices or pulls apart with ease.</p>
+
+  <p>At Ruby Red's BBQ, smoked brisket is one of the specialties that defines the restaurant's barbecue focus. It's a natural choice for anyone who appreciates traditional smoked meats or wants to make brisket the centerpiece of a hearty meal. If you're unsure what to order on your first visit, asking about the current brisket serving and available sides can help you put together a meal you'll enjoy.</p>
+
+  <div class="article-note">
+    <h3 style="margin-top:0;">What Makes Ruby Red's BBQ Worth a Visit?</h3>
+    <p style="margin-bottom:0;">Ruby Red's BBQ centers its menu on smoked brisket, ribs, and pulled pork, with a Western-themed atmosphere that complements the food. Outdoor seating, a fireplace, and a sports-friendly setting add to its appeal for casual meals and get-togethers.</p>
+  </div>
+
+  <h2>Barbecue Ribs With Plenty of Character</h2>
+
+  <p>For many barbecue lovers, ribs are the dish that makes a visit feel complete. Their appeal comes from the combination of meat, smoke, seasoning, and the rich flavors that develop during cooking. Depending on the preparation, ribs can offer a satisfying contrast between a flavorful exterior and tender meat beneath it.</p>
+
+  <p>Ruby Red's BBQ features ribs as part of its barbecue lineup, making the restaurant an option for diners who gravitate toward this classic favorite. Ribs are also a natural choice for a relaxed meal with friends, especially when everyone is in the mood for food that feels hearty and informal. If you're deciding between the restaurant's smoked specialties, ask the team about current serving options.</p>
+
+  <h2>Pulled Pork for a Classic Barbecue Favorite</h2>
+
+  <p>Pulled pork is another staple of traditional barbecue. Slow cooking helps break down the meat until it can be separated into tender strands, creating a texture that works well with barbecue seasoning and sauces. It's a familiar comfort-food option for diners who want smoky flavor in every bite.</p>
+
+  <p>With pulled pork alongside brisket and ribs, Ruby Red's BBQ covers several of the best-known styles of American barbecue. That variety can make ordering easier when a group has different favorites or when you're looking to try something different from your usual choice. You can ask about the current preparation and serving options when you arrive.</p>
+
+  <h2>A Place to Settle In and Enjoy the Meal</h2>
+
+  <p>Great barbecue is often associated with slowing down and enjoying the company around the table. Ruby Red's BBQ offers outdoor seating, giving diners an option to enjoy their meal in the open air when the weather and seating availability cooperate. Outdoor dining can be especially appealing for a casual lunch or a relaxed evening with friends.</p>
+
+  <p>The restaurant also features a fireplace, adding another element to its Western-themed atmosphere. Together, these details help create a setting suited to a leisurely meal rather than a rushed stop. If outdoor seating or the fireplace is part of what you're looking forward to, call ahead to confirm the current arrangements.</p>
+
+  <h2>Catch the Game With Barbecue on the Table</h2>
+
+  <p>Sports and barbecue make an easy pairing. Whether you're following a big matchup or keeping an eye on a game while you eat, sharing a hearty meal can make watching sports feel more like an occasion. Ruby Red's BBQ is noted as being good for watching sports, making it an option to consider when you want food and the game to be part of the same outing.</p>
+
+  <p>It's a setting that can work for a casual meetup, a post-work meal, or a weekend plan built around a favorite team. If you're hoping to watch a particular event, contact the restaurant before visiting to ask about game viewing and any current arrangements. That way, you can plan your outing with fewer surprises.</p>
+
+  <h2>Barbecue for Casual Gatherings and Everyday Cravings</h2>
+
+  <p>Not every meal out needs a celebration attached to it. Sometimes you want a generous plate of food after a busy day, or a place to reconnect with friends without worrying about making the evening feel formal. Barbecue naturally fits those occasions because it offers familiar favorites and a relaxed style of dining.</p>
+
+  <p>Ruby Red's BBQ can be a choice for those everyday moments when brisket, ribs, or pulled pork sound more appealing than another routine meal. The Western theme and sports-friendly atmosphere give it additional appeal for people who enjoy a little character with their food.</p>
+
+  <h2>Finding Ruby Red's BBQ in La Habra</h2>
+
+  <p>Ruby Red's BBQ is located at 1841 W Imperial Highway in La Habra Marketplace, La Habra, California 90631. Its location makes it a convenient option to consider when you're planning a barbecue meal in the area.</p>
+
+  <p>Before heading over, you can call the restaurant to ask about current hours, available barbecue selections, outdoor seating, or sports viewing. If you have a particular dish in mind, checking ahead can help you plan your visit and find out what's available that day.</p>
+
+  <h3>Reasons to Add Ruby Red's BBQ to Your List</h3>
+
+  <ul style="padding-left:22px;margin:0 0 20px;">
+    <li style="margin-bottom:8px;"><strong>Smoked brisket:</strong> A classic choice for fans of slow-cooked barbecue.</li>
+    <li style="margin-bottom:8px;"><strong>Barbecue ribs:</strong> A hearty favorite for a satisfying meal.</li>
+    <li style="margin-bottom:8px;"><strong>Pulled pork:</strong> Another traditional smoked-meat option to explore.</li>
+    <li style="margin-bottom:8px;"><strong>Outdoor seating:</strong> Enjoy an outdoor dining option when available.</li>
+    <li style="margin-bottom:8px;"><strong>Sports-friendly atmosphere:</strong> Consider it for a meal built around watching a game.</li>
+    <li style="margin-bottom:8px;"><strong>Western-themed setting:</strong> A casual backdrop for enjoying classic barbecue.</li>
+  </ul>
+
+  <h2>Make Ruby Red's BBQ Your Next Barbecue Stop</h2>
+
+  <p>When a barbecue craving hits, few things sound better than smoked meat and time to enjoy it. Ruby Red's BBQ brings together brisket, ribs, and pulled pork in a Western-themed restaurant setting, offering a destination for diners who appreciate classic barbecue flavors.</p>
+
+  <p>Whether you're stopping in for a hearty meal, planning to watch sports, or looking for somewhere with outdoor seating, Ruby Red's BBQ is worth considering in La Habra. Call ahead for current details, then head over to enjoy a barbecue-focused meal at Ruby Red's BBQ.</p>
+
+  <div style="background:#171717;color:#fff;padding:25px;border-radius:10px;margin-top:28px;">
+    <div style="font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#e6a17f;font-weight:800;margin-bottom:8px;">Plan Your Visit</div>
+    <h2 style="margin:0 0 15px;color:#fff;">Ruby Red's BBQ</h2>
+    <p style="color:#eee;">1841 W Imperial Hwy<br>La Habra, CA 90631<br>Located in La Habra Marketplace</p>
+    <p style="color:#eee;margin-bottom:0;">Phone: <a href="tel:+15627354545" style="color:#fff;">(562) 735-4545</a></p>
+  </div>
+</div>
+</article>
+
+
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
