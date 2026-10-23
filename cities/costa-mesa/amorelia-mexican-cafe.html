@@ -1,0 +1,823 @@
+<!DOCTYPE html><html><head><title>Amorelia Mexican Cafe - A Casual Mexican Cafe Bite In Costa Mesa - OCGrub</title><meta name="description" content="Family-owned venue serving traditional Mexican fare such as pozole & tacos in a warm space."><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+<style>
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head><body>
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/cities/">Browse Cities</a>
+  <a href="/best-of-orange-county/">Best Of Orange County</a>
+  
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script><center><div style="height:40px;"></div><div style="width:70%;text-align:left;">
+  
+<article style="font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:1200px;margin:0 auto;padding:12px;box-sizing:border-box;line-height:1.65;">
+
+  <style>
+    .restaurant-article * {
+      box-sizing: border-box;
+    }
+
+    .restaurant-article .business-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-bottom: 36px;
+    }
+
+    .restaurant-article .hero-image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .restaurant-article .business-card {
+      background: #f5f3ef;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .restaurant-article .eyebrow {
+      color: #8b3b21;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin: 0 0 10px;
+    }
+
+    .restaurant-article .business-name {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      letter-spacing: -1.3px;
+      margin: 0 0 14px;
+    }
+
+    .restaurant-article .business-summary {
+      font-size: 16px;
+      color: #48443f;
+      margin: 0 0 22px;
+    }
+
+    .restaurant-article .detail {
+      border-top: 1px solid #ded9d1;
+      padding: 13px 0;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .restaurant-article .detail strong {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 4px;
+      color: #70675f;
+    }
+
+    .restaurant-article .call-link {
+      display: inline-block;
+      background: #171717;
+      color: #fff;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 12px;
+      align-self: flex-start;
+    }
+
+    .restaurant-article .article-intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #38332f;
+      max-width: 900px;
+      margin: 0 0 28px;
+    }
+
+    .restaurant-article h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin: 0 0 22px;
+    }
+
+    .restaurant-article h2 {
+      font-size: clamp(23px, 3vw, 31px);
+      line-height: 1.2;
+      letter-spacing: -.6px;
+      margin: 0 0 14px;
+    }
+
+    .restaurant-article h3 {
+      font-size: 19px;
+      line-height: 1.3;
+      margin: 22px 0 8px;
+    }
+
+    .restaurant-article p {
+      margin: 0 0 17px;
+    }
+
+    .restaurant-article .section-rule {
+      border: 0;
+      height: 1px;
+      background: #e7e2dc;
+      margin: 32px 0;
+    }
+
+    .restaurant-article .article-note {
+      background: #f5f3ef;
+      border-left: 4px solid #8b3b21;
+      padding: 21px 24px;
+      border-radius: 0 10px 10px 0;
+      margin: 26px 0;
+    }
+
+    .restaurant-article .article-note strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-article .article-list {
+      padding-left: 22px;
+      margin: 10px 0 20px;
+    }
+
+    .restaurant-article .article-list li {
+      padding: 4px 0;
+    }
+
+    .restaurant-article .closing-panel {
+      background: #171717;
+      color: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 34px;
+    }
+
+    .restaurant-article .closing-panel h2 {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .restaurant-article .closing-panel p {
+      color: #e4e0dc;
+    }
+
+    .restaurant-article .closing-details {
+      border-top: 1px solid #454545;
+      padding-top: 17px;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .restaurant-article .closing-details strong {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1.3px;
+      color: #c9a58f;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-article .closing-details a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      .restaurant-article .business-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .restaurant-article .hero-image {
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+
+      .restaurant-article .business-card {
+        padding: 23px;
+      }
+
+      .restaurant-article .closing-panel {
+        padding: 23px;
+      }
+
+      .restaurant-article .closing-details {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .restaurant-article .call-link {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div class="restaurant-article">
+
+    <section class="business-layout" aria-label="Amorelia Mexican Cafe restaurant information">
+      <div>
+        <img
+          class="hero-image"
+          src="https://unsplash.com/photos/YiBV-s9nZfQ/download?force=true&amp;w=1200"
+          alt="Traditional Mexican-inspired dining at Amorelia Mexican Cafe in Costa Mesa, California"
+          loading="eager"
+        />
+      </div>
+
+      <div class="business-card">
+        <p class="eyebrow">Costa Mesa, California</p>
+        <h2 class="business-name">Amorelia Mexican Cafe</h2>
+        <p class="business-summary">
+          A family-owned Mexican cafe serving traditional favorites, including pozole and tacos, in a warm and welcoming atmosphere. Guests can also ask about happy hour food, cocktails, and vegan-friendly choices.
+        </p>
+
+        <div class="detail">
+          <strong>Address</strong>
+          2200 Harbor Blvd, Suite C-110, Costa Mesa, CA 92627
+        </div>
+
+        <div class="detail">
+          <strong>Phone</strong>
+          (949) 646-1422
+        </div>
+
+        <div class="detail">
+          <strong>Located In</strong>
+          Grey Plaza
+        </div>
+
+        <div class="detail">
+          <strong>Highlights</strong>
+          Traditional Mexican fare · Happy hour food · Cocktails · Vegan options
+        </div>
+
+        <a class="call-link" href="tel:+19496461422">Call the Restaurant</a>
+      </div>
+    </section>
+
+    <header>
+      <p class="eyebrow">Costa Mesa Mexican Dining Guide</p>
+      <h1>Amorelia Mexican Cafe in Costa Mesa: Traditional Pozole, Tacos, and Mexican Comfort Food</h1>
+      <p class="article-intro">
+        For those exploring Mexican restaurants in Costa Mesa, <strong>Amorelia Mexican Cafe</strong> offers a family-owned dining experience focused on traditional Mexican fare and a warm, inviting atmosphere. Located in Grey Plaza on Harbor Boulevard, the cafe features familiar favorites such as pozole and tacos, along with happy hour food, cocktails, and vegan options for guests looking for different ways to enjoy a Mexican-inspired meal.
+      </p>
+    </header>
+
+    <section>
+      <h2>Traditional Mexican Cooking at Amorelia Mexican Cafe</h2>
+      <p>
+        Traditional Mexican cuisine brings together regional ingredients, time-honored recipes, and dishes made for sharing. At Amorelia Mexican Cafe, the emphasis on familiar Mexican favorites gives diners a reason to explore comforting meals in a relaxed setting.
+      </p>
+      <p>
+        Whether you're craving a hearty bowl of soup or prefer tacos for a casual lunch, the cafe's food focus suits guests looking for recognizable Mexican flavors. If you have a specific dish in mind, contact the restaurant to confirm its current preparation and availability.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Pozole: A Classic Mexican Comfort Dish</h2>
+      <p>
+        Pozole is a traditional Mexican soup made with hominy and a seasoned broth, with recipes and garnishes that vary by style. Common accompaniments can include shredded cabbage or lettuce, radishes, onion, lime, and other toppings that let diners customize each bowl.
+      </p>
+      <p>
+        Its combination of warm broth, texture, and fresh garnishes makes pozole a popular choice for people seeking a filling meal rooted in Mexican food traditions. Amorelia Mexican Cafe highlights pozole among its traditional fare, so guests interested in this classic dish can ask about the current version and serving availability.
+      </p>
+
+      <div class="article-note">
+        <strong>Planning to order pozole?</strong>
+        Call ahead to ask whether pozole is available on the day of your visit, which style is being served, and whether garnishes or preparation options can be adjusted to your preferences.
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Tacos for a Casual Mexican Meal</h2>
+      <p>
+        Tacos are a versatile part of Mexican dining, offering a simple format for combining tortillas with fillings, toppings, and complementary flavors. They can work for a quick lunch, a relaxed dinner, or a meal where everyone wants to choose different combinations.
+      </p>
+      <p>
+        At Amorelia Mexican Cafe, tacos are among the traditional Mexican dishes associated with its food offering. If you're deciding what to order, ask about available fillings, toppings, portion sizes, and any daily selections before visiting.
+      </p>
+      <p>
+        Guests with dietary preferences can also ask whether meat-free fillings or other substitutions are available. Confirming ingredients directly with the restaurant is especially helpful for those avoiding particular foods.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>A Warm, Family-Owned Cafe Atmosphere</h2>
+      <p>
+        The atmosphere can shape how a meal feels, from a quick stop for lunch to a longer catch-up with friends or relatives. Amorelia Mexican Cafe is described as a family-owned venue with a warm setting, making it an option for diners who prefer a comfortable, approachable environment.
+      </p>
+      <p>
+        Its casual Mexican dining concept can suit different everyday occasions, whether you're meeting someone for a meal or introducing family members to traditional dishes. For larger parties or specific seating requests, call in advance to ask about the restaurant's arrangements.
+      </p>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Happy Hour Food and Cocktails in Costa Mesa</h2>
+      <p>
+        A meal can also be an opportunity to unwind after a busy day. Amorelia Mexican Cafe lists happy hour food and great cocktails among its highlights, making it worth considering for guests looking to pair food with drinks in a casual setting.
+      </p>
+      <p>
+        Whether you're meeting friends or planning an informal evening out, check which food specials and beverages are currently available. Happy hour times, menu selections, prices, and drink options can change, so it's best to confirm the latest details directly with the cafe.
+      </p>
+
+      <h3>What to Confirm Before Happy Hour</h3>
+      <ul class="article-list">
+        <li>Current happy hour days and times.</li>
+        <li>Which food items qualify for happy hour pricing.</li>
+        <li>Available cocktail selections and current prices.</li>
+        <li>Any special conditions or ordering requirements.</li>
+      </ul>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Vegan Options and Dietary Considerations</h2>
+      <p>
+        Mexican cuisine includes many ingredients that can be used in plant-based meals, such as beans, vegetables, chiles, corn, and fresh salsa. Amorelia Mexican Cafe lists vegan options as one of its service highlights, giving plant-based diners a reason to ask about suitable choices.
+      </p>
+      <p>
+        Not every dish that appears meat-free is necessarily vegan. Broths, cooking fats, sauces, beans, and garnishes may contain animal-derived ingredients, so guests following a vegan diet should verify preparation details with the restaurant before ordering.
+      </p>
+
+      <h3>Helpful Questions for Vegan Diners</h3>
+      <ul class="article-list">
+        <li>Which current menu items are fully vegan?</li>
+        <li>Are beans, rice, sauces, and broths prepared without animal products?</li>
+        <li>Can dishes be customized to remove dairy or other non-vegan ingredients?</li>
+        <li>Can staff advise on ingredient and cross-contact concerns?</li>
+      </ul>
+    </section>
+
+    <hr class="section-rule" />
+
+    <section>
+      <h2>Finding Amorelia Mexican Cafe at Grey Plaza</h2>
+      <p>
+        Amorelia Mexican Cafe is located at 2200 Harbor Boulevard, Suite C-110, Costa Mesa, CA 92627, within Grey Plaza. Its Harbor Boulevard address makes it straightforward to identify when planning a visit for traditional Mexican food, tacos, or a bowl of pozole.
+      </p>
+      <p>
+        Before heading over, consider calling to confirm the cafe's current business hours, menu availability, happy hour schedule, and vegan selections. Checking these details in advance can help you choose a convenient time and make sure the dishes you're interested in are available.
+      </p>
+
+      <ul class="article-list">
+        <li><strong>For pozole lovers:</strong> Ask about the day's availability and preparation style.</li>
+        <li><strong>For taco fans:</strong> Check current fillings and customization options.</li>
+        <li><strong>For happy hour:</strong> Confirm current food specials and cocktail offerings.</li>
+        <li><strong>For vegan diners:</strong> Verify ingredients and cooking methods with staff.</li>
+        <li><strong>For first-time visitors:</strong> Confirm operating hours and the exact suite location before arriving.</li>
+      </ul>
+    </section>
+
+    <section class="closing-panel">
+      <p class="eyebrow" style="color:#c9a58f;">Costa Mesa Restaurant Spotlight</p>
+      <h2>Visit Amorelia Mexican Cafe for Traditional Mexican Favorites</h2>
+      <p>
+        Amorelia Mexican Cafe brings traditional Mexican food to Costa Mesa with favorites such as pozole and tacos in a warm, family-owned setting. Happy hour food, cocktails, and vegan options add flexibility for different dining preferences. Contact the cafe directly to check current menu selections, hours, and happy hour details before planning your visit.
+      </p>
+
+      <div class="closing-details">
+        <div>
+          <strong>Restaurant</strong>
+          Amorelia Mexican Cafe
+        </div>
+        <div>
+          <strong>Address</strong>
+          2200 Harbor Blvd, C-110<br />
+          Costa Mesa, CA 92627
+        </div>
+        <div>
+          <strong>Phone</strong>
+          <a href="tel:+19496461422">(949) 646-1422</a>
+        </div>
+        <div>
+          <strong>Dining Highlights</strong>
+          Pozole · Tacos · Happy hour food<br />
+          Cocktails · Vegan options
+        </div>
+      </div>
+    </section>
+
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+
+</div></center>
+<div style="height:80px;"></div>
+</body><footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/cities/">Cities</a>
+      <a href="/best-of-orange-county/">Best Of</a>
+      
+      
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+</html> 
