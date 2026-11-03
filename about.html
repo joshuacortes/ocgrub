@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="./orange-county-grub.ico" type="image/x-icon">
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About OCGrub.com</title>
+    <meta name="description" content="Learn a little about us and we established OCGrub.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-378RHVD2SY');
+</script>
+    
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+
+
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+      <a href="/cities/">Cities</a>
+      
+      
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+  <a href="/cities/">Browse Cities</a>
+  
+  
+
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+<!-- ===== OCGRUB ABOUT US PAGE BODY ===== -->
+
+<style>
+.ocabout {
+  background: #faf5ea;
+  color: #231a14;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+.ocabout *, .ocabout *::before, .ocabout *::after {
+  box-sizing: border-box;
+}
+.ocabout h1, .ocabout h2, .ocabout h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #231a14;
+}
+.ocabout a:focus-visible {
+  outline: 3px solid #ff6b35;
+  outline-offset: 2px;
+}
+.ocabout-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* INTRO */
+.ocabout-intro {
+  padding-top: 72px;
+  padding-bottom: 55px;
+}
+.ocabout-eyebrow {
+  color: #c2410c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.ocabout-intro h1 {
+  font-size: 54px;
+  line-height: 1.12;
+  letter-spacing: -1px;
+  max-width: 800px;
+  margin: 0 0 22px;
+}
+.ocabout-intro p {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #4a3d33;
+  max-width: 740px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* MISSION */
+.ocabout-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 65px;
+  border-top: 1px solid #e3d8c3;
+}
+.ocabout-mission h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+.ocabout-mission p {
+  font-size: 16px;
+  color: #4a3d33;
+  margin: 0 0 16px;
+}
+.ocabout-mission-visual {
+  min-height: 390px;
+  border-radius: 4px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(35,26,20,.08),rgba(35,26,20,.08)),
+    url('https://i.postimg.cc/j56q8xL8/ocgrub-about-us-breakfast.jpg')
+    center/cover no-repeat;
+}
+
+/* FOUNDER */
+.ocabout-founder {
+  background: #f1e8d8;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.ocabout-founder-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 55px;
+  align-items: center;
+}
+.ocabout-founder-photo {
+  width: 100%;
+  min-height: 390px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ocabout-founder-photo img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  display: block;
+}
+.ocabout-founder-placeholder {
+  text-align: center;
+  color: #6b5b4b;
+  font-family: Georgia, serif;
+}
+.ocabout-founder-placeholder strong {
+  display: block;
+  font-size: 72px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.ocabout-founder-placeholder span {
+  font-size: 13px;
+}
+.ocabout-founder h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.ocabout-founder-name {
+  color: #c2410c;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+.ocabout-founder p {
+  font-size: 16px;
+  color: #4a3d33;
+  margin: 0 0 16px;
+}
+
+/* VALUES */
+.ocabout-values {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #e3d8c3;
+}
+.ocabout-heading {
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+.ocabout-heading h2 {
+  font-size: 36px;
+  margin: 0 0 12px;
+}
+.ocabout-heading p {
+  color: #4a3d33;
+  font-size: 17px;
+  margin: 0;
+}
+.ocabout-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+.ocabout-value {
+  border-top: 3px solid #231a14;
+  padding-top: 16px;
+}
+.ocabout-value-number {
+  color: #c2410c;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.ocabout-value h3 {
+  font-size: 23px;
+  margin: 0 0 10px;
+}
+.ocabout-value p {
+  font-size: 15px;
+  color: #4a3d33;
+  margin: 0;
+}
+
+/* SELECTION PROCESS */
+.ocabout-process {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.ocabout-process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 55px;
+}
+.ocabout-process-item h3 {
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+.ocabout-process-item p {
+  font-size: 15px;
+  color: #4a3d33;
+  margin: 0;
+}
+
+/* COMMUNITY */
+.ocabout-community {
+  background: #2b2018;
+  color: #f3ebe0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ocabout-community h2 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.2;
+  max-width: 700px;
+  margin: 0 0 15px;
+}
+.ocabout-community p {
+  color: #e5d9ca;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 0 25px;
+}
+.ocabout-btn {
+  display: inline-block;
+  background: #ff6b35;
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+.ocabout-btn:hover {
+  background: #e85b28;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .ocabout-intro {
+    padding-top: 42px;
+  }
+  .ocabout-intro h1 {
+    font-size: 38px;
+  }
+  .ocabout-intro p {
+    font-size: 18px;
+  }
+  .ocabout-mission,
+  .ocabout-founder-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .ocabout-mission-visual {
+    min-height: 280px;
+  }
+  .ocabout-founder-photo {
+    max-width: 360px;
+    min-height: 320px;
+  }
+  .ocabout-founder-photo img {
+    height: 320px;
+  }
+  .ocabout-value-grid,
+  .ocabout-process-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .ocabout-heading h2,
+  .ocabout-mission h2,
+  .ocabout-founder h2,
+  .ocabout-community h2 {
+    font-size: 30px;
+  }
+}
+</style>
+
+<main class="ocabout">
+
+  <!-- INTRO -->
+  <section class="ocabout-wrap ocabout-intro">
+    <div class="ocabout-eyebrow">Our Story · Our Community · Our Table</div>
+    <h1>Good food starts with knowing where to look.</h1>
+    <p>
+      OCGrub was created to make discovering great local food in Orange County easier.
+      We're passionate about delicious food, thoughtful ingredients, and the independent
+      restaurants that make our communities worth exploring.
+    </p>
+  </section>
+
+  <!-- OUR MISSION -->
+  <section class="ocabout-wrap ocabout-mission">
+    <div>
+      <div class="ocabout-eyebrow">Why OCGrub Exists</div>
+      <h2>A better way to discover what's good around the corner.</h2>
+      <p>
+        Orange County is home to an incredible food scene. From neighborhood
+        cafes and family-owned kitchens to restaurants serving fresh, locally
+        sourced ingredients, there is always something new worth discovering.
+      </p>
+      <p>
+        We started OCGrub because finding those places shouldn't take hours
+        of scrolling through search results, outdated listings, or endless reviews.
+        We wanted to create a straightforward guide that helps people find
+        restaurants based on what matters: the food, the ingredients, and
+        the experience.
+      </p>
+      <p>
+        Whether you're looking for a healthier meal, a locally owned restaurant,
+        a new date-night spot, or somewhere to bring the family, OCGrub is here
+        to help you find your next favorite.
+      </p>
+    </div>
+    <div class="ocabout-mission-visual" role="img"
+      aria-label="Freshly prepared restaurant food served at a local dining table">
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="ocabout-founder">
+    <div class="ocabout-wrap ocabout-founder-grid">
+
+      <!-- Replace this placeholder with your actual founder photo:
+           <img src="/your-actual-photo-path.jpg" alt="Joshua Cortes, founder of OCGrub"> -->
+      <div class="ocabout-founder-photo">
+        <div class="ocabout-founder-placeholder">
+        
+<img style="width:100%; border-radius:10px;" src="https://i.postimg.cc/ZK8Prpbj/ocgrub-about-us.jpg"/>
+        </div>
+      </div>
+
+      <div>
+        <div class="ocabout-eyebrow">Meet the Founder</div>
+        <h2>Built by someone who calls Orange County home.</h2>
+        <div class="ocabout-founder-name">Joshua Cortes · Founder</div>
+
+        <p>
+          My name is Joshua Cortes, and I'm the founder of OCGrub.
+          I was born and raised in Fullerton, California, and Orange County
+          has always been home.
+        </p>
+        <p>
+          Growing up here gave me an appreciation for the different cities,
+          neighborhoods, and communities that make up Orange County.
+          Each has its own personality, local businesses, and food worth
+          discovering. I wanted to build something that celebrates all of it.
+        </p>
+        <p>
+          My interest in food goes beyond simply finding a good meal.
+          I'm especially interested in restaurants that prioritize quality
+          ingredients, fresh preparation, healthier options, and local sourcing.
+          I believe people should have an easier way to discover businesses
+          that share those values.
+        </p>
+        <p>
+          OCGrub is my way of helping people explore the local food scene,
+          support independent restaurant owners, and discover places they
+          might not have found otherwise.
+        </p>
+        <p>
+          This is a locally rooted project, built with the goal of making
+          Orange County's food community easier to explore and enjoy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT MATTERS -->
+  <section class="ocabout-wrap ocabout-values">
+    <div class="ocabout-heading">
+      <div class="ocabout-eyebrow">What We Believe</div>
+      <h2>More than just another restaurant directory.</h2>
+      <p>
+        We believe finding a great restaurant should be about more than
+        a rating or a sponsored placement. Our focus is on the food,
+        the people behind it, and the experience of discovering somewhere new.
+      </p>
+    </div>
+
+    <div class="ocabout-value-grid">
+      <div class="ocabout-value">
+        <div class="ocabout-value-number">01 / LOCAL</div>
+        <h3>Independent restaurants</h3>
+        <p>
+          We prioritize locally owned restaurants and the independent
+          operators who give Orange County its character. Supporting
+          local businesses helps keep our food communities interesting.
+        </p>
+      </div>
+
+      <div class="ocabout-value">
+        <div class="ocabout-value-number">02 / INGREDIENTS</div>
+        <h3>Quality over convenience</h3>
+        <p>
+          We're particularly interested in restaurants that emphasize
+          fresh ingredients, thoughtful preparation, locally sourced
+          products, and healthier food options.
+        </p>
+      </div>
+
+      <div class="ocabout-value">
+        <div class="ocabout-value-number">03 / DISCOVERY</div>
+        <h3>Places worth finding</h3>
+        <p>
+          From familiar neighborhood favorites to restaurants you haven't
+          heard of yet, we want to make it easier to discover great food
+          throughout Orange County.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE CHOOSE -->
+  <section class="ocabout-wrap ocabout-process">
+    <div class="ocabout-heading">
+      <div class="ocabout-eyebrow">Our Selection Process</div>
+      <h2>How we choose restaurants.</h2>
+      <p>
+        Every restaurant featured on OCGrub should have a reason to be here.
+        We look beyond a name on a map and consider several factors before
+        highlighting a restaurant or recommending it to our readers.
+      </p>
+    </div>
+
+    <div class="ocabout-process-grid">
+
+      <div class="ocabout-process-item">
+        <h3>Real-time customer feedback</h3>
+        <p>
+          We pay attention to current customer reviews and feedback to
+          understand how restaurants are performing today. Recent experiences
+          matter because a restaurant's quality and consistency can change
+          over time.
+        </p>
+      </div>
+
+      <div class="ocabout-process-item">
+        <h3>Ingredient quality and sourcing</h3>
+        <p>
+          We look for restaurants that demonstrate a commitment to fresh,
+          quality ingredients. Local sourcing, seasonal products, and
+          thoughtful food preparation are all qualities that stand out.
+        </p>
+      </div>
+
+      <div class="ocabout-process-item">
+        <h3>Locally owned and operated</h3>
+        <p>
+          OCGrub is focused on independent restaurants, not national chains
+          or corporate restaurant groups. We want to highlight the local
+          businesses that contribute to our neighborhoods.
+        </p>
+      </div>
+
+      <div class="ocabout-process-item">
+        <h3>The overall dining experience</h3>
+        <p>
+          Great food is the starting point. We also consider the atmosphere,
+          service, consistency, menu options, and whether a restaurant
+          is worth recommending to someone exploring Orange County.
+        </p>
+      </div>
+
+      <div class="ocabout-process-item">
+        <h3>Local research and discovery</h3>
+        <p>
+          We research restaurants throughout Orange County, explore different
+          cuisines and neighborhoods, and publish articles that help readers
+          find food and dining experiences that match what they're looking for.
+        </p>
+      </div>
+
+      <div class="ocabout-process-item">
+        <h3>A guide that keeps evolving</h3>
+        <p>
+          The local food scene is always changing. We aim to keep our
+          recommendations and restaurant information useful, relevant,
+          and open to community contributions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMUNITY CTA -->
+  <section class="ocabout-community">
+    <div class="ocabout-wrap">
+      <div class="ocabout-eyebrow">Explore · Discover · Contribute</div>
+      <h2>There's always another great local restaurant to discover.</h2>
+      <p>
+        OCGrub is growing alongside the Orange County food community.
+        Whether you're a local looking for your next favorite meal or
+        an independent restaurant owner who wants to be discovered,
+        we'd love to have you be part of it.
+      </p>
+      <a class="ocabout-btn" href="/get-featured/">
+        Get Your Restaurant Featured
+      </a>
+      <a class="ocabout-btn" href="/cities/"
+         style="margin-left:10px;background:transparent;border:1px solid #f3ebe0;">
+        Explore Orange County
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== END ABOUT US PAGE BODY ===== -->
+
+  
+  
+  
+  
+  
+  
+</body>
+  
+  
+  
+  
+  
+  
+  <div style="height:80px;"></div>
+  
+  <footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+      <a href="/cities/">Cities</a>
+      
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/ocgrubnow" title="Instagram">IG</a>
+      <a href="https://x.com/ocgrub" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af; /* light gray */
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+  
+  
+</html>
