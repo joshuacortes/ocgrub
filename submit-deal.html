@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="./orange-county-grub.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Deal or Offer | OCGrub</title>
+<meta name="description" content="Restaurant owners: submit your deals, offers and coupons to OCGrub for free. Reach Orange County diners looking for great local food.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-378RHVD2SY');
+</script>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+/* MOBILE NEWS BUTTON */
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER BUTTON */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ACTIVE CLASS FOR MOBILE MENU */
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+</style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="oc-desktop-nav">
+      <a href="/groups">Group Picks</a>
+      <a href="/date-and-everyday">Everyday Picks</a>
+      <a href="/cities/">Cities</a>
+    </nav>
+
+    <!-- CTA BUTTONS -->
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <!-- MOBILE BUTTONS -->
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="ocMobileMenu">
+  <a href="/groups">Group Picks</a>
+  <a href="/date-and-everyday">Everyday Picks</a>
+  <a href="/cities/">Browse Cities</a>
+  <a href="/newsletter/" class="mobile-btn-outline">Join Newsletter</a>
+  <a href="/get-featured/" class="mobile-btn-primary">Get Featured</a>
+</div>
+
+<script>
+const mobileMenu = document.getElementById('ocMobileMenu');
+const mobileBtn = document.getElementById('mobileMenuBtn');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+
+<!-- ===== SUBMIT DEALS BODY ===== -->
+<style>
+.ocdeals { background: #faf5ea; color: #231a14; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+.ocdeals *, .ocdeals *::before, .ocdeals *::after { box-sizing: border-box; }
+.ocdeals h1, .ocdeals h2, .ocdeals h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; color: #231a14; }
+.ocdeals a:focus-visible { outline: 3px solid #ff6b35; outline-offset: 2px; }
+.ocdeals-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* INTRO */
+.ocdeals-intro { padding-top: 56px; padding-bottom: 28px; }
+.ocdeals-intro h1 { font-size: 52px; line-height: 1.08; letter-spacing: -0.5px; margin: 0 0 16px; max-width: 760px; }
+.ocdeals-intro p { font-size: 19px; max-width: 640px; margin: 0; color: #4a3d33; font-family: Georgia, serif; line-height: 1.65; }
+
+/* MAIN LAYOUT */
+.ocdeals-main { display: grid; grid-template-columns: 5fr 6fr; gap: 48px; align-items: start; padding-top: 24px; padding-bottom: 64px; }
+
+/* LEFT: WHAT TO SUBMIT */
+.ocdeals-info h2 { font-size: 28px; line-height: 1.2; margin: 0 0 12px; }
+.ocdeals-info > p { font-size: 16px; color: #4a3d33; margin: 0 0 24px; }
+.ocdeals-list { list-style: none; margin: 0 0 28px; padding: 0; border-top: 1px solid #e3d8c3; }
+.ocdeals-list li { padding: 14px 0; border-bottom: 1px solid #e3d8c3; }
+.ocdeals-list h3 { margin: 0 0 2px; font-size: 19px; }
+.ocdeals-list p { margin: 0; font-size: 15px; color: #4a3d33; }
+.ocdeals-note { font-size: 14px; color: #6b5b4b; margin: 0 0 20px; }
+.ocdeals-link { color: #c2410c; font-weight: 600; text-decoration: underline; }
+
+/* RIGHT: FORM */
+.ocdeals-form { background: #ffffff; border: 1px solid #e3d8c3; border-top: 4px solid #ff6b35; border-radius: 4px; padding: 32px; min-height: 300px; }
+.ocdeals-form h2 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+.ocdeals-form > p { font-size: 16px; color: #4a3d33; margin: 0 0 24px; }
+.ocdeals-form iframe { max-width: 100% !important; }
+
+/* OWNERS STRIP */
+.ocdeals-strip { background: #2b2018; color: #f3ebe0; padding-top: 44px; padding-bottom: 44px; }
+.ocdeals-strip h2 { color: #fff; font-size: 28px; margin: 0 0 10px; }
+.ocdeals-strip p { max-width: 620px; font-size: 17px; margin: 0 0 20px; font-family: Georgia, serif; }
+.ocdeals-btn { display: inline-block; background: #ff6b35; color: #fff; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .ocdeals-intro { padding-top: 36px; }
+  .ocdeals-intro h1 { font-size: 36px; }
+  .ocdeals-intro p { font-size: 17px; }
+  .ocdeals-main { grid-template-columns: 1fr; gap: 32px; }
+  .ocdeals-form { padding: 22px 16px; }
+}
+</style>
+
+<main class="ocdeals">
+
+  <!-- INTRO -->
+  <section class="ocdeals-wrap ocdeals-intro">
+    <h1>Submit a Deal or Offer</h1>
+    <p>Running a special? Tell Orange County diners about it. Deal submissions are free for locally owned restaurants.</p>
+  </section>
+
+  <!-- INFO + FORM -->
+  <section class="ocdeals-wrap ocdeals-main">
+
+    <div class="ocdeals-info">
+      <h2>What you can submit</h2>
+      <p>Anything that gives a local diner a reason to come in this week.</p>
+      <ul class="ocdeals-list">
+        <li>
+          <h3>Daily and weekly specials</h3>
+          <p>Taco Tuesday, happy hour, lunch combos and early-bird menus.</p>
+        </li>
+        <li>
+          <h3>Coupons and discounts</h3>
+          <p>Percent off, buy-one-get-one, free appetizer with an entrée.</p>
+        </li>
+        <li>
+          <h3>Group and party offers</h3>
+          <p>Catering packages, birthday perks and team-outing deals.</p>
+        </li>
+        <li>
+          <h3>Limited-time events</h3>
+          <p>Grand openings, seasonal menus and holiday specials.</p>
+        </li>
+      </ul>
+      <p class="ocdeals-note">Include the start and end dates, any restrictions, and how diners redeem the offer. Only independently owned restaurants are eligible, and all submissions are reviewed before they are published.</p>
+      <p class="ocdeals-note">Want a full listing too? <a class="ocdeals-link" href="/get-featured/">Get your restaurant featured</a>.</p>
+    </div>
+
+    <div class="ocdeals-form">
+      <h2>Deal submission form</h2>
+      <p>Fill out the form below and we will review your offer.</p>
+
+      <!-- JOTFORM -->
+      <div id="jotform-deals">
+        <script type="text/javascript" src="https://form.jotform.com/jsform/263185534519160"></script>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- OWNERS STRIP -->
+  <section class="ocdeals-strip">
+    <div class="ocdeals-wrap">
+      <h2>No reviews to manage. No commissions to pay.</h2>
+      <p>OCGrub is free for restaurant owners. Submit as many deals as you like.</p>
+      <a class="ocdeals-btn" href="/get-featured/">Get your restaurant featured</a>
+    </div>
+  </section>
+
+</main>
+<!-- ===== END SUBMIT DEALS BODY ===== -->
+
+
+<div style="height:80px;"></div>
+
+<footer class="oc-footer">
+  <div class="footer-container">
+    <!-- LOGO -->
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <a href="/groups">Group Picks</a>
+      <a href="/date-and-everyday">Everyday Picks</a>
+      <a href="/cities/">Cities</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact Us</a>
+      <a href="/news/">News</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="footer-cta">
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/ocgrubnow" title="Instagram">IG</a>
+      <a href="https://x.com/ocgrub" title="X.com">X</a>
+    </div>
+  </div>
+
+  <!-- MICRO COPYRIGHT -->
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+<style>
+/* FOOTER STYLES */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.footer-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #1f2937;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  color: #1f2937;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.footer-social a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+/* MICRO COPYRIGHT */
+.footer-micro {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-cta {
+    gap: 10px;
+  }
+  .footer-social {
+    gap: 10px;
+  }
+}
+</style>
+
+</body>
+</html>
