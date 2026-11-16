@@ -397,19 +397,35 @@ mobileBtn.addEventListener('click', () => {
   </section>
 
   <!-- FOR OWNERS -->
-  <section class="ochome-owners">
-    <div class="ochome-wrap">
-      <h2>Restaurant Owners:</h2>
-      <p>Free listings. Free deal submissions. There are no reviews to manage and no commissions to pay.</p>
+<section class="ochome-owners">
+  <div class="ochome-wrap">
+    <h2>Restaurant Owners:</h2>
+    <p>Free listings. Free deal submissions. There are no reviews to manage and no commissions to pay.</p>
+    <div class="ochome-btn-group">
       <a class="ochome-btn" href="/get-featured/">Get your restaurant featured</a>
-         <br>
-        <a class="ochome-btn" href="/submit-deal">Submit Deals or Offers</a>
-        <br>
-        <a class="ochome-btn" href="/for-restaurants">How it Works</a>
+      <a class="ochome-btn" href="/submit-deal">Submit Deals or Offers</a>
+      <a class="ochome-btn" href="/for-restaurants">How it Works</a>
     </div>
-  </section>
+  </div>
+</section>
 
 </main>
+
+  <style>
+    .ochome-btn-group {
+  display: flex;
+  flex-direction: column;   /* stacked on mobile */
+  gap: 16px;                /* replaces the <br><br> spacing */
+}
+
+@media (min-width: 768px) {
+  .ochome-btn-group {
+    flex-direction: row;    /* side by side on desktop */
+    flex-wrap: wrap;        /* wraps gracefully if space runs short */
+    gap: 16px;
+  }
+}
+    </style>
 
 <!-- ===== END HOMEPAGE BODY ===== -->
   
