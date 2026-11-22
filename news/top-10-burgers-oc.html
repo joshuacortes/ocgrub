@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="./orange-county-grub.ico" type="image/x-icon"> 
+<link rel="icon" href="./orange-county-grub.ico" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OCGrub - Top 10 Burgers in Orange County</title>
-    <meta name="description" content="Discover the Top 10 Burgers in Orange County with OCGrub. From smash burgers to gourmet stacks, explore the must-try burger spots across OC.">
+    <meta name="description" content="Discover the Top 10 Burgers in Orange County with OCGrub. Every spot on this list is locally owned — from smash burgers to gourmet stacks, explore the must-try burger spots across OC.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +17,7 @@
   gtag('js', new Date());
   gtag('config', 'G-378RHVD2SY');
 </script>
-    
+
 <style>
 
 body {
@@ -50,6 +50,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
+  padding: 8px 0;
 }
 
 .oc-desktop-nav {
@@ -61,6 +62,7 @@ body {
   color: #4b5563;
   text-decoration: none;
   font-size: 14px;
+  padding: 10px 0;
 }
 
 .oc-cta {
@@ -99,7 +101,7 @@ body {
   text-decoration: none;
   color: #fff;
   background: #ff6b35;
-  padding: 8px 12px;
+  padding: 10px 12px;
   border-radius: 8px;
 }
 
@@ -109,6 +111,7 @@ body {
   flex-direction: column;
   gap: 4px;
   cursor: pointer;
+  padding: 10px 6px;
 }
 
 .oc-menu-btn span {
@@ -126,7 +129,9 @@ body {
   height: 100%;
   background: #fff;
   transform: translateX(-100%);
-  transition: 0.25s;
+  transition: transform 0.25s, visibility 0.25s;
+  visibility: hidden;
+  pointer-events: none;
   padding: 60px 16px;
   display: flex;
   flex-direction: column;
@@ -143,6 +148,8 @@ body {
 
 #ocMobileMenu.active {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media (max-width: 900px) {
@@ -155,15 +162,16 @@ body {
   }
 }
 
-/* HERO */
+/* HERO — short banner, 4px blur, focused on the center of the image */
 .hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 
 .hero-bg {
@@ -171,6 +179,8 @@ body {
   inset: 0;
   background-size: cover;
   background-position: center;
+  filter: blur(4px);
+  transform: scale(1.05);
 }
 
 .hero-overlay {
@@ -187,8 +197,12 @@ body {
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  margin: 0;
 }
 
 /* ARTICLE */
@@ -199,6 +213,16 @@ body {
   padding: 24px;
   border-radius: 12px;
   line-height: 1.7;
+  color: #1f2937;
+}
+
+.article h2 {
+  margin-top: 28px;
+  margin-bottom: 6px;
+}
+
+.article h2:first-child {
+  margin-top: 0;
 }
 
 /* FOOTER */
@@ -222,6 +246,7 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: #1f2937;
+  padding: 8px 0;
 }
 
 .footer-links {
@@ -234,6 +259,7 @@ body {
   text-decoration: none;
   color: #4b5563;
   font-size: 14px;
+  padding: 10px 0;
 }
 
 .footer-micro {
@@ -260,10 +286,9 @@ body {
 
 <a href="/date-and-everyday">Everyday Picks</a>
       <a href="/cities/">Cities</a>
-      
-      
-      
-      
+
+
+
     </nav>
 
     <div class="oc-cta">
@@ -273,75 +298,89 @@ body {
 
     <div class="mobile-header-buttons">
       <a href="/news/" class="mobile-news-btn">News</a>
-      <div class="oc-menu-btn" id="mobileMenuBtn">
+      <div class="oc-menu-btn" id="mobileMenuBtn" role="button" tabindex="0" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </div>
     </div>
   </div>
 </header>
 
-<div id="ocMobileMenu">
+<div id="ocMobileMenu" aria-hidden="true"></div>
+
+<template id="ocMobileMenuLinks">
 <a href="/groups">Group Picks</a>
 
 <a href="/date-and-everyday">Everyday Picks</a>
   <a href="/cities/">Cities</a>
-  
-  
-  
-  
-</div>
+</template>
 
 <script>
-document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-  document.getElementById('ocMobileMenu').classList.toggle('active');
+var ocMenuBuilt = false;
+function ocToggleMenu() {
+  var menu = document.getElementById('ocMobileMenu');
+  if (!ocMenuBuilt) {
+    menu.appendChild(document.getElementById('ocMobileMenuLinks').content.cloneNode(true));
+    ocMenuBuilt = true;
+  }
+  var isOpen = menu.classList.toggle('active');
+  menu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+  document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+document.getElementById('mobileMenuBtn').addEventListener('click', ocToggleMenu);
+document.getElementById('mobileMenuBtn').addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); ocToggleMenu(); }
 });
 </script>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349');"></div>
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349')";"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Top 10 Burgers in Orange County</h1>
-    <p>The ultimate OC burger list — from smash burgers to gourmet stacks locals swear by.</p>
+    <p>My go-to burger list for OC — smash burgers, a gas-station gem, and a dive-bar classic. Every spot here is locally owned.</p>
   </div>
 </section>
 
 <!-- ARTICLE -->
 <div class="article">
 
-<h2>#1 Peter’s Gourmade Grill (Tustin)</h2>
-<p>Widely considered one of the best overall burgers in OC, known for juicy patties, bold seasoning, and consistently high-quality builds.</p>
+<p>
+I get asked about burgers more than almost anything else on OCGrub, so here's my list. These are the ten spots I actually send people to — the places I go back to myself. I kept this one all local: no chains, no franchises, just independent OC spots doing burgers right. Some are smashed thin and crispy, some are stacked a mile high, and one of them is hiding inside a gas station. Let's get into it.
+</p>
+
+<h2>#1 Peter's Gourmade Grill (Tustin)</h2>
+<p>If you only try one burger from this list, make it this one. Peter's is tucked inside a gas station in Tustin, which sounds like a gimmick until you take a bite — then you get it. The patties are thick, juicy, and seasoned like somebody in the kitchen actually cares, and the builds are big without falling apart on you. I've sent a lot of people here over the years and nobody has ever come back disappointed. This is still the burger I judge every other OC burger against.</p>
 
 <h2>#2 Hammer Burger (Santa Ana)</h2>
-<p>A smash burger favorite with strong local hype, crispy edges, and simple but addictive flavor.</p>
+<p>This is my smash burger pick, and it's not close. Hammer smashes them thin so you get those crispy, lacy edges, keeps the menu simple, and just nails the basics — good beef, melted cheese, a soft bun, nothing you don't need. It's the kind of burger you finish and immediately start thinking about ordering a second one. If you're a smash burger person, this is your spot.</p>
 
 <h2>#3 The Cut Handcrafted Burgers (Irvine)</h2>
-<p>Gourmet-style burgers with elevated toppings and premium ingredients.</p>
+<p>When I want a burger that feels a little more put-together, I go to The Cut. Everything tastes fresh and made to order, the toppings actually add something instead of just piling up, and you can tell they're using quality ingredients from the first bite. It's gourmet without being fussy about it — you still leave full, you just feel a little fancier about it.</p>
 
 <h2>#4 TK Burgers (Multiple OC Locations)</h2>
-<p>Old-school, fast, and reliable — a classic beachside burger experience.</p>
+<p>TK is an OC original, and I mean that as the highest compliment. It's old-school in the best way: charbroiled burgers, crinkle-cut fries, beach-town energy, and prices that don't make you wince. Yes, they have a few locations now, but they're all right here in Orange County and it still feels like a neighborhood spot, not a chain. This is the burger I grew up on, and it holds up.</p>
 
-<h2>#5 In-N-Out Burger</h2>
-<p>The most iconic fast burger in California. Simple, consistent, and always fresh.</p>
+<h2>#5 Mick's Karma Bar (Irvine)</h2>
+<p>Mick's is one of those places people in Irvine have been quietly gatekeeping for years. It's a small spot in a business park, which makes the line out the door at lunch even funnier — word got out a long time ago. The burgers are creative without getting weird, the Karma Burger is the one I order, and everything comes out hot and fast even when they're slammed. If you work anywhere near Irvine, this is your new lunch spot. Sorry in advance.</p>
 
-<h2>#6 Eureka! (Irvine / Newport)</h2>
-<p>Craft burgers with creative toppings and a modern gastropub feel.</p>
+<h2>#6 Burger Parlor (Fullerton)</h2>
+<p>Downtown Fullerton needed a great burger spot and Burger Parlor is it. The beef is ground fresh, the burgers come out with a proper crust on them, and the whole menu reads like it was built by people who genuinely love burgers — because it was. I like that I can bring anyone here: the purist who wants a classic cheeseburger and the friend who wants something stacked and messy both leave happy.</p>
 
-<h2>#7 Habit Burger & Grill</h2>
-<p>Chargrilled flavor that stands out from typical fast food chains.</p>
+<h2>#7 GD Bro Burger (Santa Ana)</h2>
+<p>GD Bro started as a food truck, and you can still feel that energy — big flavors, over-the-top builds, zero interest in playing it safe. This is where I send people who tell me they're bored of regular burgers. The portions are generous, the combinations actually work, and it's just fun to eat. Santa Ana keeps delivering, and GD Bro is a big reason why.</p>
 
-<h2>#8 Hopdoddy Burger Bar (Newport Beach)</h2>
-<p>Premium burgers with fresh ingredients and craft-style combinations.</p>
+<h2>#8 Cassidy's (Newport Beach)</h2>
+<p>Cassidy's is a dive bar first and a burger legend second — or maybe it's the other way around. The burgers are cooked right behind the bar, they're huge, they're juicy, and there's no pretension anywhere in the building. No fancy toppings, no truffle anything, just a proper old-school bar burger the way they've been doing it for decades. Every OC burger list needs a spot like this on it, and this is ours.</p>
 
-<h2>#9 Bunz Burger Joint</h2>
-<p>Known for build-your-own style burgers and strong smash burger options.</p>
+<h2>#9 Bunz Burger Joint (Huntington Beach)</h2>
+<p>Bunz is where I go when I want it exactly my way. It's build-your-own, so you're in charge — pick your patty, your cheese, your toppings, go classic or go completely off the rails. Their smash burgers are legit too, so even if you don't feel like playing chef, you can't really order wrong here. Easy, casual, and consistently good, which is all I ever ask from a burger joint.</p>
 
 <h2>#10 Swagyu Burger</h2>
-<p>Wagyu-focused burgers delivering a richer, more premium bite.</p>
+<p>I had to close the list with something a little indulgent. Swagyu does wagyu burgers, and yes, you can taste the difference — richer, beefier, with that melt-in-your-mouth thing wagyu does. It's a step up in price from most of this list, but it's not a gimmick; it's a genuinely better bite. Save this one for when you want to treat yourself a little.</p>
 
 <h2>Final Thoughts</h2>
-<p>Orange County has one of the strongest burger scenes in California. Whether you want fast and simple or gourmet and stacked, there’s something here for every craving.</p>
+<p>That's my ten. What I love about this list is that every single spot is locally owned — these are OC people making OC burgers, and you can taste the difference that makes. Start at the top if you want my personal favorite, jump to Hammer or GD Bro if you're in a smash burger mood, and don't sleep on Cassidy's just because it's a dive bar. That's half the charm. Did I miss your favorite? You know where to find me — I'm always taking recommendations for the next round.</p>
 
 </div>
 
@@ -354,9 +393,9 @@ document.getElementById('mobileMenuBtn').addEventListener('click', () => {
 
 <a href="/date-and-everyday">Everyday Picks</a>
             <a href="/cities/">Cities</a>
-      
-      
-      
+
+
+
       <a href="/about">About</a>
 <a href="/contact">Contact Us</a>
 <a href="/news/">News</a>
