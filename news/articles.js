@@ -1,11 +1,5 @@
 const newsArticles = [
-  {
-    title: "Where to Eat on Black Friday in Orange County",
-    slug: "black-friday-eating-guide-oc",
-    img: "https://raw.githubusercontent.com/joshuacortes/ocgrub/main/photos/ocgrub-group-meal.jpg",
-    meta: "Orange County \u00b7 Black Friday",
-    excerpt: "Shopping-break spots near the malls, for a group lunch or dinner after."
-  },
+
   {
     title: "New Late Night Taco Spot Opens in Anaheim",
     slug: "taco-spot-anaheim",
