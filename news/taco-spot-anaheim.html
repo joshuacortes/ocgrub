@@ -190,7 +190,7 @@ body {
 .ocg-hero {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,10 +200,12 @@ body {
 }
 
 .ocg-hero-bg {
-  position: absolute;
+   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 78%;
+  filter: blur(2px);
+  transform: scale(1.05);
   z-index: 1;
 }
 
@@ -222,8 +224,8 @@ body {
 }
 
 .ocg-hero h1 {
-  font-size: 42px;
-  margin-bottom: 12px;
+  font-size: 32px;
+  margin-bottom: 8px;
 }
 
 .ocg-hero p {
