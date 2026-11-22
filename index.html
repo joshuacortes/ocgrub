@@ -361,38 +361,9 @@ mobileBtn.addEventListener('click', () => {
 
 
 
-  <!-- LATEST NEWS -->
-<section class="ochome-wrap ochome-section">
-  <h2>Latest from OCGrub</h2>
-  <p class="ochome-lede">New openings, best-of lists, and what's happening around OC.</p>
+    <div class="ochome-new-grid" id="ochomeLatestGrid"></div>
 
-  <div class="ochome-new-grid">
-
-    <a class="ochome-new-card" href="/news/taco-spot-anaheim">
-      <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1400&q=80" alt="New Late Night Taco Spot Opens in Anaheim" loading="lazy">
-      <div class="ochome-new-meta">Anaheim &middot; Late Night</div>
-      <h3>New Late Night Taco Spot Opens in Anaheim</h3>
-      <p>Where to go when the late-night craving hits.</p>
-    </a>
-
-    <a class="ochome-new-card" href="/news/top-10-burgers-oc">
-      <img src="https://images.unsplash.com/photo-1550547660-d9450f859934?auto=format&fit=crop&w=1400&q=80" alt="Top 10 Burger Joints in Orange County 2026" loading="lazy">
-      <div class="ochome-new-meta">Orange County &middot; Best Of</div>
-      <h3>Top 10 Burger Joints in Orange County 2026</h3>
-      <p>Smash burgers to gourmet stacks, across OC.</p>
-    </a>
-
-    <a class="ochome-new-card" href="/news/late-night-delivery-rankings">
-      <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1400&q=80" alt="Best Late Night Delivery Apps Ranked" loading="lazy">
-      <div class="ochome-new-meta">Orange County &middot; Delivery</div>
-      <h3>Best Late Night Delivery Apps Ranked</h3>
-      <p>Which apps actually deliver late in OC.</p>
-    </a>
-
-  </div>
-
-  <a class="ochome-more" href="/news/">See all news &rarr;</a>
-</section>
+    
 
 
   
@@ -474,7 +445,24 @@ mobileBtn.addEventListener('click', () => {
   
   
   
-  
+  <script src="/news/articles.js"></script>
+<script>
+  const latestGrid = document.getElementById("ochomeLatestGrid");
+  if (latestGrid && typeof newsArticles !== "undefined") {
+    newsArticles.slice(0, 3).forEach(function(article) {
+      const card = document.createElement("a");
+      card.className = "ochome-new-card";
+      card.href = "/news/" + article.slug;
+      card.innerHTML =
+        '<img src="' + article.img + '" alt="' + article.title + '" loading="lazy">' +
+        '<div class="ochome-new-meta">' + (article.meta || "") + '</div>' +
+        '<h3>' + article.title + '</h3>' +
+        '<p>' + (article.excerpt || "") + '</p>';
+      latestGrid.appendChild(card);
+    });
+  }
+</script>
+
   
   
 </body>
