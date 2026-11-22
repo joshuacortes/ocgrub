@@ -398,7 +398,35 @@ mobileBtn.addEventListener('click', () => {
 </style>
 <script src="/news/articles.js"></script>
 
-  
+
+
+    <script>
+const grid = document.getElementById("ocNewsGrid");
+
+function renderNews() {
+  grid.innerHTML = "";
+  newsArticles.forEach(article => {
+    const card = document.createElement("div");
+    card.className = "oc-news-card";
+    const img = article.img
+      ? article.img
+      : "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80";
+    card.innerHTML = `
+      <h2 class="oc-news-title">${article.title}</h2>
+      <a href="/news/${article.slug}">
+        <img class="oc-news-img" src="${img}" alt="${article.title}" loading="lazy">
+      </a>
+      <a class="oc-news-link" href="/news/${article.slug}">
+        Read Full Article →
+      </a>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+renderNews();
+</script>
+
   
   
 </body>
