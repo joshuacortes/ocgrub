@@ -38,6 +38,21 @@
        <priority>0.8000</priority>
   </url>
   <url>
+       <loc>https://ocgrub.com/news/taco-spot-anaheim</loc>
+       <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://ocgrub.com/news/top-10-burgers-oc</loc>
+       <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://ocgrub.com/news/ocgrub-deals-launch</loc>
+       <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
        <loc>https://ocgrub.com/cities/anaheim/</loc>
        <lastmod>2026-11-05T01:33:45+00:00</lastmod>
        <priority>0.8000</priority>
