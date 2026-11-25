@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="./orange-county-grub.ico" type="image/x-icon"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCGrub - Late-Night Halal Turkish at Istanbul Grill in Fountain Valley</title>
+    <meta name="description" content="Istanbul Grill in Fountain Valley serves mixed grill kebabs and the creamiest hummus until 1 AM — a family-run Turkish spot and one of Yelp's Top 100 in the US. Here's what to order.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-378RHVD2SY');
+</script>
+    
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+
+/* HERO */
+.ocg-hero {
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.ocg-hero-bg {
+   position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 78%;
+  filter: blur(4px);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.ocg-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 2;
+}
+
+.ocg-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.ocg-hero h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.ocg-hero p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* ARTICLE */
+.article-wrap {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+.article-wrap h2 {
+  margin-top: 24px;
+}
+
+/* FOOTER */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+}
+
+.footer-micro {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 20px;
+}
+</style>
+
+<!-- ADSENSE (KEEPED EXACT) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <nav class="oc-desktop-nav">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+      <a href="/cities/">Cities</a>
+<a href="https://www.instagram.com/ocgrubnow/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+      
+      
+      
+      
+    </nav>
+
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="ocMobileMenu">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+  <a href="/cities/">Cities</a>
+<a href="https://www.instagram.com/ocgrubnow/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+  
+  
+  
+  
+</div>
+
+<script>
+document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+  document.getElementById('ocMobileMenu').classList.toggle('active');
+});
+</script>
+
+<!-- HERO -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://s3-media0.fl.yelpcdn.com/bphoto/0XI_RmJUwmlVtRxDjAVcTw/o.jpg');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Istanbul Grill California</h1>
+    <p>Family-run Turkish cooking until 1 AM — mixed grills, Adana kebab, and serious hummus.</p>
+  </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<div class="article-wrap">
+
+<h2>Overview</h2>
+<p><strong>Istanbul Grill California</strong> is Fountain Valley’s family-run Turkish spot, and it’s the rare restaurant that’s still cooking at midnight. Family-owned and operated since 2013, it landed on Yelp’s Top 100 restaurants in the USA in both 2015 and 2016, and it’s TripAdvisor’s #1 restaurant in Fountain Valley. It’s halal, it’s open until 1 AM every night, and the kebabs are the real thing.</p>
+<p>Late-night dining in OC is thin. This is one of the good answers.</p>
+<h2>Where to Find It</h2>
+<p><strong>Istanbul Grill California</strong><br>
+18010 Newhope St, Ste D, Fountain Valley, CA 92708<br>
+Phone: (714) 430-1434
+</p>
+<iframe src="https://www.google.com/maps?q=18010%20Newhope%20St%2C%20Ste%20D%2C%20Fountain%20Valley%2C%20CA%2092708&output=embed" width="100%" height="300" style="border:0;" loading="lazy" title="Map — Istanbul Grill California"></iframe>
+<h2>Hours</h2>
+<ul><li>Monday - Sunday: 11:00 AM - 1:00 AM</li></ul>
+<p>Open every day from 11:00 AM to 1:00 AM. (Yelp lists a 10:00 AM open; the restaurant’s own site says 11:00.)</p>
+<h2>What to Order</h2>
+<p>The <strong>Mixed Grill Kebab for two</strong> is the spread to get — a pile of kebabs that shows off the grill. The <strong>Lamb Shish Kebab</strong> is the one reviewers call the juiciest and most flavorful, and the <strong>Chicken Adana Kebab</strong> is a filling plate on its own. Start with the <strong>Appetizer Sampler</strong>: hummus, babaganoush, labneh with walnuts, and dolmas — the hummus alone gets called the creamiest around, and the babaganoush is the best some regulars have ever had.</p>
+<h2>Why I Like It</h2>
+<p>It’s a family spot doing one cuisine properly, late, every night. The grill work is serious, the appetizers are the kind you talk about after, and there aren’t many halal Turkish rooms in OC doing it at this level.</p>
+<h2>Best Time to Go</h2>
+<p>Late. That’s the whole point — when most kitchens are closed, Istanbul Grill is still going, and a mixed grill at midnight hits different.</p>
+<h2>Final Thoughts</h2>
+<p>If you’re hungry late in Fountain Valley, this is the answer. Get the mixed grill, start with the sampler, and don’t skip the hummus.</p>
+
+</div>
+
+<footer class="oc-footer">
+  <div class="footer-container">
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <div class="footer-links">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+            <a href="/cities/">Cities</a>
+      
+      
+      
+      <a href="/about">About</a>
+<a href="/contact">Contact Us</a>
+<a href="/news/">News</a>
+    </div>
+
+    <div>
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+  </div>
+
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
