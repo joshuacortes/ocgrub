@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="./orange-county-grub.ico" type="image/x-icon"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCGrub - Webb's Grainworks Is Aliso Viejo's Brewery, Distillery, and Dinner Spot in One</title>
+    <meta name="description" content="Webb's Grainworks in Aliso Viejo brews its own beer, distills its own spirits, and serves Korean wings and brisket sandwiches under a Model T — here's what to order.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-378RHVD2SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-378RHVD2SY');
+</script>
+    
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.oc-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.oc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+/* LOGO */
+.oc-logo {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* DESKTOP NAV */
+.oc-desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.oc-desktop-nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.oc-desktop-nav a:hover {
+  color: #1f2937;
+}
+
+/* CTA BUTTONS */
+.oc-cta {
+  display: flex;
+  gap: 10px;
+}
+
+.oc-cta a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.oc-cta .btn-primary {
+  background: #ff6b35;
+  color: #ffffff;
+}
+
+.oc-cta .btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  background: transparent;
+}
+
+/* MOBILE HEADER BUTTONS */
+.mobile-header-buttons {
+  display: none;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-news-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff6b35;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+/* HAMBURGER */
+.oc-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.oc-menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #000000;
+  display: block;
+}
+
+/* MOBILE MENU */
+#ocMobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  padding: 60px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+}
+
+#ocMobileMenu a {
+  display: block;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#ocMobileMenu a.mobile-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu a.mobile-btn-outline {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ocMobileMenu.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+  .oc-desktop-nav,
+  .oc-cta {
+    display: none;
+  }
+  .mobile-header-buttons {
+    display: flex;
+  }
+}
+
+/* HERO */
+.ocg-hero {
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.ocg-hero-bg {
+   position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 78%;
+  filter: blur(4px);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.ocg-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 2;
+}
+
+.ocg-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.ocg-hero h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.ocg-hero p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* ARTICLE */
+.article-wrap {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+.article-wrap h2 {
+  margin-top: 24px;
+}
+
+/* FOOTER */
+.oc-footer {
+  background: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  padding: 40px 16px 20px;
+  color: #1f2937;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-btn-primary,
+.footer-btn-outline {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer-btn-primary {
+  background: #ff6b35;
+  color: #fff;
+}
+
+.footer-btn-outline {
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+}
+
+.footer-micro {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 20px;
+}
+</style>
+
+<!-- ADSENSE (KEEPED EXACT) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189512042031215"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header class="oc-header">
+  <div class="container">
+    <a href="/" class="oc-logo">OCGrub</a>
+
+    <nav class="oc-desktop-nav">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+      <a href="/cities/">Cities</a>
+<a href="https://www.instagram.com/ocgrubnow/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+      
+      
+      
+      
+    </nav>
+
+    <div class="oc-cta">
+      <a href="/newsletter/" class="btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="btn-primary">Get Featured</a>
+    </div>
+
+    <div class="mobile-header-buttons">
+      <a href="/news/" class="mobile-news-btn">News</a>
+      <div class="oc-menu-btn" id="mobileMenuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="ocMobileMenu">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+  <a href="/cities/">Cities</a>
+<a href="https://www.instagram.com/ocgrubnow/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+  
+  
+  
+  
+</div>
+
+<script>
+document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+  document.getElementById('ocMobileMenu').classList.toggle('active');
+});
+</script>
+
+<!-- HERO -->
+<section class="ocg-hero">
+  <div class="ocg-hero-bg" style="background-image:url('https://s3-media0.fl.yelpcdn.com/bphoto/k1QsBnRiYkS4ELSFqmH6rA/o.jpg');"></div>
+  <div class="ocg-hero-overlay"></div>
+  <div class="ocg-hero-content">
+    <h1>Webb's Grainworks</h1>
+    <p>A brewery, a distillery, and a restaurant under one roof — with a caboose for seating.</p>
+  </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<div class="article-wrap">
+
+<h2>Overview</h2>
+<p><strong>Webb’s Grainworks</strong> is the kind of place that makes you wonder why every town doesn’t have one: a brewery, a distillery, and a restaurant all under one roof. It’s family-owned — opened in 2023 by the grandson of auto dealer Lew Webb — and Orange Coast called it an O.C. unicorn, which feels about right. There’s a repurposed Santa Fe caboose for seating and a restored Ford Model T suspended overhead, and the whole room feels like it was built by people who love what they do.</p>
+<p>The food is global comfort food with a smoker and a fryer doing the heavy lifting, and the beer and spirits are made right there on site.</p>
+<h2>Where to Find It</h2>
+<p><strong>Webb’s Grainworks</strong><br>
+7 Journey, Aliso Viejo, CA 92656<br>
+</p>
+<iframe src="https://www.google.com/maps?q=7%20Journey%2C%20Aliso%20Viejo%2C%20CA%2092656&output=embed" width="100%" height="300" style="border:0;" loading="lazy" title="Map — Webb’s Grainworks"></iframe>
+<p>They don’t list a phone number and they don’t take reservations — just walk in.</p>
+<h2>Hours</h2>
+<ul><li>Monday - Thursday: 11:00 AM - 10:00 PM</li><li>Friday - Saturday: 11:00 AM - 11:00 PM</li><li>Sunday: 11:00 AM - 10:00 PM</li></ul>
+<p>Friday and Saturday they stay open until 11:00, which makes it an easy late-week stop.</p>
+<h2>What to Order</h2>
+<p>Start with the <strong>Whipped Feta &amp; Ricotta Dip</strong> — it’s the plate people photograph first. The <strong>House-Smoked BBQ Brisket Sandwich</strong> is the hearty move, and the <strong>Spicy Korean Wings</strong> come with sticky rice, pickled daikon, and buttermilk dressing. Don’t skip the <strong>Goat Cheese Wontons</strong> with raspberry sweet &amp; sour either.</p>
+<h2>Why I Like It</h2>
+<p>It’s a brewery and a distillery and a restaurant, and all three parts are done properly instead of one carrying the other two. The room itself is half the fun — caboose, Model T, and a menu that doesn’t sit still.</p>
+<h2>Best Time to Go</h2>
+<p>Friday or Saturday evening, when the room is buzzing and the kitchen is going until 11:00. It’s the kind of place that works just as well for a casual dinner as it does for a night out with friends.</p>
+<h2>Final Thoughts</h2>
+<p>If you’re in Aliso Viejo and want something that isn’t another chain restaurant, Webb’s is the stop. Get the whipped feta dip, try whatever they brewed most recently, and take a look at the caboose before you leave.</p>
+
+</div>
+
+<footer class="oc-footer">
+  <div class="footer-container">
+    <a href="/" class="footer-logo">OCGrub</a>
+
+    <div class="footer-links">
+<a href="/groups">Group Picks</a>
+
+<a href="/date-and-everyday">Everyday Picks</a>
+            <a href="/cities/">Cities</a>
+      
+      
+      
+      <a href="/about">About</a>
+<a href="/contact">Contact Us</a>
+<a href="/news/">News</a>
+    </div>
+
+    <div>
+      <a href="/newsletter/" class="footer-btn-outline">Newsletter</a>
+      <a href="/get-featured/" class="footer-btn-primary">Get Featured</a>
+    </div>
+  </div>
+
+  <div class="footer-micro">
+    &copy;2026 OCGrub. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
